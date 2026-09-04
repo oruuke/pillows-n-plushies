@@ -24,11 +24,11 @@
           "CalculationType": "Additive"
         }
       ],
-      "Volatility": [
+      "Insanity": [
         {
           "Target": "Max",
-          "CalculationType": "Multiplicative",
-          "Amount": -0.04
+          "CalculationType": "Additive",
+          "Amount": 50
         }
       ],
       "Affinity_Ice": [

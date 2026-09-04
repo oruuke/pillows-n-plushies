@@ -7,6 +7,7 @@ import com.hypixel.hytale.component.ComponentAccessor;
 import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.component.system.WorldEventSystem;
+import com.hypixel.hytale.logger.HytaleLogger;
 import com.hypixel.hytale.server.core.modules.entitystats.EntityStatMap;
 import com.hypixel.hytale.server.core.modules.entitystats.EntityStatValue;
 import com.hypixel.hytale.server.core.modules.entitystats.asset.EntityStatType;
@@ -21,6 +22,7 @@ public class CastSpellLimiterSystem extends WorldEventSystem<EntityStore, HexCas
     public CastSpellLimiterSystem() {
         super(HexCastEvent.class);
     }
+    HytaleLogger L = HytaleLogger.get("");
 
     @Override
     public void handle(@Nonnull Store<EntityStore> store, @Nonnull CommandBuffer<EntityStore> buffer,
@@ -35,6 +37,8 @@ public class CastSpellLimiterSystem extends WorldEventSystem<EntityStore, HexCas
             return;
 
         var current = tracker.getCurrent();
+
+        L.atInfo().log("stability: %s", current);
         tracker.setCurrent(current - current * resolveInsanity(buffer, playerRoot) / 100);
     }
 

@@ -1,7 +1,7 @@
 plugins {
     id 'idea'
     id 'java'
-    id 'com.azuredoom.hytale-tools' version '1.0.38'
+    id 'com.azuredoom.hytale-tools' version '1.+'
     id 'com.azuredoom.hytalepublisher' version '1.1.7'
     id 'com.gradleup.shadow' version '9.4.2'
 }
@@ -13,7 +13,7 @@ configurations {
 }
 
 dependencies {
-    implementation('curse.maven:hexcode-1448311:8758841')
+    vineImplementation 'curse.maven:hexcode-1448311:8758841'
     shaded('com.riprod:patchly:3.+')
 }
 

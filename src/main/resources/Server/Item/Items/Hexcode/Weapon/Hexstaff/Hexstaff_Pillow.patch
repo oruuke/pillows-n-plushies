@@ -18,13 +18,12 @@
     "Ability3": "Hexstaff_Ability3"
   },
   "Weapon": {
-    "RenderDualWielded": false,
     "StatModifiers": {
-      "Magic_Power": [
+      "Flag_IsHolding": [
         {
           "Target": "Max",
           "CalculationType": "Additive",
-          "Amount": 1.6
+          "Amount": 1
         }
       ],
       "MagicCharges": [
@@ -32,33 +31,155 @@
           "CalculationType": "Additive",
           "Amount": 8
         }
+      ],
+      "Stability": [
+        {
+          "Target": "Max",
+          "CalculationType": "Additive",
+          "Amount": 22
+        }
+      ],
+      "Volatility": [
+        {
+          "Target": "Max",
+          "CalculationType": "Additive",
+          "Amount": 56
+        }
       ]
     },
     "EntityStatsToClear": [
-      "Magic_Power",
+      "Flag_IsHolding",
       "MagicCharges",
       "Volatility"
     ]
   },
-  "ItemAppearanceConditions": {
-    "SignatureEnergy": [
-      {
-        "Condition": [
-          100,
-          100
-        ],
-        "ConditionValueType": "Percent"
-      }
-    ]
-  },
-  "Recipe": {
-    "BenchRequirement": [
-      {
-        "Categories": [
-          "Arcane_Hexcode"
-        ],
-        "Id": "Arcanebench"
-      }
-    ]
+  "ItemSoundSetId": "ISS_Weapons_Wood",
+  "InteractionVars": {
+    "HexTier1": {
+      "Interactions": [
+        {
+          "Parent": "CastSpell_Template",
+          "Type": "HexExecute",
+          "Effects": {
+            "ItemAnimationId": "HexExecution_Primary"
+          },
+          "Config": {
+            "HexStorageType": "ExecutionConfig",
+            "Parent": "CastConfig_Tier1",
+            "Style": "Hexstaff_Basic_Mithril",
+            "HexStats": {
+              "Resources": {
+                "Initial": {
+                  "Arcane": 27.5
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "HexTier2": {
+      "Interactions": [
+        {
+          "Parent": "CastSpell_Template",
+          "Type": "HexExecute",
+          "Effects": {
+            "ItemAnimationId": "HexExecution_Primary"
+          },
+          "Config": {
+            "HexStorageType": "ExecutionConfig",
+            "Parent": "CastConfig_Tier2",
+            "Style": "Hexstaff_Basic_Mithril",
+            "HexStats": {
+              "Resources": {
+                "Initial": {
+                  "Arcane": 31.5
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "HexTier3": {
+      "Interactions": [
+        {
+          "Parent": "CastSpell_Template",
+          "Type": "HexExecute",
+          "Effects": {
+            "ItemAnimationId": "HexExecution_Primary"
+          },
+          "Config": {
+            "HexStorageType": "ExecutionConfig",
+            "Parent": "CastConfig_Tier3",
+            "Style": "Hexstaff_Basic_Mithril",
+            "HexStats": {
+              "Resources": {
+                "Initial": {
+                  "Arcane": 35.5
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "HexTier4": {
+      "Interactions": [
+        {
+          "Parent": "CastSpell_Template",
+          "Type": "HexExecute",
+          "Effects": {
+            "ItemAnimationId": "HexExecution_Primary"
+          },
+          "Config": {
+            "HexStorageType": "ExecutionConfig",
+            "Parent": "CastConfig_Tier4",
+            "Style": "Hexstaff_Basic_Mithril",
+            "HexStats": {
+              "Resources": {
+                "Initial": {
+                  "Arcane": 39.5
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "Drawmode": {
+      "Interactions": [
+        {
+          "Type": "HexDrawMode",
+          "Parent": "Drawmode_Default",
+          "AuraParticles": [
+            {
+              "SystemId": "Hexstaff_Motes_Slow",
+              "PositionOffset": {
+                "Y": 1.5
+              },
+              "Color": "#FFFFFF",
+              "Scale": 1.3
+            },
+            {
+              "SystemId": "Hexstaff_Sparks_Mid",
+              "PositionOffset": {
+                "Y": 0.0
+              },
+              "Color": "#ECEFF1",
+              "Scale": 1.2
+            },
+            {
+              "SystemId": "Hexstaff_Generic_Mist",
+              "PositionOffset": {
+                "Y": -1.5
+              },
+              "Color": "#ECEFF1",
+              "Scale": 1.3
+            }
+          ]
+        }
+      ]
+    }
   }
 }

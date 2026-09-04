@@ -1,1 +1,2 @@
-- reworked onesie robes and pillow book :3
+- reworked onesie again :3c
+- copied mithril staff into pillow

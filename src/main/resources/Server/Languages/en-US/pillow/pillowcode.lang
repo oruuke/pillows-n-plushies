@@ -25,7 +25,7 @@ Obelisk_Pillow.description.patch = <color is="#b55088"><b>a pillow so dense it c
 # ==== onesies ====
 
 Armor_Onesie_Bear_Head.name = onesie pillowmage bear hood
-Armor_Onesie_Bear_Head.description = <color is="#b55088"><b>attuned to the wired, the cold recluse acquires wealth of mana</b></color>
+Armor_Onesie_Bear_Head.description = <color is="#b55088"><b>attuned to the wired, the cold recluse acquires wealth of mana</b></color> \n<color is="#ffffff">yet a fray spirals along each thread until total fracture and undoing</color>
 
 Armor_Onesie_Bear_Chest.name = onesie pillowmage bear robe
 Armor_Onesie_Bear_Chest.description = <color is="#b55088"><b>attuned to the wired, the cold recluse acquires wealth of mana</b></color>

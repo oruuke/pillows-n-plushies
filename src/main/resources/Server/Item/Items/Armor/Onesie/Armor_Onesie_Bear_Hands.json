@@ -18,6 +18,13 @@
           "CalculationType": "Additive"
         }
       ],
+      "Insanity": [
+        {
+          "Target": "Max",
+          "CalculationType": "Additive",
+          "Amount": 21
+        }
+      ],
       "Affinity_Ice": [
         {
           "Target": "Max",

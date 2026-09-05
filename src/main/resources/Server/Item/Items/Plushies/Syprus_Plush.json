@@ -1,16 +1,14 @@
 {
   "Parent": "Template_Plush",
   "TranslationProperties": {
-    "Name": "pillow.items.Slushy_Plush.name",
-    "Description": "pillow.items.Slushy_Plush.description"
+    "Name": "pillow.items.Syprus_Plush.name",
+    "Description": "pillow.items.Syprus_Plush.description"
   },
   "PlayerAnimationsId": "Item",
-  "Quality": "Developer",
   "MaxStack": 100,
   "Set": "Furniture_Misc",
-  "Icon": "Icons/ItemsGenerated/Slushy_Plush.png",
-  "Model": "Items/Blocks/Plushies/Slushy_Plush.blockymodel",
-  "Texture": "Items/Blocks/Plushies/Slushy_Plush.png",
+  "Model": "Items/Blocks/Plushies/Syprus_Plush.blockymodel",
+  "Texture": "Items/Blocks/Plushies/Syprus_Plush.png",
   "Weapon": {},
   "Interactions": {
     "Secondary": {
@@ -23,11 +21,11 @@
     "Material": "Solid",
     "DrawType": "Model",
     "Opacity": "Transparent",
-    "CustomModel": "Items/Blocks/Plushies/Slushy_Plush.blockymodel",
+    "CustomModel": "Items/Blocks/Plushies/Syprus_Plush.blockymodel",
     "VariantRotation": "NESW",
     "CustomModelTexture": [
       {
-        "Texture": "Items/Blocks/Plushies/Slushy_Plush.png",
+        "Texture": "Items/Blocks/Plushies/Syprus_Plush.png",
         "Weight": 1
       }
     ],
@@ -61,8 +59,31 @@
     "PhysicalMaterialId": "Cloth",
     "BlockParticleSetId": "Dust"
   },
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Cloth_Block_Wool_Red",
+        "Quantity": 2
+      },
+      {
+        "ItemId": "Ingredient_Fibre",
+        "Quantity": 4
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Pillow_Bench",
+        "Categories": [
+          "Pillow_Plushies"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ],
+    "TimeSeconds": 16
+  },
   "IconProperties": {
-    "Scale": 0.75,
+    "Scale": 0.7,
     "Rotation": [
       22.5,
       45,
@@ -70,7 +91,8 @@
     ],
     "Translation": [
       0,
-      -14
+      -13
     ]
-  }
+  },
+  "Icon": "Icons/ItemsGenerated/Syprus_Plush.png"
 }

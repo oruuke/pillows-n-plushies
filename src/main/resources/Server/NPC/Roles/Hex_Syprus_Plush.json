@@ -1,0 +1,16 @@
+{
+  "Type": "Variant",
+  "Reference": "Template_Hex_Plush",
+  "Modify": {
+    "Appearance": "Hex_Syprus_Plush",
+    "DropHexItem": "Syprus_Plush",
+    "DropList": "Drop_Plush",
+    "NameTranslationKey": { "Compute": "NameTranslationKey" }
+  },
+  "Parameters": {
+    "NameTranslationKey": {
+      "Value": "Syprus",
+      "Description": "Syprus"
+    }
+  }
+}

@@ -1,2 +1,1 @@
-- reworked onesie again :3c
-- copied mithril staff into pillow
+- added syprus plushie

@@ -7,10 +7,11 @@
   "Model": "Items/Blocks/Letters/Letter_Pillow_N.blockymodel",
   "BlockType": {
     "CustomModel": "Items/Blocks/Letters/Letter_Pillow_N.blockymodel",
+    "InteractionHint": "server.interaction.offset",
     "State": {
       "Definitions": {
         "Offset": {
-          "InteractionHint": "server.interactionHints.align",
+          "InteractionHint": "server.interaction.align",
           "CustomModel": "Items/Blocks/Letters_Offset/Letter_Pillow_N.blockymodel"
         }
       }

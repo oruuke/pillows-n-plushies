@@ -37,6 +37,7 @@
       "IsUsable": true
     },
     "HitboxType": "Block_Plushie_Slime",
+    "InteractionHint": "server.interaction.sit",
     "Seats": [
       {
         "Offset": {

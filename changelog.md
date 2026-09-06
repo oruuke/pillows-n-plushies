@@ -1,1 +1,1 @@
-- added foxy plushie
+- added pillow lettering offset

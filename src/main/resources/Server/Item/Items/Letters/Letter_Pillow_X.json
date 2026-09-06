@@ -6,7 +6,16 @@
   },
   "Model": "Items/Blocks/Letters/Letter_Pillow_X.blockymodel",
   "BlockType": {
-    "CustomModel": "Items/Blocks/Letters/Letter_Pillow_X.blockymodel"
+    "CustomModel": "Items/Blocks/Letters/Letter_Pillow_X.blockymodel",
+    "InteractionHint": "server.interaction.offset",
+    "State": {
+      "Definitions": {
+        "Offset": {
+          "InteractionHint": "server.interaction.align",
+          "CustomModel": "Items/Blocks/Letters_Offset/Letter_Pillow_X.blockymodel"
+        }
+      }
+    }
   },
   "Recipe": {
     "Input": [

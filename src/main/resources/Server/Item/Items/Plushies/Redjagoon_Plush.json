@@ -35,6 +35,7 @@
       "IsUsable": true
     },
     "HitboxType": "Block_Plushie_Fumo",
+    "InteractionHint": "server.interaction.squeeze",
     "Interactions": {
       "Use": {
         "Interactions": [

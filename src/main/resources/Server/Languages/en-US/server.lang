@@ -10,6 +10,13 @@ Onesies.name = onesies
 Stitching.name = stitching
 
 
+# ==== interaction hints ====
+
+interaction.squeeze = Press [{key}] to squeeze!
+interaction.offset = Press [{key}] to offset!
+interaction.align = Press [{key}] to align!
+
+
 # ==== radial menu ====
 
 radialmenu.ui.button.close=Close

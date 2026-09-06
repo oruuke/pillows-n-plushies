@@ -33,6 +33,7 @@
       "IsUsable": true
     },
     "HitboxType": "Block_Plushie_Fish",
+    "InteractionHint": "server.interaction.squeeze",
     "Interactions": {
       "Use": {
         "Interactions": [

@@ -35,6 +35,19 @@
     "Group": "Cloth",
     "BlockSoundSetId": "Cloth",
     "PhysicalMaterialId": "Cloth",
-    "BlockParticleSetId": "Dust"
+    "BlockParticleSetId": "Dust",
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "ChangeState",
+            "Changes": {
+              "default": "Offset",
+              "Offset": "default"
+            }
+          }
+        ]
+      }
+    }
   }
 }

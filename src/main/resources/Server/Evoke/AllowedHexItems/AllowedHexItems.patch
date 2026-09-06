@@ -61,6 +61,10 @@
       "EntityId": "Hex_Syprus_Plush"
     },
     {
+      "BlockId": "Foxy_Plush",
+      "EntityId": "Hex_Foxy_Plush"
+    },
+    {
       "BlockId": "Slushy_Plush",
       "EntityId": "Hex_Slushy_Plush"
     }

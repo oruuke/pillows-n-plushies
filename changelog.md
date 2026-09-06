@@ -1,1 +1,1 @@
-- added syprus plushie
+- added foxy plushie

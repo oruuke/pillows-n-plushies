@@ -1,0 +1,98 @@
+{
+  "Parent": "Template_Plush",
+  "TranslationProperties": {
+    "Name": "pillow.items.Foxy_Plush.name",
+    "Description": "pillow.items.Foxy_Plush.description"
+  },
+  "PlayerAnimationsId": "Item",
+  "MaxStack": 100,
+  "Set": "Furniture_Misc",
+  "Model": "Items/Blocks/Plushies/Foxy_Plush.blockymodel",
+  "Texture": "Items/Blocks/Plushies/Foxy_Plush.png",
+  "Weapon": {},
+  "Interactions": {
+    "Secondary": {
+      "Interactions": [
+        "Block_Secondary"
+      ]
+    }
+  },
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Items/Blocks/Plushies/Foxy_Plush.blockymodel",
+    "VariantRotation": "NESW",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Blocks/Plushies/Foxy_Plush.png",
+        "Weight": 1
+      }
+    ],
+    "Flags": {
+      "IsUsable": true
+    },
+    "HitboxType": "Block_Plushie_Fumo",
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "Simple",
+            "Effects": {
+              "WorldSoundEventId": "SFX_Plushie_Build"
+            }
+          }
+        ]
+      }
+    },
+    "PlacementSettings": {
+      "RotationMode": "FacingPlayer"
+    },
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "SoftBlocks"
+      }
+    },
+    "ParticleColor": "#f5f5f5",
+    "Group": "Cloth",
+    "BlockSoundSetId": "Plushie",
+    "PhysicalMaterialId": "Cloth",
+    "BlockParticleSetId": "Dust"
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Cloth_Block_Wool_Gray",
+        "Quantity": 2
+      },
+      {
+        "ItemId": "Ingredient_Fibre",
+        "Quantity": 4
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Pillow_Bench",
+        "Categories": [
+          "Pillow_Plushies"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ],
+    "TimeSeconds": 16
+  },
+  "IconProperties": {
+    "Scale": 0.7,
+    "Rotation": [
+      30,
+      35,
+      18
+    ],
+    "Translation": [
+      -2,
+      -14
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Foxy_Plush.png"
+}

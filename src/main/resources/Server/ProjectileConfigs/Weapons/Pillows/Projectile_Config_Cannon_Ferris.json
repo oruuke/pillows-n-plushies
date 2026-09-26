@@ -26,6 +26,10 @@
             ]
           }
         },
+        {
+          "Type": "Pillows:DropItem",
+          "ItemId": "Ferris_Body_Pillow"
+        },
         "Common_Projectile_Despawn_Pillow"
       ]
     },
@@ -40,6 +44,10 @@
               "Common_Projectile_Miss"
             ]
           }
+        },
+        {
+          "Type": "Pillows:DropItem",
+          "ItemId": "Ferris_Body_Pillow"
         },
         "Common_Projectile_Despawn_Pillow"
       ]

@@ -3,6 +3,18 @@
   "Cooldown": {
     "Cooldown": 0.1
   },
+  "Rules": {
+    "BlockedBy": [
+      "Primary",
+      "Ability1",
+      "Ability2",
+      "Ability3",
+      "Use",
+      "Pick",
+      "SwapFrom",
+      "SwapTo"
+    ]
+  },
   "Interactions": [
     "Weapon_Cannon_Primary_Reload"
   ],

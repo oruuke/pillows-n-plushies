@@ -1,6 +1,6 @@
 {
   "PlayerAnimationsId": "Crossbow",
-  "Reticle": "DefaultMelee",
+  "Reticle": "ReticleCannon",
   "Quality": "Template",
   "Categories": [
     "Items.Weapons"
@@ -19,7 +19,7 @@
   "Interactions": {
     "SwapFrom": "Root_Weapon_Cannon_Swap_From",
     "Primary": "Root_Weapon_Cannon_Primary_Signature",
-    "Secondary": "Root_Weapon_Crossbow_Secondary_Guard",
+    "Secondary": "Root_Zoom_Cannon_ADS",
     "Ability1": "Root_Weapon_Crossbow_Signature_BigArrow",
     "Ability3": "Root_Common_Cannon_StatAmmoReload_Entry"
   },
@@ -118,70 +118,10 @@
           }
         }
       ]
-    },
-    "Guard_Start_StaminaCost": {
-      "Interactions": [
-        {
-          "$Comment": "The amount of stamina consumed upon starting guarding",
-          "Type": "ChangeStat",
-          "StatModifiers": {
-            "Stamina": -0.5
-          }
-        }
-      ]
-    },
-    "Guard_Wield": {
-      "Interactions": [
-        {
-          "$Comment": "Actively guarding with the weapon",
-          "Parent": "Weapon_Crossbow_Secondary_Guard_Wield",
-          "Effects": {
-            "WorldSoundEventId": "SFX_Hand_Crossbow_T1_Raise",
-            "LocalSoundEventId": "SFX_Hand_Crossbow_T1_Raise_Local"
-          },
-          "StaminaCost": {
-            "Value": 7,
-            "CostType": "Damage"
-          },
-          "BlockedEffects": {
-            "WorldSoundEventId": "SFX_Hand_Crossbow_T1_Block_Impact"
-          }
-        }
-      ]
-    },
-    "Guard_Bash": {
-      "Interactions": [
-        {
-          "Type": "ApplyEffect",
-          "EffectId": "Stamina_Broken_Immune"
-        },
-        {
-          "$Comment": "Effects and stamina consumed upon a guard bash",
-          "Parent": "Weapon_Crossbow_Secondary_Guard_Bash"
-        }
-      ]
-    },
-    "Guard_Bash_Damage": {
-      "Interactions": [
-        {
-          "Parent": "Weapon_Crossbow_Secondary_Guard_Bash_Damage",
-          "DamageCalculator": {
-            "BaseDamage": {
-              "Physical": 0
-            }
-          },
-          "DamageEffects": {
-            "WorldSoundEventId": "SFX_T1_Impact_Blunt",
-            "LocalSoundEventId": "SFX_T1_Impact_Blunt"
-          }
-        }
-      ]
     }
   },
   "Weapon": {
     "EntityStatsToClear": [
-      "SignatureEnergy",
-      "SignatureCharges",
       "Ammo"
     ],
     "StatModifiers": {
@@ -190,71 +130,8 @@
           "Amount": 6,
           "CalculationType": "Additive"
         }
-      ],
-      "SignatureEnergy": [
-        {
-          "Amount": 5,
-          "CalculationType": "Additive"
-        }
-      ],
-      "SignatureCharges": [
-        {
-          "Amount": 1,
-          "CalculationType": "Additive"
-        }
       ]
     }
-  },
-  "ItemAppearanceConditions": {
-    "SignatureEnergy": [
-      {
-        "Condition": [
-          100,
-          100
-        ],
-        "ConditionValueType": "Percent",
-        "Particles": [
-          {
-            "SystemId": "Sword_Signature_Ready",
-            "TargetNodeName": "Main",
-            "PositionOffset": {
-              "X": 0
-            },
-            "TargetEntityPart": "PrimaryItem"
-          }
-        ]
-      }
-    ],
-    "SignatureCharges": [
-      {
-        "Condition": [
-          1,
-          100
-        ],
-        "ConditionValueType": "Percent",
-        "LocalSoundEventId": "SFX_Bow_T2_Signature_Loop_Local",
-        "WorldSoundEventId": "SFX_Bow_T2_Signature_Loop",
-        "Particles": [
-          {
-            "SystemId": "Crossbow_Signature_Status",
-            "TargetNodeName": "Main",
-            "PositionOffset": {
-              "X": 0,
-              "Y": 0,
-              "Z": 0
-            },
-            "Scale": 1,
-            "TargetEntityPart": "PrimaryItem"
-          }
-        ],
-        "ModelVFXId": "Crossbow_Signature_Status",
-        "FirstPersonParticles": [
-          {
-            "SystemId": "Crossbow_Signature_Status_FP"
-          }
-        ]
-      }
-    ]
   },
   "ClipsGeometry": false,
   "Consumable": false,

@@ -1,0 +1,24 @@
+{
+  "$Comment": "Aim-down-sights wielding interaction for the test sniper rifle - keeps the chain alive while the player holds secondary so the shared client-side zoom system stays active. Heavily slows the player and disables sprinting while scoped (sniper). CancelOnOtherClick is false so firing (Primary) does not finish this chain - the scope zoom stays locked in while you shoot. Firing is allowed to run concurrently via the Primary's interaction rules (BlockedBy excludes Secondary), but the sniper Primary requires a fresh click per shot so it is single-shot, not full-auto.",
+  "Id": "Zoom_Cannon_ADS_Wield",
+  "Type": "Wielding",
+  "HorizontalSpeedMultiplier": 0.35,
+  "Effects": {
+    "MovementEffects": {
+      "DisableSprint": true
+    },
+    "HideFirstPersonHeldItem": false,
+    "Zoom": {
+      "MagnificationMultiplier": 5,
+      "MouseSensitivityMultiplier": 0.15,
+      "OverlayTexture": "ScreenEffects/reticle_2.png",
+      "DepthOfField": false,
+      "ForcePerspective": "FirstPerson",
+      "InLerp": 0.18,
+      "OutLerp": 0.25,
+      "OverlayFade": true,
+      "OverlayFadePerSecond": 8
+    }
+  },
+  "CancelOnOtherClick": false
+}

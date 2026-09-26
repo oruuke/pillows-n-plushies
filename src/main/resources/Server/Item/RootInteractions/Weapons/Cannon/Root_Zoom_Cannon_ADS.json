@@ -1,0 +1,17 @@
+{
+  "Rules": {
+    "BlockedBy": [
+      "Secondary",
+      "Ability1",
+      "Ability2",
+      "Ability3",
+      "Use",
+      "Pick",
+      "SwapFrom",
+      "SwapTo"
+    ]
+  },
+  "Interactions": [
+    "Zoom_Cannon_ADS_Wield"
+  ]
+}

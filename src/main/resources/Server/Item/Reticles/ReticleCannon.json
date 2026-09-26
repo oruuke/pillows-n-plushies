@@ -1,0 +1,24 @@
+{
+  "Base": ["UI/Reticles/Melee.png"],
+  "ServerEvents": {
+    "OnHit": {
+      "Parts": [
+        "UI/Reticles/ServerEvents/OnHit/Default.png"
+      ]
+    },
+    "OnKill": {
+      "HideBase": true,
+      "Parts": [
+        "UI/Reticles/ServerEvents/OnKill/Default.png",
+        "UI/Reticles/ServerEvents/OnKill/Melee.png"
+      ]
+    }
+  },
+  "ClientEvents": {
+    "OnHit": {
+      "Parts": [
+        "UI/Reticles/ServerEvents/OnHit/Default.png"
+      ]
+    }
+  }
+}

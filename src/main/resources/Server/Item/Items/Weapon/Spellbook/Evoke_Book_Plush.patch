@@ -42,51 +42,52 @@
     "Interactions": {
         "Primary": "Root_Evoke",
         "Secondary": {
-            "Type": "OpenEvokeBook",
-            "PageName": "EvokeBookPlushPage",
-            "CardName": "CardHexCreaturesPlush",
-            "Next": {
-                "Type": "Serial",
-                "Interactions": [
-                    {
+            "RequireNewClick": true,
+            "Interactions": [
+                {
+                    "Type": "OpenEvokeBook",
+                    "PageName": "EvokeBookPlushPage",
+                    "CardName": "CardHexCreaturesPlush",
+                    "Next": {
                         "Type": "Simple",
                         "RunTime": 0.5,
                         "Effects": {
                             "WorldSoundEventId": "SFX_Skeleton_Mage_Spellbook_Charge"
                         }
+                    },
+                    "Failed": {
+                        "Type": "Simple",
+                        "Effects": {
+                            "ItemAnimationId": "Interact"
+                        }
                     }
-                ]
-            },
-            "Failed": {
-                "Type": "Simple",
-                "Effects": {
-                    "ItemAnimationId": "Interact"
                 }
-            }
+            ]
         },
         "Ability1": "Root_Evoke",
         "Ability4": {
-            "Type": "OpenEvokeBook",
-            "PageName": "EvokeBookPlushPage",
-            "CardName": "CardHexCreaturesPlush",
-            "Next": {
-                "Type": "Serial",
-                "Interactions": [
-                    {
+            "RequireNewClick": true,
+            "HudInputBindingEntry": "evoke.hud.inputBinding.open",
+            "Interactions": [
+                {
+                    "Type": "OpenEvokeBook",
+                    "PageName": "EvokeBookPlushPage",
+                    "CardName": "CardHexCreaturesPlush",
+                    "Next": {
                         "Type": "Simple",
                         "RunTime": 0.5,
                         "Effects": {
                             "WorldSoundEventId": "SFX_Skeleton_Mage_Spellbook_Charge"
                         }
+                    },
+                    "Failed": {
+                        "Type": "Simple",
+                        "Effects": {
+                            "ItemAnimationId": "Interact"
+                        }
                     }
-                ]
-            },
-            "Failed": {
-                "Type": "Simple",
-                "Effects": {
-                    "ItemAnimationId": "Interact"
                 }
-            }
+            ]
         }
     },
     "Weapon": {}

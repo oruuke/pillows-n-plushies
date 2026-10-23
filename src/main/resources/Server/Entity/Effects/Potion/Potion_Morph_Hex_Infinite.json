@@ -1,11 +1,69 @@
 {
-  "Parent": "Potion_Morph_Hex_Template",
   "OverlapBehavior": "Overwrite",
   "ModelChange": "Hex_Gaia_Plush",
   "Infinite": true,
+  "StatusEffectIcon": "Icons/ItemsGenerated/Potion_Purify.png",
+  "ApplicationEffects": {
+    "Particles": [
+      {
+        "SystemId": "Needle_AoE_Grow2",
+        "TargetNodeName": "G1",
+        "Scale": 1.0,
+        "PositionOffset": {
+          "X": 0,
+          "Y": 0.2,
+          "Z": 0
+        }
+      },
+      {
+        "SystemId": "Needle_AoE_Spawn",
+        "TargetNodeName": "G1",
+        "PositionOffset": {
+          "X": 0,
+          "Y": 0.2,
+          "Z": 0
+        }
+      }
+    ],
+    "WorldSoundEventId": "SFX_Cloth_Break",
+    "KnockbackMultiplier": 2,
+    "HorizontalSpeedMultiplier": 1,
+    "MovementEffects": {
+      "SpeedMultiplier": 1.5
+    }
+  },
+  "DamageResistance": {
+    "Fall": [
+      {
+        "CalculationType": "Percent",
+        "Amount": 100
+      }
+    ],
+    "Slashing": [
+      {
+        "CalculationType": "Percent",
+        "Amount": 50
+      }
+    ]
+  },
   "ApplyConditions": [
     {
       "Id": "Alive"
     }
-  ]
+  ],
+  "RawStatModifiers": {
+    "Stamina": [
+      {
+        "CalculationType": "Multiplicative",
+        "Amount": 2
+      }
+    ],
+    "Oxygen": [
+      {
+        "Target": "Max",
+        "CalculationType": "Multiplicative",
+        "Amount": 0.01
+      }
+    ]
+  }
 }

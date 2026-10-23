@@ -10,7 +10,7 @@
       "Interactions": [
         {
           "Type": "Pillow:ApplyEffectRandomModel",
-          "EffectId": "Potion_Morph_Hex_Template",
+          "EffectId": "Potion_Morph_Hex_Limited",
           "WeightedEntityIds": [
             {
               "Id": "Hex_Edilan_Plush",

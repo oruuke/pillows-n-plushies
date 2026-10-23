@@ -10,7 +10,7 @@ import com.hypixel.hytale.server.core.modules.entity.player.PlayerSkinComponent;
 
 public class EffectRejoinEvent {
     public static final HytaleLogger LOGGER = HytaleLogger.forEnclosingClass();
-    private static final String[] PLUSHIE_EFFECTS = {"Potion_Morph_Hex_Template", "Potion_Morph_Hex_Infinite"};
+    private static final String[] PLUSHIE_EFFECTS = {"Potion_Morph_Hex_Limited", "Potion_Morph_Hex_Infinite"};
 
     public static void onPlayerReady(PlayerReadyEvent event) {
         final var ref = event.getPlayer().getReference();

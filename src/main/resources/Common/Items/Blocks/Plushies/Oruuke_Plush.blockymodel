@@ -1465,7 +1465,7 @@
                         {
                           "id": "49",
                           "name": "R-Forearm",
-                          "position": {"x": -2, "y": 0.2, "z": 1},
+                          "position": {"x": -5, "y": -1, "z": 0},
                           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                           "shape": {
                             "type": "none",
@@ -1484,7 +1484,7 @@
                             {
                               "id": "50",
                               "name": "R-Hand",
-                              "position": {"x": 0, "y": 0, "z": 0},
+                              "position": {"x": -3, "y": -2, "z": 0},
                               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                               "shape": {
                                 "type": "none",
@@ -1503,7 +1503,7 @@
                                 {
                                   "id": "51",
                                   "name": "R-Hand--C1",
-                                  "position": {"x": 0, "y": 0, "z": 0},
+                                  "position": {"x": 6, "y": 3.2, "z": 1},
                                   "orientation": {"x": 0, "y": 0, "z": 0.17365, "w": 0.98481},
                                   "shape": {
                                     "type": "box",
@@ -1555,7 +1555,7 @@
                                 {
                                   "id": "52",
                                   "name": "R-Attachment",
-                                  "position": {"x": -10.07818, "y": 0.45723, "z": 1},
+                                  "position": {"x": -0.7101, "y": -4.10154, "z": 2},
                                   "orientation": {"x": 0.69636, "y": 0.12279, "z": 0.12279, "w": 0.69636},
                                   "shape": {
                                     "type": "none",
@@ -1599,7 +1599,7 @@
                         {
                           "id": "54",
                           "name": "L-Forearm",
-                          "position": {"x": -4, "y": -12, "z": -1},
+                          "position": {"x": 5, "y": -1, "z": 0},
                           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                           "shape": {
                             "type": "none",
@@ -1618,7 +1618,7 @@
                             {
                               "id": "55",
                               "name": "L-Hand",
-                              "position": {"x": 6, "y": 12.2, "z": 2},
+                              "position": {"x": 3, "y": -2, "z": 0},
                               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                               "shape": {
                                 "type": "none",
@@ -1637,7 +1637,7 @@
                                 {
                                   "id": "56",
                                   "name": "L-Hand--C1",
-                                  "position": {"x": 0, "y": 0, "z": 0},
+                                  "position": {"x": -6, "y": 3.2, "z": 1},
                                   "orientation": {"x": 0, "y": 0, "z": -0.17365, "w": 0.98481},
                                   "shape": {
                                     "type": "box",
@@ -1689,7 +1689,7 @@
                                 {
                                   "id": "57",
                                   "name": "L-Attachment",
-                                  "position": {"x": 12, "y": -8, "z": 2},
+                                  "position": {"x": 6, "y": -4.8, "z": 3},
                                   "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                                   "shape": {
                                     "type": "none",

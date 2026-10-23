@@ -7,7 +7,7 @@
   "Icon": "Icons/ItemsGenerated/Potion_Morph_Dog.png",
   "Interactions": {
     "Primary": "Block_Primary",
-    "Secondary": "Root_Secondary_Consume_Potion_Morph_Plush"
+    "Secondary": "Root_Secondary_Consume_Potion_Morph_Plush_Limited"
   },
   "InteractionVars": {
     "RemoveEffect": {

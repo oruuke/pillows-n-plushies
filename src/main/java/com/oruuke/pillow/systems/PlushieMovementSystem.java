@@ -18,7 +18,7 @@ import com.oruuke.pillow.interactions.ApplyEffectRandomModelInteraction;
 import javax.annotation.Nonnull;
 
 public class PlushieMovementSystem extends EntityTickingSystem<EntityStore> {
-    private static final String[] PLUSHIE_EFFECTS = {"Potion_Morph_Hex_Template", "Potion_Morph_Hex_Infinite"};
+    private static final String[] PLUSHIE_EFFECTS = {"Potion_Morph_Hex_Limited", "Potion_Morph_Hex_Infinite"};
     private static final float JUMP_FORCE_MULTIPLIER = 1.5F;
     private static final float SWIM_JUMP_FORCE_MULTIPLIER = 0.04F;
     private static final float DRAG_MULTIPLIER = 0.40F;

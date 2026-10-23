@@ -1,6 +1,6 @@
 {
   "RequireNewClick": true,
   "Interactions": [
-    "Condition_Consume_Potion_Morph_Plush"
+    "Condition_Consume_Potion_Morph_Plush_Limited"
   ]
 }

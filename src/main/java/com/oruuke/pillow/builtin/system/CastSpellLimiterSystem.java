@@ -22,7 +22,7 @@ public class CastSpellLimiterSystem extends WorldEventSystem<EntityStore, HexCas
     public CastSpellLimiterSystem() {
         super(HexCastEvent.class);
     }
-    HytaleLogger L = HytaleLogger.get("");
+    //HytaleLogger L = HytaleLogger.get("");
 
     @Override
     public void handle(@Nonnull Store<EntityStore> store, @Nonnull CommandBuffer<EntityStore> buffer,
@@ -39,7 +39,6 @@ public class CastSpellLimiterSystem extends WorldEventSystem<EntityStore, HexCas
         var current = tracker.getCurrent();
         var set = current - current * resolveInsanity(buffer, playerRoot) / 100;
 
-        L.atInfo().log("stability: %s", set);
         tracker.setCurrent(set);
     }
 

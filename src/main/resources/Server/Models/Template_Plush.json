@@ -145,7 +145,7 @@
     "Idle": {
       "Animations": [
         {
-          "Animation": "Characters/Animations/Default/Idle.blockyanim",
+          "Animation": "Characters/Animations/Plush/Default/Idle_Plush.blockyanim",
           "Looping": true,
           "Speed": 0.5
         }

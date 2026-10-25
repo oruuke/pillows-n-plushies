@@ -359,35 +359,55 @@
                             {
                               "id": "12",
                               "name": "Leaf",
-                              "position": {"x": 2.88504, "y": 0.01887, "z": 0.9489},
-                              "orientation": {"x": 0.12974, "y": -0.03559, "z": 0.12546, "w": 0.98293},
+                              "position": {"x": 2.90374, "y": 0.15086, "z": 0.467},
+                              "orientation": {"x": 0.04358, "y": -0.04639, "z": 0.12188, "w": 0.9905},
                               "shape": {
-                                "type": "quad",
+                                "type": "none",
                                 "offset": {"x": -0.1, "y": -0.1, "z": 0},
-                                "stretch": {"x": -1, "y": 1, "z": 1},
+                                "stretch": {"x": 1, "y": 1, "z": 1},
                                 "settings": {
-                                  "isPiece": false,
-                                  "size": {"x": 5, "y": 3},
-                                  "normal": "+Z"
+                                  "isPiece": false
                                 },
-                                "textureLayout": {
-                                  "front": {
-                                    "offset": {"x": 103, "y": 37},
-                                    "mirror": {"x": false, "y": false},
-                                    "angle": 0
-                                  }
-                                },
+                                "textureLayout": {},
                                 "unwrapMode": "custom",
                                 "visible": true,
-                                "doubleSided": true,
+                                "doubleSided": false,
                                 "shadingMode": "flat"
                               },
                               "children": [
                                 {
                                   "id": "13",
+                                  "name": "Leaf--C1",
+                                  "position": {"x": -1.39848, "y": 0.03486, "z": 0},
+                                  "orientation": {"x": 0, "y": 0, "z": -0.04362, "w": 0.99905},
+                                  "shape": {
+                                    "type": "quad",
+                                    "offset": {"x": 0, "y": -0.5, "z": 0},
+                                    "stretch": {"x": -1, "y": 1, "z": 1},
+                                    "settings": {
+                                      "isPiece": false,
+                                      "size": {"x": 5, "y": 2},
+                                      "normal": "+Z",
+                                      "isStaticBox": true
+                                    },
+                                    "textureLayout": {
+                                      "front": {
+                                        "offset": {"x": 103, "y": 38},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      }
+                                    },
+                                    "unwrapMode": "custom",
+                                    "visible": true,
+                                    "doubleSided": true,
+                                    "shadingMode": "flat"
+                                  }
+                                },
+                                {
+                                  "id": "14",
                                   "name": "Leaf2",
-                                  "position": {"x": -0.50727, "y": -2.15727, "z": -0.241},
-                                  "orientation": {"x": -0.04753, "y": 0.02279, "z": -0.25688, "w": 0.96501},
+                                  "position": {"x": -1.37426, "y": -1.65933, "z": -0.22144},
+                                  "orientation": {"x": -0.04848, "y": 0.02069, "z": -0.29872, "w": 0.95288},
                                   "shape": {
                                     "type": "quad",
                                     "offset": {"x": -0.1, "y": -0.1, "z": 0},
@@ -413,40 +433,60 @@
                               ]
                             },
                             {
-                              "id": "14",
+                              "id": "15",
                               "name": "Leaf3",
-                              "position": {"x": -2.68504, "y": 0.01887, "z": 0.9489},
-                              "orientation": {"x": 0.12974, "y": 0.03559, "z": -0.12546, "w": 0.98293},
+                              "position": {"x": -2.70374, "y": 0.15086, "z": 0.467},
+                              "orientation": {"x": 0.04358, "y": 0.04639, "z": -0.12188, "w": 0.9905},
                               "shape": {
-                                "type": "quad",
+                                "type": "none",
                                 "offset": {"x": -0.1, "y": -0.1, "z": 0},
                                 "stretch": {"x": 1, "y": 1, "z": 1},
                                 "settings": {
-                                  "isPiece": false,
-                                  "size": {"x": 5, "y": 3},
-                                  "normal": "+Z"
+                                  "isPiece": false
                                 },
-                                "textureLayout": {
-                                  "front": {
-                                    "offset": {"x": 103, "y": 37},
-                                    "mirror": {"x": false, "y": false},
-                                    "angle": 0
-                                  }
-                                },
+                                "textureLayout": {},
                                 "unwrapMode": "custom",
                                 "visible": true,
-                                "doubleSided": true,
+                                "doubleSided": false,
                                 "shadingMode": "flat"
                               },
                               "children": [
                                 {
-                                  "id": "15",
-                                  "name": "Leaf4",
-                                  "position": {"x": 0.70727, "y": -2.15727, "z": -0.241},
-                                  "orientation": {"x": -0.04753, "y": -0.02279, "z": 0.25688, "w": 0.96501},
+                                  "id": "16",
+                                  "name": "Leaf3--C1",
+                                  "position": {"x": 1.43588, "y": 0.03486, "z": 0},
+                                  "orientation": {"x": 0, "y": 0, "z": 0.04362, "w": 0.99905},
                                   "shape": {
                                     "type": "quad",
-                                    "offset": {"x": -0.1, "y": -0.1, "z": 0},
+                                    "offset": {"x": 0, "y": -0.5, "z": 0},
+                                    "stretch": {"x": 1, "y": 1, "z": 1},
+                                    "settings": {
+                                      "isPiece": false,
+                                      "size": {"x": 5, "y": 2},
+                                      "normal": "+Z",
+                                      "isStaticBox": true
+                                    },
+                                    "textureLayout": {
+                                      "front": {
+                                        "offset": {"x": 103, "y": 38},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      }
+                                    },
+                                    "unwrapMode": "custom",
+                                    "visible": true,
+                                    "doubleSided": true,
+                                    "shadingMode": "flat"
+                                  }
+                                },
+                                {
+                                  "id": "17",
+                                  "name": "Leaf4",
+                                  "position": {"x": 1.57426, "y": -1.65933, "z": -0.22144},
+                                  "orientation": {"x": -0.04848, "y": -0.02069, "z": 0.29872, "w": 0.95288},
+                                  "shape": {
+                                    "type": "quad",
+                                    "offset": {"x": -0.0626, "y": -0.1, "z": 0},
                                     "stretch": {"x": 1, "y": 1, "z": 1},
                                     "settings": {
                                       "isPiece": false,
@@ -473,7 +513,7 @@
                       ]
                     },
                     {
-                      "id": "16",
+                      "id": "18",
                       "name": "Chest-Plush-Lower",
                       "position": {"x": 0, "y": -7, "z": 0},
                       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -524,7 +564,7 @@
                       },
                       "children": [
                         {
-                          "id": "17",
+                          "id": "19",
                           "name": "Plushie-Clothes",
                           "position": {"x": 0, "y": 2.1, "z": 4},
                           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -543,7 +583,7 @@
                           },
                           "children": [
                             {
-                              "id": "18",
+                              "id": "20",
                               "name": "Plushie-Clothes--C1",
                               "position": {"x": 0, "y": 0, "z": 0},
                               "orientation": {"x": 0.70711, "y": 0, "z": 0, "w": 0.70711},
@@ -571,7 +611,7 @@
                               }
                             },
                             {
-                              "id": "19",
+                              "id": "21",
                               "name": "Plushie-Clothes--C2",
                               "position": {"x": 0, "y": -0.1, "z": 0},
                               "orientation": {"x": 0.70711, "y": 0, "z": 0, "w": 0.70711},
@@ -599,7 +639,7 @@
                               }
                             },
                             {
-                              "id": "20",
+                              "id": "22",
                               "name": "Plushie-Clothes--C3",
                               "position": {"x": 0, "y": -0.1, "z": 0},
                               "orientation": {"x": 0.70711, "y": 0, "z": 0, "w": 0.70711},
@@ -627,7 +667,7 @@
                               }
                             },
                             {
-                              "id": "21",
+                              "id": "23",
                               "name": "Plushie-Clothes--C4",
                               "position": {"x": -7, "y": -0.2, "z": 0},
                               "orientation": {"x": 0.5, "y": 0.5, "z": 0.5, "w": 0.5},
@@ -655,7 +695,7 @@
                               }
                             },
                             {
-                              "id": "22",
+                              "id": "24",
                               "name": "Plushie-Clothes--C5",
                               "position": {"x": 7, "y": -0.2, "z": 0},
                               "orientation": {"x": 0.5, "y": -0.5, "z": -0.5, "w": 0.5},
@@ -683,7 +723,7 @@
                               }
                             },
                             {
-                              "id": "23",
+                              "id": "25",
                               "name": "Plushie-Clothes--C6",
                               "position": {"x": 0, "y": 0, "z": 0},
                               "orientation": {"x": 0.70711, "y": 0, "z": 0, "w": 0.70711},
@@ -713,7 +753,7 @@
                           ]
                         },
                         {
-                          "id": "24",
+                          "id": "26",
                           "name": "Plushie-Tag",
                           "position": {"x": 0, "y": 0, "z": -2},
                           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -732,7 +772,7 @@
                           },
                           "children": [
                             {
-                              "id": "25",
+                              "id": "27",
                               "name": "Plushie-Tag--C1",
                               "position": {"x": 0, "y": 0, "z": 0},
                               "orientation": {"x": 0, "y": 0.42262, "z": 0, "w": 0.90631},
@@ -766,7 +806,7 @@
                   ]
                 },
                 {
-                  "id": "26",
+                  "id": "28",
                   "name": "Head",
                   "position": {"x": 0, "y": 13, "z": 1},
                   "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -817,7 +857,7 @@
                   },
                   "children": [
                     {
-                      "id": "27",
+                      "id": "29",
                       "name": "Mouth--C1",
                       "position": {"x": 1, "y": 1.5, "z": 6.1},
                       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -845,7 +885,7 @@
                       }
                     },
                     {
-                      "id": "28",
+                      "id": "30",
                       "name": "Facial--C2",
                       "position": {"x": 1, "y": 2.5, "z": 6.1},
                       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -892,7 +932,7 @@
                       }
                     },
                     {
-                      "id": "29",
+                      "id": "31",
                       "name": "R-Earring",
                       "position": {"x": -11.5, "y": -1.2, "z": -0.5},
                       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -943,7 +983,7 @@
                       },
                       "children": [
                         {
-                          "id": "30",
+                          "id": "32",
                           "name": "leaf-left--C1",
                           "position": {"x": -1, "y": 2.5, "z": 0.5},
                           "orientation": {"x": 0, "y": 0, "z": 0.25882, "w": 0.96593},
@@ -973,7 +1013,7 @@
                       ]
                     },
                     {
-                      "id": "31",
+                      "id": "33",
                       "name": "Top",
                       "position": {"x": 0, "y": 17.5, "z": 0},
                       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -1024,7 +1064,7 @@
                       },
                       "children": [
                         {
-                          "id": "32",
+                          "id": "34",
                           "name": "Top--C1",
                           "position": {"x": 0, "y": 2.5, "z": 0},
                           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -1076,7 +1116,7 @@
                           }
                         },
                         {
-                          "id": "33",
+                          "id": "35",
                           "name": "Hair",
                           "position": {"x": 1, "y": -1.5, "z": 6},
                           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -1103,7 +1143,7 @@
                           },
                           "children": [
                             {
-                              "id": "34",
+                              "id": "36",
                               "name": "Hair--C1",
                               "position": {"x": 1, "y": 6, "z": 12.1},
                               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -1131,7 +1171,7 @@
                               }
                             },
                             {
-                              "id": "35",
+                              "id": "37",
                               "name": "Hair--C2",
                               "position": {"x": 10, "y": 6, "z": 7.1},
                               "orientation": {"x": 0, "y": 0.70711, "z": 0, "w": 0.70711},
@@ -1159,7 +1199,7 @@
                               }
                             },
                             {
-                              "id": "36",
+                              "id": "38",
                               "name": "Hair--C3",
                               "position": {"x": -10, "y": 6, "z": 7.1},
                               "orientation": {"x": 0, "y": -0.70711, "z": 0, "w": 0.70711},
@@ -1189,7 +1229,7 @@
                           ]
                         },
                         {
-                          "id": "37",
+                          "id": "39",
                           "name": "R-Cat-Ear",
                           "position": {"x": -7.12052, "y": 6.05418, "z": 2.97035},
                           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -1208,7 +1248,7 @@
                           },
                           "children": [
                             {
-                              "id": "38",
+                              "id": "40",
                               "name": "CatEar2",
                               "position": {"x": 0, "y": 0, "z": 0},
                               "orientation": {"x": 0.08624, "y": -0.00702, "z": 0.17827, "w": 0.98017},
@@ -1235,7 +1275,7 @@
                               },
                               "children": [
                                 {
-                                  "id": "39",
+                                  "id": "41",
                                   "name": "CatEar3--C1",
                                   "position": {"x": 11.06712, "y": -1.08848, "z": -1.00005},
                                   "orientation": {"x": 0.04341, "y": -0.00427, "z": 0, "w": 0.99905},
@@ -1263,7 +1303,7 @@
                                   }
                                 },
                                 {
-                                  "id": "40",
+                                  "id": "42",
                                   "name": "CatEar3",
                                   "position": {"x": 0.82802, "y": -2.93335, "z": -1.19239},
                                   "orientation": {"x": 0.03303, "y": -0.02083, "z": 0.00503, "w": 0.99922},
@@ -1282,7 +1322,7 @@
                                   }
                                 },
                                 {
-                                  "id": "41",
+                                  "id": "43",
                                   "name": "CatEar4",
                                   "position": {"x": -1.2262, "y": -3.19214, "z": -1.04042},
                                   "orientation": {"x": 0.03303, "y": -0.02083, "z": 0.00503, "w": 0.99922},
@@ -1305,7 +1345,7 @@
                           ]
                         },
                         {
-                          "id": "42",
+                          "id": "44",
                           "name": "L-Cat-Ear",
                           "position": {"x": 7.12053, "y": 6.05417, "z": 2.97035},
                           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -1324,7 +1364,7 @@
                           },
                           "children": [
                             {
-                              "id": "43",
+                              "id": "45",
                               "name": "CatEar1",
                               "position": {"x": 0, "y": 0, "z": 0},
                               "orientation": {"x": 0.08624, "y": 0.00702, "z": -0.17827, "w": 0.98017},
@@ -1351,7 +1391,7 @@
                               },
                               "children": [
                                 {
-                                  "id": "44",
+                                  "id": "46",
                                   "name": "CatEar2--C1",
                                   "position": {"x": -11.06712, "y": -1.08846, "z": -1.00005},
                                   "orientation": {"x": 0.04341, "y": 0.00427, "z": 0, "w": 0.99905},
@@ -1379,7 +1419,7 @@
                                   }
                                 },
                                 {
-                                  "id": "45",
+                                  "id": "47",
                                   "name": "CatEar5",
                                   "position": {"x": -0.82698, "y": -2.82344, "z": -1.06018},
                                   "orientation": {"x": 0.03303, "y": 0.02083, "z": -0.00503, "w": 0.99922},
@@ -1398,7 +1438,7 @@
                                   }
                                 },
                                 {
-                                  "id": "46",
+                                  "id": "48",
                                   "name": "CatEar6",
                                   "position": {"x": 1.22619, "y": -3.19213, "z": -1.04042},
                                   "orientation": {"x": 0.03303, "y": 0.02083, "z": -0.00503, "w": 0.99922},
@@ -1425,8 +1465,8 @@
                   ]
                 },
                 {
-                  "id": "47",
-                  "name": "R-Shoulder",
+                  "id": "49",
+                  "name": "R-Arm",
                   "position": {"x": -7, "y": 11.5, "z": 1},
                   "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                   "shape": {
@@ -1444,10 +1484,61 @@
                   },
                   "children": [
                     {
-                      "id": "48",
-                      "name": "R-Arm",
+                      "id": "50",
+                      "name": "R-Plushie-Stub",
                       "position": {"x": 0, "y": 0, "z": 0},
-                      "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                      "orientation": {"x": 0, "y": 0, "z": -0.57358, "w": 0.81915},
+                      "shape": {
+                        "type": "box",
+                        "offset": {"x": -0.5, "y": -3.5, "z": 0},
+                        "stretch": {"x": 1, "y": 1, "z": 1},
+                        "settings": {
+                          "isPiece": false,
+                          "size": {"x": 4, "y": 9, "z": 4}
+                        },
+                        "textureLayout": {
+                          "back": {
+                            "offset": {"x": 84, "y": 45},
+                            "mirror": {"x": false, "y": false},
+                            "angle": 0
+                          },
+                          "right": {
+                            "offset": {"x": 80, "y": 45},
+                            "mirror": {"x": false, "y": false},
+                            "angle": 0
+                          },
+                          "front": {
+                            "offset": {"x": 92, "y": 45},
+                            "mirror": {"x": false, "y": false},
+                            "angle": 0
+                          },
+                          "left": {
+                            "offset": {"x": 88, "y": 45},
+                            "mirror": {"x": false, "y": false},
+                            "angle": 0
+                          },
+                          "top": {
+                            "offset": {"x": 92, "y": 45},
+                            "mirror": {"x": true, "y": true},
+                            "angle": 0
+                          },
+                          "bottom": {
+                            "offset": {"x": 92, "y": 54},
+                            "mirror": {"x": false, "y": false},
+                            "angle": 90
+                          }
+                        },
+                        "unwrapMode": "custom",
+                        "visible": true,
+                        "doubleSided": false,
+                        "shadingMode": "flat"
+                      }
+                    },
+                    {
+                      "id": "51",
+                      "name": "R-Forearm",
+                      "position": {"x": 0, "y": 0, "z": 0},
+                      "orientation": {"x": 0, "y": 0, "z": -0.21644, "w": 0.9763},
                       "shape": {
                         "type": "none",
                         "offset": {"x": 0, "y": 0, "z": 0},
@@ -1463,64 +1554,13 @@
                       },
                       "children": [
                         {
-                          "id": "49",
-                          "name": "R-Plushie-Stub",
-                          "position": {"x": 0, "y": 0, "z": 0},
-                          "orientation": {"x": 0, "y": 0, "z": -0.57358, "w": 0.81915},
-                          "shape": {
-                            "type": "box",
-                            "offset": {"x": -0.5, "y": -3.5, "z": 0},
-                            "stretch": {"x": 1, "y": 1, "z": 1},
-                            "settings": {
-                              "isPiece": false,
-                              "size": {"x": 4, "y": 9, "z": 4}
-                            },
-                            "textureLayout": {
-                              "back": {
-                                "offset": {"x": 84, "y": 45},
-                                "mirror": {"x": false, "y": false},
-                                "angle": 0
-                              },
-                              "right": {
-                                "offset": {"x": 80, "y": 45},
-                                "mirror": {"x": false, "y": false},
-                                "angle": 0
-                              },
-                              "front": {
-                                "offset": {"x": 92, "y": 45},
-                                "mirror": {"x": false, "y": false},
-                                "angle": 0
-                              },
-                              "left": {
-                                "offset": {"x": 88, "y": 45},
-                                "mirror": {"x": false, "y": false},
-                                "angle": 0
-                              },
-                              "top": {
-                                "offset": {"x": 92, "y": 45},
-                                "mirror": {"x": true, "y": true},
-                                "angle": 0
-                              },
-                              "bottom": {
-                                "offset": {"x": 92, "y": 54},
-                                "mirror": {"x": false, "y": false},
-                                "angle": 90
-                              }
-                            },
-                            "unwrapMode": "custom",
-                            "visible": true,
-                            "doubleSided": false,
-                            "shadingMode": "flat"
-                          }
-                        },
-                        {
-                          "id": "50",
-                          "name": "R-Forearm",
-                          "position": {"x": 0, "y": 0, "z": 0},
-                          "orientation": {"x": 0, "y": 0, "z": -0.21644, "w": 0.9763},
+                          "id": "52",
+                          "name": "R-Hand",
+                          "position": {"x": -2, "y": -4.5, "z": 0},
+                          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                           "shape": {
                             "type": "none",
-                            "offset": {"x": 0, "y": 0, "z": 0},
+                            "offset": {"x": -0.5, "y": -3.5, "z": 0},
                             "stretch": {"x": 1, "y": 1, "z": 1},
                             "settings": {
                               "isPiece": false
@@ -1533,13 +1573,13 @@
                           },
                           "children": [
                             {
-                              "id": "51",
-                              "name": "R-Hand",
-                              "position": {"x": -2, "y": -4.5, "z": 0},
-                              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                              "id": "53",
+                              "name": "R-Attachment",
+                              "position": {"x": -15.5, "y": -5.5, "z": 14},
+                              "orientation": {"x": 0.60876, "y": 0, "z": 0, "w": 0.79335},
                               "shape": {
                                 "type": "none",
-                                "offset": {"x": -0.5, "y": -3.5, "z": 0},
+                                "offset": {"x": 0, "y": 0, "z": 0},
                                 "stretch": {"x": 1, "y": 1, "z": 1},
                                 "settings": {
                                   "isPiece": false
@@ -1549,28 +1589,7 @@
                                 "visible": true,
                                 "doubleSided": false,
                                 "shadingMode": "flat"
-                              },
-                              "children": [
-                                {
-                                  "id": "52",
-                                  "name": "R-Attachment",
-                                  "position": {"x": -15.5, "y": -5.5, "z": 14},
-                                  "orientation": {"x": 0.60876, "y": 0, "z": 0, "w": 0.79335},
-                                  "shape": {
-                                    "type": "none",
-                                    "offset": {"x": 0, "y": 0, "z": 0},
-                                    "stretch": {"x": 1, "y": 1, "z": 1},
-                                    "settings": {
-                                      "isPiece": false
-                                    },
-                                    "textureLayout": {},
-                                    "unwrapMode": "custom",
-                                    "visible": true,
-                                    "doubleSided": false,
-                                    "shadingMode": "flat"
-                                  }
-                                }
-                              ]
+                              }
                             }
                           ]
                         }
@@ -1579,8 +1598,8 @@
                   ]
                 },
                 {
-                  "id": "53",
-                  "name": "L-Shoulder",
+                  "id": "54",
+                  "name": "L-Arm",
                   "position": {"x": 7, "y": 11.5, "z": 1},
                   "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                   "shape": {
@@ -1598,10 +1617,61 @@
                   },
                   "children": [
                     {
-                      "id": "54",
-                      "name": "L-Arm",
+                      "id": "55",
+                      "name": "L-Plushie-Stub",
                       "position": {"x": 0, "y": 0, "z": 0},
-                      "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                      "orientation": {"x": 0, "y": 0, "z": 0.57358, "w": 0.81915},
+                      "shape": {
+                        "type": "box",
+                        "offset": {"x": 0.5, "y": -3.5, "z": 0},
+                        "stretch": {"x": 1, "y": 1, "z": 1},
+                        "settings": {
+                          "isPiece": false,
+                          "size": {"x": 4, "y": 9, "z": 4}
+                        },
+                        "textureLayout": {
+                          "back": {
+                            "offset": {"x": 88, "y": 45},
+                            "mirror": {"x": true, "y": false},
+                            "angle": 0
+                          },
+                          "right": {
+                            "offset": {"x": 92, "y": 45},
+                            "mirror": {"x": true, "y": false},
+                            "angle": 0
+                          },
+                          "front": {
+                            "offset": {"x": 96, "y": 45},
+                            "mirror": {"x": true, "y": false},
+                            "angle": 0
+                          },
+                          "left": {
+                            "offset": {"x": 84, "y": 45},
+                            "mirror": {"x": true, "y": false},
+                            "angle": 0
+                          },
+                          "top": {
+                            "offset": {"x": 88, "y": 45},
+                            "mirror": {"x": false, "y": true},
+                            "angle": 0
+                          },
+                          "bottom": {
+                            "offset": {"x": 92, "y": 58},
+                            "mirror": {"x": true, "y": false},
+                            "angle": 90
+                          }
+                        },
+                        "unwrapMode": "custom",
+                        "visible": true,
+                        "doubleSided": false,
+                        "shadingMode": "flat"
+                      }
+                    },
+                    {
+                      "id": "56",
+                      "name": "L-Forearm",
+                      "position": {"x": 24.57705, "y": -2.19416, "z": 5.69634},
+                      "orientation": {"x": 0.57776, "y": 0.03178, "z": -0.18023, "w": 0.79542},
                       "shape": {
                         "type": "none",
                         "offset": {"x": 0, "y": 0, "z": 0},
@@ -1617,83 +1687,10 @@
                       },
                       "children": [
                         {
-                          "id": "55",
-                          "name": "L-Plushie-Stub",
-                          "position": {"x": 0, "y": 0, "z": 0},
-                          "orientation": {"x": 0, "y": 0, "z": 0.57358, "w": 0.81915},
-                          "shape": {
-                            "type": "none",
-                            "offset": {"x": 0, "y": 0, "z": 0},
-                            "stretch": {"x": 1, "y": 1, "z": 1},
-                            "settings": {
-                              "isPiece": false
-                            },
-                            "textureLayout": {},
-                            "unwrapMode": "custom",
-                            "visible": true,
-                            "doubleSided": false,
-                            "shadingMode": "flat"
-                          },
-                          "children": [
-                            {
-                              "id": "56",
-                              "name": "L-Plushie-Stub--C1",
-                              "position": {"x": 0.5, "y": 0.5, "z": 0},
-                              "orientation": {"x": 0, "y": -0.70711, "z": 0, "w": 0.70711},
-                              "shape": {
-                                "type": "box",
-                                "offset": {"x": 0, "y": -4, "z": 0},
-                                "stretch": {"x": 1, "y": 1, "z": 1},
-                                "settings": {
-                                  "isPiece": false,
-                                  "size": {"x": 4, "y": 9, "z": 4},
-                                  "isStaticBox": true
-                                },
-                                "textureLayout": {
-                                  "back": {
-                                    "offset": {"x": 88, "y": 45},
-                                    "mirror": {"x": true, "y": false},
-                                    "angle": 0
-                                  },
-                                  "right": {
-                                    "offset": {"x": 92, "y": 45},
-                                    "mirror": {"x": true, "y": false},
-                                    "angle": 0
-                                  },
-                                  "front": {
-                                    "offset": {"x": 96, "y": 45},
-                                    "mirror": {"x": true, "y": false},
-                                    "angle": 0
-                                  },
-                                  "left": {
-                                    "offset": {"x": 84, "y": 45},
-                                    "mirror": {"x": true, "y": false},
-                                    "angle": 0
-                                  },
-                                  "top": {
-                                    "offset": {"x": 88, "y": 45},
-                                    "mirror": {"x": false, "y": true},
-                                    "angle": 0
-                                  },
-                                  "bottom": {
-                                    "offset": {"x": 92, "y": 58},
-                                    "mirror": {"x": true, "y": false},
-                                    "angle": 90
-                                  }
-                                },
-                                "unwrapMode": "custom",
-                                "visible": true,
-                                "doubleSided": false,
-                                "shadingMode": "flat"
-                              }
-                            }
-                          ]
-                        },
-                        {
                           "id": "57",
-                          "name": "L-Forearm",
-                          "position": {"x": 24.57705, "y": -2.19416, "z": 5.69634},
-                          "orientation": {"x": 0.57776, "y": 0.03178, "z": -0.18023, "w": 0.79542},
+                          "name": "L-Hand",
+                          "position": {"x": 0, "y": 0, "z": 0},
+                          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                           "shape": {
                             "type": "none",
                             "offset": {"x": 0, "y": 0, "z": 0},
@@ -1710,7 +1707,7 @@
                           "children": [
                             {
                               "id": "58",
-                              "name": "L-Hand",
+                              "name": "L-Attachment",
                               "position": {"x": 0, "y": 0, "z": 0},
                               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                               "shape": {
@@ -1725,28 +1722,7 @@
                                 "visible": true,
                                 "doubleSided": false,
                                 "shadingMode": "flat"
-                              },
-                              "children": [
-                                {
-                                  "id": "59",
-                                  "name": "L-Attachment",
-                                  "position": {"x": 0, "y": 0, "z": 0},
-                                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
-                                  "shape": {
-                                    "type": "none",
-                                    "offset": {"x": 0, "y": 0, "z": 0},
-                                    "stretch": {"x": 1, "y": 1, "z": 1},
-                                    "settings": {
-                                      "isPiece": false
-                                    },
-                                    "textureLayout": {},
-                                    "unwrapMode": "custom",
-                                    "visible": true,
-                                    "doubleSided": false,
-                                    "shadingMode": "flat"
-                                  }
-                                }
-                              ]
+                              }
                             }
                           ]
                         }
@@ -1757,7 +1733,7 @@
               ]
             },
             {
-              "id": "60",
+              "id": "59",
               "name": "L-Plushie-Leg",
               "position": {"x": 3, "y": 2, "z": 5},
               "orientation": {"x": 0, "y": 0.08716, "z": 0, "w": 0.99619},
@@ -1808,7 +1784,7 @@
               }
             },
             {
-              "id": "61",
+              "id": "60",
               "name": "R-Plushie-Leg",
               "position": {"x": -3, "y": 2, "z": 5},
               "orientation": {"x": 0, "y": -0.08716, "z": 0, "w": 0.99619},

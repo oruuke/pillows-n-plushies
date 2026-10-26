@@ -1524,8 +1524,8 @@
                           },
                           "bottom": {
                             "offset": {"x": 92, "y": 54},
-                            "mirror": {"x": false, "y": false},
-                            "angle": 90
+                            "mirror": {"x": true, "y": true},
+                            "angle": 270
                           }
                         },
                         "unwrapMode": "custom",
@@ -1670,8 +1670,8 @@
                     {
                       "id": "56",
                       "name": "L-Forearm",
-                      "position": {"x": 24.57705, "y": -2.19416, "z": 5.69634},
-                      "orientation": {"x": 0.57776, "y": 0.03178, "z": -0.18023, "w": 0.79542},
+                      "position": {"x": 27.95585, "y": 11.06325, "z": 11.27658},
+                      "orientation": {"x": 0.62089, "y": 0.16637, "z": 0.19827, "w": 0.73994},
                       "shape": {
                         "type": "none",
                         "offset": {"x": 0, "y": 0, "z": 0},

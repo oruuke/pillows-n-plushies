@@ -23,8 +23,8 @@
   "Camera": {
     "Pitch": {
       "AngleRange": {
-        "Max": 15,
-        "Min": -5
+        "Max": 1,
+        "Min": -1
       },
       "TargetNodes": [
         "Head"
@@ -32,8 +32,8 @@
     },
     "Yaw": {
       "AngleRange": {
-        "Max": 15,
-        "Min": -15
+        "Max": 1,
+        "Min": -1
       },
       "TargetNodes": [
         "Head"
@@ -41,8 +41,8 @@
     },
     "PositionOffset": {
       "X": 0.80,
-      "Z": 3.00,
-      "Y": 0.10
+      "Z": 1.00,
+      "Y": 0.20
     }
   },
   "PhysicsValues": {
@@ -94,12 +94,59 @@
         }
       ]
     },
+    "Interact": {
+      "Animations": [
+        {
+          "Animation": "Characters/Animations/Default/Interact.blockyanim",
+          "Looping": false,
+          "Speed": 0.4
+        }
+      ]
+    },
+    "SwingSickle": {
+      "Animations": [
+        {
+          "Animation": "Characters/Animations/Items/Main_Handed/Sickle/Attacks/Swing_Left/Swing_Left.blockyanim",
+          "SoundEventId": "SFX_Light_Melee_T2_Swing",
+          "Speed": 0.45,
+          "Looping": false
+        },
+        {
+          "Animation": "Characters/Animations/Items/Main_Handed/Sickle/Attacks/Swing_Right/Swing_Right.blockyanim",
+          "SoundEventId": "SFX_Light_Melee_T1_Swing",
+          "Speed": 0.45,
+          "Looping": false
+        }
+      ]
+    },
+    "Water": {
+      "Animations": [
+        {
+          "Animation": "Characters/Animations/Items/Dual_Handed/Watering_Can/Attacks/Water/Water_Moving.blockyanim",
+          "SoundEventId": "SFX_Water_MoveIn",
+          "Speed": 0.1,
+          "Looping": false
+        }
+      ]
+    },
+    "Idle": {
+      "Animations": [
+        {
+          "Animation": "Characters/Animations/Plush/Default/Idle_Plush.blockyanim",
+          "Looping": true,
+          "Speed": 0.5
+        }
+      ]
+    },
     "Walk": {
       "Animations": [
         {
-          "Animation": "Characters/Animations/Plush/Flavor/Walk_Plush.blockyanim",
-          "Looping": true,
-          "Speed": 1.6
+          "Animation": "Characters/Animations/Default/Walk.blockyanim",
+          "Speed": 1.0,
+          "FootstepIntervals": [
+            25,
+            75
+          ]
         }
       ]
     },

@@ -35,9 +35,9 @@
           "interpolationType": "linear"
         },
         {
-          "time": 17,
-          "delta": {"x": 0, "y": 0, "z": 0.13053, "w": 0.99144},
-          "interpolationType": "linear"
+          "time": 20,
+          "delta": {"x": 0.02825, "y": -0.21459, "z": 0.12744, "w": 0.96794},
+          "interpolationType": "smooth"
         }
       ],
       "shapeStretch": [],
@@ -53,9 +53,9 @@
           "interpolationType": "linear"
         },
         {
-          "time": 17,
-          "delta": {"x": 0, "y": 0, "z": -0.13053, "w": 0.99144},
-          "interpolationType": "linear"
+          "time": 20,
+          "delta": {"x": 0.02825, "y": 0.21459, "z": -0.12744, "w": 0.96794},
+          "interpolationType": "smooth"
         }
       ],
       "shapeStretch": [],

@@ -45,8 +45,8 @@
   "Camera": {
     "Pitch": {
       "AngleRange": {
-        "Max": 15,
-        "Min": -5
+        "Max": 1,
+        "Min": -1
       },
       "TargetNodes": [
         "Head"
@@ -54,17 +54,17 @@
     },
     "Yaw": {
       "AngleRange": {
-        "Max": 15,
-        "Min": -15
+        "Max": 1,
+        "Min": -1
       },
       "TargetNodes": [
         "Head"
       ]
     },
     "PositionOffset": {
-      "X": 0.8,
-      "Z": 3.0,
-      "Y": 0.1
+      "X": 0.80,
+      "Z": 1.00,
+      "Y": 0.20
     }
   },
   "PhysicsValues": {

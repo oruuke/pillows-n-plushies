@@ -97,7 +97,7 @@
                       "children": [
                         {
                           "id": "6",
-                          "name": "Chest-Plush-Upper",
+                          "name": "Plushie-Core-Upper",
                           "position": {"x": 0, "y": 0, "z": 0},
                           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                           "shape": {
@@ -130,12 +130,12 @@
                                 "angle": 0
                               },
                               "top": {
-                                "offset": {"x": 48, "y": 82},
+                                "offset": {"x": 70, "y": 82},
                                 "mirror": {"x": true, "y": true},
                                 "angle": 0
                               },
                               "bottom": {
-                                "offset": {"x": 62, "y": 74},
+                                "offset": {"x": 48, "y": 74},
                                 "mirror": {"x": true, "y": false},
                                 "angle": 0
                               }
@@ -202,7 +202,7 @@
                         },
                         {
                           "id": "8",
-                          "name": "Chest-Plush-Lower",
+                          "name": "Plushie-Core-Lower",
                           "position": {"x": 0, "y": -7, "z": 0},
                           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                           "shape": {
@@ -235,12 +235,12 @@
                                 "angle": 0
                               },
                               "top": {
-                                "offset": {"x": 48, "y": 82},
-                                "mirror": {"x": true, "y": true},
+                                "offset": {"x": 34, "y": 82},
+                                "mirror": {"x": false, "y": true},
                                 "angle": 0
                               },
                               "bottom": {
-                                "offset": {"x": 62, "y": 74},
+                                "offset": {"x": 48, "y": 74},
                                 "mirror": {"x": true, "y": false},
                                 "angle": 0
                               }
@@ -1264,7 +1264,7 @@
                     {
                       "id": "39",
                       "name": "R-Arm",
-                      "position": {"x": -4, "y": 3, "z": 4},
+                      "position": {"x": -7, "y": 3, "z": 4},
                       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                       "shape": {
                         "type": "none",
@@ -1283,7 +1283,7 @@
                         {
                           "id": "40",
                           "name": "R-Plushie-Nubbin",
-                          "position": {"x": -3, "y": -0.5, "z": 0},
+                          "position": {"x": 0, "y": -0.5, "z": 0},
                           "orientation": {"x": 0, "y": 0, "z": -0.57358, "w": 0.81915},
                           "shape": {
                             "type": "box",
@@ -1321,8 +1321,8 @@
                               },
                               "bottom": {
                                 "offset": {"x": 92, "y": 54},
-                                "mirror": {"x": false, "y": false},
-                                "angle": 90
+                                "mirror": {"x": true, "y": true},
+                                "angle": 270
                               }
                             },
                             "unwrapMode": "custom",
@@ -1334,7 +1334,7 @@
                         {
                           "id": "41",
                           "name": "R-Forearm",
-                          "position": {"x": -3, "y": -0.5, "z": 0},
+                          "position": {"x": 0, "y": -0.5, "z": 0},
                           "orientation": {"x": 0, "y": 0, "z": -0.21644, "w": 0.9763},
                           "shape": {
                             "type": "none",
@@ -1372,7 +1372,7 @@
                                 {
                                   "id": "43",
                                   "name": "R-Attachment",
-                                  "position": {"x": -21, "y": -9, "z": 14},
+                                  "position": {"x": -20.5, "y": -3.5, "z": 14},
                                   "orientation": {"x": 0.60876, "y": 0, "z": 0, "w": 0.79335},
                                   "shape": {
                                     "type": "none",
@@ -1397,7 +1397,7 @@
                     {
                       "id": "44",
                       "name": "L-Arm",
-                      "position": {"x": 7, "y": 2.5, "z": 4},
+                      "position": {"x": 7, "y": 3, "z": 4},
                       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                       "shape": {
                         "type": "none",
@@ -1416,7 +1416,7 @@
                         {
                           "id": "45",
                           "name": "L-Plushie-Nubbin",
-                          "position": {"x": 0, "y": 0, "z": 0},
+                          "position": {"x": 0, "y": -0.5, "z": 0},
                           "orientation": {"x": 0, "y": 0, "z": 0.57358, "w": 0.81915},
                           "shape": {
                             "type": "box",
@@ -1428,32 +1428,32 @@
                             },
                             "textureLayout": {
                               "back": {
-                                "offset": {"x": 88, "y": 45},
+                                "offset": {"x": 107, "y": 80},
                                 "mirror": {"x": true, "y": false},
                                 "angle": 0
                               },
                               "right": {
-                                "offset": {"x": 92, "y": 45},
+                                "offset": {"x": 111, "y": 80},
                                 "mirror": {"x": true, "y": false},
                                 "angle": 0
                               },
                               "front": {
-                                "offset": {"x": 96, "y": 45},
+                                "offset": {"x": 115, "y": 80},
                                 "mirror": {"x": true, "y": false},
                                 "angle": 0
                               },
                               "left": {
-                                "offset": {"x": 84, "y": 45},
+                                "offset": {"x": 103, "y": 80},
                                 "mirror": {"x": true, "y": false},
                                 "angle": 0
                               },
                               "top": {
-                                "offset": {"x": 88, "y": 45},
+                                "offset": {"x": 107, "y": 80},
                                 "mirror": {"x": false, "y": true},
                                 "angle": 0
                               },
                               "bottom": {
-                                "offset": {"x": 92, "y": 58},
+                                "offset": {"x": 111, "y": 93},
                                 "mirror": {"x": true, "y": false},
                                 "angle": 90
                               }
@@ -1467,7 +1467,7 @@
                         {
                           "id": "46",
                           "name": "L-Forearm",
-                          "position": {"x": 31.41995, "y": 13.06325, "z": 11.27658},
+                          "position": {"x": 31.41995, "y": 12.56325, "z": 11.27658},
                           "orientation": {"x": 0.62089, "y": 0.16637, "z": 0.19827, "w": 0.73993},
                           "shape": {
                             "type": "none",

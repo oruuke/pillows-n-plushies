@@ -58,6 +58,15 @@
         }
       ]
     },
+    "Revival": {
+      "Animations": [
+        {
+          "Animation": "Characters/Animations/Plush/Pillow_Revival_Plush.blockyanim",
+          "Looping": true,
+          "Speed": 1
+        }
+      ]
+    },
     "Overdrive": {
       "Animations": [
         {
@@ -141,8 +150,8 @@
     "Walk": {
       "Animations": [
         {
-          "Animation": "Characters/Animations/Default/Walk.blockyanim",
-          "Speed": 1.0,
+          "Animation": "Characters/Animations/Plush/Flavor/Walk_Plush.blockyanim",
+          "Speed": 2.0,
           "FootstepIntervals": [
             25,
             75

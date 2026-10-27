@@ -1,1 +1,4 @@
-- fixed plushie scale
+- expanded on plushie rpg
+- overhauled plushie bones
+- added revival animation
+- fixed 6-7 for plushies

@@ -12,6 +12,12 @@
     },
     {
       "Type": "EmitNpcResult",
+      "Id": "revival",
+      "Label": "Revival",
+      "ResultId": "revival"
+    },
+    {
+      "Type": "EmitNpcResult",
       "Id": "overdrive",
       "Label": "Overdrive",
       "ResultId": "overdrive"

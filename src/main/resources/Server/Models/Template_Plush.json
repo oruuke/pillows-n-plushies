@@ -71,6 +71,24 @@
     "Mass": 16
   },
   "AnimationSets": {
+    "Plush_Reload": {
+      "Animations": [
+        {
+          "Animation": "Characters/Animations/Plush/Cannon/Plush_Reload.blockyanim",
+          "Looping": false,
+          "Speed": 0.4
+        }
+      ]
+    },
+    "Revival": {
+      "Animations": [
+        {
+          "Animation": "Characters/Animations/Plush/Pillow_Revival_Plush.blockyanim",
+          "Looping": true,
+          "Speed": 1
+        }
+      ]
+    },
     "Overdrive": {
       "Animations": [
         {
@@ -154,8 +172,8 @@
     "Walk": {
       "Animations": [
         {
-          "Animation": "Characters/Animations/Default/Walk.blockyanim",
-          "Speed": 1.0,
+          "Animation": "Characters/Animations/Plush/Flavor/Walk_Plush.blockyanim",
+          "Speed": 1.5,
           "FootstepIntervals": [
             25,
             75
@@ -178,7 +196,7 @@
     "Run": {
       "Animations": [
         {
-          "Animation": "Characters/Animations/Default/Run.blockyanim",
+          "Animation": "Characters/Animations/Plush/Flavor/Walk_Plush.blockyanim",
           "Speed": 0.9,
           "FootstepIntervals": [
             25,

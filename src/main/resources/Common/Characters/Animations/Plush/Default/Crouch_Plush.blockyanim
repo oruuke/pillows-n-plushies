@@ -140,7 +140,7 @@
       "position": [
         {
           "time": 0,
-          "delta": {"x": 0, "y": -0.7, "z": -0.1},
+          "delta": {"x": 0, "y": -0.7, "z": -0.2},
           "interpolationType": "linear"
         }
       ],

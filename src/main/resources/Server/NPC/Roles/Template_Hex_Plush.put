@@ -634,6 +634,25 @@
         ]
       },
       {
+        "$Comment": "Revival radial menu result",
+        "Sensor": {
+          "Type": "RadialMenuResult",
+          "MenuId": "RadialMenu",
+          "ResultId": "revival"
+        },
+        "Actions": [
+          {
+            "Type": "PlayAnimation",
+            "Slot": "Action",
+            "Animation": "Revival"
+          },
+          {
+            "Type": "State",
+            "State": "Idle"
+          }
+        ]
+      },
+      {
         "$Comment": "Overdrive radial menu result",
         "Sensor": {
           "Type": "RadialMenuResult",

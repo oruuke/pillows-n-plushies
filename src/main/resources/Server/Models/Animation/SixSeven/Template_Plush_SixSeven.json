@@ -68,7 +68,7 @@
     "Idle": {
       "Animations": [
         {
-          "Animation": "Characters/Animations/Plush/Pillow_SixSeven_Plush.blockyanim",
+          "Animation": "Characters/Animations/Emote/Pillow_SixSeven.blockyanim",
           "Looping": true,
           "Speed": 1.0
         }

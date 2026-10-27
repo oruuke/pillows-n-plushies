@@ -2,7 +2,7 @@
   "$Comment": "Menu radial",
   "Enabled": true,
   "ExecutionMode": "SelectAndRun",
-  "DefaultOptionId": "breakdance",
+  "DefaultOptionId": "follow",
   "Options": [
     {
       "Type": "EmitNpcResult",
@@ -27,12 +27,6 @@
       "Id": "padoru-spin",
       "Label": "Padoru Spin",
       "ResultId": "padoru-spin"
-    },
-    {
-      "Type": "EmitNpcResult",
-      "Id": "breakdance",
-      "Label": "Breakdance",
-      "ResultId": "breakdance"
     }
   ]
 }

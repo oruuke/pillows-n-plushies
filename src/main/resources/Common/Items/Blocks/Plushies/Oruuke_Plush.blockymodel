@@ -1543,8 +1543,8 @@
                               },
                               "bottom": {
                                 "offset": {"x": 92, "y": 54},
-                                "mirror": {"x": false, "y": false},
-                                "angle": 90
+                                "mirror": {"x": true, "y": true},
+                                "angle": 270
                               }
                             },
                             "unwrapMode": "custom",

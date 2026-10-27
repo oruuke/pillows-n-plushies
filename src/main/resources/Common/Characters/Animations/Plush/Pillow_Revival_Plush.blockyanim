@@ -1224,27 +1224,27 @@
         },
         {
           "time": 415,
-          "delta": {"x": 0, "y": -0.01, "z": 5.53878},
+          "delta": {"x": 0, "y": -0.01, "z": 1.53878},
           "interpolationType": "linear"
         },
         {
           "time": 416,
-          "delta": {"x": 0, "y": -0.56, "z": 4.28},
+          "delta": {"x": 0, "y": -0.36, "z": 0.28},
           "interpolationType": "linear"
         },
         {
           "time": 417,
-          "delta": {"x": 0, "y": -1.06, "z": 3.02},
+          "delta": {"x": 0, "y": -0.66, "z": 0.02},
           "interpolationType": "linear"
         },
         {
           "time": 418,
-          "delta": {"x": 0, "y": -1.3526, "z": 1.76429},
+          "delta": {"x": 0, "y": -0.9526, "z": -0.23571},
           "interpolationType": "linear"
         },
         {
           "time": 419,
-          "delta": {"x": 0, "y": -1.38, "z": -0.04},
+          "delta": {"x": 0, "y": -1.18, "z": -1.04},
           "interpolationType": "linear"
         },
         {

@@ -1,4 +1,5 @@
 - expanded on plushie rpg
 - overhauled plushie bones
 - added revival animation
-- fixed 6-7 for plushies
+- fixed weapon positions for plushies
+- fixed many animations for plushies

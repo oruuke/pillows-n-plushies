@@ -98,11 +98,11 @@
                         {
                           "id": "6",
                           "name": "Plushie-Core-Upper",
-                          "position": {"x": 0, "y": 0, "z": 0},
+                          "position": {"x": 0, "y": -5, "z": 0},
                           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                           "shape": {
                             "type": "box",
-                            "offset": {"x": 0, "y": 0.3, "z": 0},
+                            "offset": {"x": 0, "y": 5.2, "z": 0},
                             "stretch": {"x": 1, "y": 1, "z": 1},
                             "settings": {
                               "isPiece": false,
@@ -149,7 +149,7 @@
                             {
                               "id": "7",
                               "name": "Slushy-Items",
-                              "position": {"x": -0.5, "y": 0.9, "z": 4.1},
+                              "position": {"x": -0.5, "y": 1, "z": 4.1},
                               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                               "shape": {
                                 "type": "quad",
@@ -713,12 +713,12 @@
                         {
                           "id": "20",
                           "name": "Plushie-Core-Lower",
-                          "position": {"x": 0, "y": -7, "z": 0},
+                          "position": {"x": 0, "y": -5, "z": 0},
                           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                           "shape": {
                             "type": "box",
-                            "offset": {"x": 0, "y": 0.3, "z": 0},
-                            "stretch": {"x": 1, "y": 1, "z": 1},
+                            "offset": {"x": 0, "y": -1.8, "z": 0},
+                            "stretch": {"x": 1, "y": 1, "z": 1.01},
                             "settings": {
                               "isPiece": false,
                               "size": {"x": 14, "y": 4, "z": 8}
@@ -764,7 +764,7 @@
                             {
                               "id": "21",
                               "name": "Plushie-Tag",
-                              "position": {"x": 0, "y": -0.1, "z": -2},
+                              "position": {"x": 0, "y": 0, "z": -2},
                               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                               "shape": {
                                 "type": "none",
@@ -1256,8 +1256,8 @@
                               },
                               "bottom": {
                                 "offset": {"x": 92, "y": 54},
-                                "mirror": {"x": false, "y": false},
-                                "angle": 90
+                                "mirror": {"x": true, "y": true},
+                                "angle": 270
                               }
                             },
                             "unwrapMode": "custom",

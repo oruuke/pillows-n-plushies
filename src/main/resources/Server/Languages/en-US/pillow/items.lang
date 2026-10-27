@@ -111,11 +111,13 @@ Bench_Pillowmill.description = <color is="#b55088"><b>oddly intimidating...</b><
 
 # ==== potions ====
 
-Potion_Morph_Plushie_Random.name = Potion of Plushie Morphing
-Potion_Morph_Plushie_Random.description = <color is="#b55088"><b>weave your physical form anew</b></color>
-Potion_Morph_Plushie_Random_Infinite.name = Sequence of Plushie Reconstruction
-Potion_Morph_Plushie_Random_Infinite.description = <color is="#ffafff"><b>restitch your very dna down to the strand</b></color>
 Potion_Morph_Plushie_Template.name = Template Potion of Plushie Morphing
+
+Potion_Morph_Plushie_Random.name = Potion of Plushie Morphing
+Potion_Morph_Plushie_Random.description = <color is="#b55088"><b>weave your physical form anew</b></color> \n\n<color is="#ffffff">threads may snag on blocks... \n<b>not for use in water</b></color>
+
+Potion_Morph_Plushie_Random_Infinite.name = Sequence of Plushie Reconstruction
+Potion_Morph_Plushie_Random_Infinite.description = <color is="#ffafff"><b>restitch your dna down to the strand</b></color> \n\n<color is="#ffffff">threads may snag on blocks... \n<b>not for use in water</b></color> \n\n<b>holds till death or disconnect</b>
 
 
 # ==== cannons ====

@@ -130,8 +130,8 @@
                                 "angle": 0
                               },
                               "top": {
-                                "offset": {"x": 56, "y": 82},
-                                "mirror": {"x": false, "y": true},
+                                "offset": {"x": 56, "y": 74},
+                                "mirror": {"x": false, "y": false},
                                 "angle": 0
                               },
                               "bottom": {

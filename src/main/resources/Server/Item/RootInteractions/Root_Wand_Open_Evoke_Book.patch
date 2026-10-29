@@ -1,0 +1,19 @@
+{
+  "$Requires": "Lexem:HexcodeEvoke",
+  "Interactions~": [
+    {
+      "Items+": [
+        "Evoke_Book_Plush"
+      ],
+      "Next": {
+        "Type": "Evoke:IsHoldingCondition",
+        "MainHanded": false,
+        "Items": [
+          "Evoke_Book_Plush"
+        ],
+        "Next": "Open_Evoke_Book_Plush",
+        "Failed": "Open_Evoke_Book"
+      }
+    }
+  ]
+}

@@ -15,6 +15,8 @@ import com.oruuke.pillow.builtin.HexcodeBuiltin;
 import com.oruuke.pillow.interactions.ApplyEffectRandomModelInteraction;
 import com.oruuke.pillow.interactions.DropItemInteraction;
 import com.oruuke.pillow.interactions.SummonInteraction;
+import com.oruuke.pillow.systems.PlushieBlockSnapSystem;
+import com.oruuke.pillow.systems.PlushieHandGlowSystem;
 import com.oruuke.pillow.systems.PlushieMovementSystem;
 import com.riprod.patchly.PatchManager;
 
@@ -43,6 +45,8 @@ public class PillowsNPlushies extends JavaPlugin {
         this.getEventRegistry().registerGlobal(PlayerReadyEvent.class, EffectRejoinEvent::onPlayerReady);
         Condition.CODEC.register("Pillow:IsConnected", IsConnectedCondition.class, IsConnectedCondition.CODEC);
         this.getEntityStoreRegistry().registerSystem(new PlushieMovementSystem());
+        this.getEntityStoreRegistry().registerSystem(new PlushieBlockSnapSystem());
+        this.getEntityStoreRegistry().registerSystem(new PlushieHandGlowSystem());
     }
 
     @Override

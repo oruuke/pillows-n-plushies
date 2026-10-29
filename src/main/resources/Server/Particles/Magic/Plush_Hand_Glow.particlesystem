@@ -1,0 +1,10 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Plush_Hand_Glitter"
+    }
+  ],
+  "IsImportant": false,
+  "BoundingRadius": 1,
+  "CullDistance": 30.0
+}

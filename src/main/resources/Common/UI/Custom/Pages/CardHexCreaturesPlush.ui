@@ -10,6 +10,12 @@ $C = "../Common.ui";
     Focused: (OutlineSize: 3, OutlineColor: #007f7f, Background: #e6e6f1)
 );
 
+@SaveButtonStyle = TextButtonStyle(
+    Default: (Background: #e6e6f1, LabelStyle: (FontSize: 16, TextColor: #B55088, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center, OutlineColor: #007f7f)),
+    Hovered: (Background: #e6e6f1, LabelStyle: (FontSize: 18, TextColor: #B55088, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center, OutlineColor: #007f7f)),
+    Pressed: (Background: #e6e6f1, LabelStyle: (FontSize: 18, TextColor: #B55088, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center, OutlineColor: #007f7f))
+);
+
 @CustomCheckBoxStyle = CheckBoxStyle(
     Unchecked: (
         DefaultBackground: (Color: #e6e6f1),
@@ -35,21 +41,46 @@ Group {
 
             Group { Anchor: (Width: 8); }
 
-            Label #HCName {
-              Text: "Hex Creature Name";
-              Anchor: (Width: 250, Height: 30);
-              Visible: true;
-              Style: (FontSize: 18, TextColor: #B55088, RenderBold: true, VerticalAlignment: Center);
-              Padding: (Left: 12);
-            }
+            Group {
+                Anchor: (Width: 250);
+                LayoutMode: Middle;
 
-            $C.@TextField #NameInput {
-               Anchor: (Width: 200, Height: 30);
-               PlaceholderText: "Name";
-               MaxLength: 20;
-               Visible: false;
-               Decoration: @InputFieldStyle;
-               Style: InputFieldStyle(TextColor: #B55088);
+                Label #HCName {
+                  Text: "Hex Creature Name";
+                  Anchor: (Width: 250, Height: 30);
+                  Visible: true;
+                  Style: (FontSize: 18, TextColor: #B55088, RenderBold: true, VerticalAlignment: Center);
+                  Padding: (Left: 12);
+                }
+
+                $C.@TextField #NameInput {
+                   Anchor: (Width: 200, Height: 30);
+                   PlaceholderText: "Name";
+                   MaxLength: 20;
+                   Visible: false;
+                   Decoration: @InputFieldStyle;
+                   Style: InputFieldStyle(TextColor: #B55088);
+                }
+
+                Group #EssenceRow {
+                    Anchor: (Height: 22);
+                    LayoutMode: Left;
+                    Padding: (Left: 12);
+                    Visible: false;
+
+                    ItemIcon #EssenceIcon {
+                        ItemId: "Ingredient_Life_Essence";
+                        Anchor: (Width: 18, Height: 18);
+                    }
+
+                    Group { Anchor: (Width: 4); }
+
+                    Label #HCEssence {
+                        Text: "";
+                        Anchor: (Height: 22);
+                        Style: (FontSize: 14, TextColor: #B55088, VerticalAlignment: Center);
+                    }
+                }
             }
         }
 

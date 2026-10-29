@@ -17,7 +17,13 @@
       "Description": "Drop from Hex Creature"
     },
     "holdableItems": {
-      "Value": [ "Furniture_Crude_Candle", "Tool_Hammer*", "Weapon_Assault_Rifle", "*Gun*", "*Handgun*" ],
+      "Value": [
+        "Furniture_Crude_Candle",
+        "Tool_Hammer*",
+        "Weapon_Assault_Rifle",
+        "*Gun*",
+        "*Handgun*"
+      ],
       "Description": "Items that can be held in the hand"
     },
     "DropList": {
@@ -31,16 +37,25 @@
   },
   "IsMemory": false,
   "BreathesInWater": false,
-  "DropList": { "Compute": "DropList" },
-  "Appearance": {"Compute": "Appearance"},
+  "DropList": {
+    "Compute": "DropList"
+  },
+  "Appearance": {
+    "Compute": "Appearance"
+  },
   "DisableDamageFlock": false,
   "DefaultNPCAttitude": "Ignore",
   "DefaultPlayerAttitude": "Ignore",
-  "FlockSpawnTypes": {"Compute": "FlockArray"},
-  "FlockAllowedNPC": {"Compute": "FlockArray"},
+  "FlockSpawnTypes": {
+    "Compute": "FlockArray"
+  },
+  "FlockAllowedNPC": {
+    "Compute": "FlockArray"
+  },
   "ApplySeparation": true,
   "SeparationDistance": 1.0,
   "SeparationWeight": 0.6,
+  "SeparationLegacySteeringStrength": 0.2,
   "InventorySize": 0,
   "HotbarSize": 4,
   "OffHandSlots": 1,
@@ -48,7 +63,9 @@
   "PickupDropOnDeath": true,
   "MaxHealth": 200,
   "KnockbackScale": 2.0,
-  "NameTranslationKey": {"Compute": "NameTranslationKey"},
+  "NameTranslationKey": {
+    "Compute": "NameTranslationKey"
+  },
   "MotionControllerList": [
     {
       "Type": "Walk",
@@ -67,8 +84,8 @@
       "$Comment": "Clear",
       "States": [
         {
-          "From": [ ],
-          "To": [ ]
+          "From": [],
+          "To": []
         }
       ],
       "Actions": [
@@ -88,41 +105,7 @@
   "Instructions": [
     {
       "$Comment": "Adds the entity to the player flock",
-      "Continue": true,
-      "Instructions": [
-        {
-          "$Comment": "Add creature to flock",
-          "Continue": true,
-          "Sensor": {
-            "Type": "Self",
-            "Filters": [
-              {
-                "Type": "Flock",
-                "FlockStatus": "NotMember"
-              }
-            ]
-          },
-          "Instructions": [
-            {
-              "Sensor": {
-                "Type": "Player",
-                "Range": 15,
-                "Filters": [
-                  {
-                    "Type": "Evoke:IsEvoker"
-                  }
-                ]
-              },
-              "Actions": [
-                {
-                  "Type": "JoinFlock",
-                  "ForceJoin": true
-                }
-              ]
-            }
-          ]
-        }
-      ]
+      "Reference": "Component_Evoke_Join_Evoker_Flock"
     },
     {
       "$Comment": "Pick up item",
@@ -137,7 +120,10 @@
               "Filters": [
                 {
                   "Type": "Evoke:IsInventoryFull",
-                  "Inventories": ["Hotbar", "Storage"]
+                  "Inventories": [
+                    "Hotbar",
+                    "Storage"
+                  ]
                 }
               ]
             }
@@ -147,12 +133,16 @@
               "Sensor": {
                 "Type": "DroppedItem",
                 "Range": 2,
-                "Items": { "Compute": "holdableItems" }
+                "Items": {
+                  "Compute": "holdableItems"
+                }
               },
               "Actions": [
                 {
                   "Type": "Evoke:HCPickUpItem",
-                  "Items": { "Compute": "holdableItems" },
+                  "Items": {
+                    "Compute": "holdableItems"
+                  },
                   "Hoover": true
                 }
               ],
@@ -166,46 +156,15 @@
       ]
     },
     {
-      "$Comment": "Change the state",
-      "Continue": true,
-      "Instructions": [
-        {
-          "Continue": true,
-          "Sensor": {
-            "Type": "FlockLeader"
-          },
-          "Instructions": [
-            {
-              "$Comment": "Store target position",
-              "Sensor": {
-                "Type": "Beacon",
-                "Message": "EvokeTargetPosition",
-                "Range": 100
-              },
-              "Actions": [
-                {
-                  "Type": "State",
-                  "State": "SeekPosition"
-                }
-              ]
-            },
-            {
-              "$Comment": "Follow the leader",
-              "Sensor": {
-                "Type": "Beacon",
-                "Message": "EvokeFollowLeader",
-                "Range": 100
-              },
-              "Actions": [
-                {
-                  "Type": "State",
-                  "State": "Following"
-                }
-              ]
-            }
-          ]
-        }
-      ]
+      "$Comment": "Beacon wand command",
+      "Reference": "Component_Evoke_Wand_Commands",
+      "Modify": {
+        "_ExportStates": [
+          "SeekPosition",
+          "Following"
+        ],
+        "Range": 100
+      }
     },
     {
       "$Comment": "Go to target position",
@@ -237,7 +196,7 @@
           "Actions": [
             {
               "Type": "State",
-              "State": "CheckTasks.Default"
+              "State": "Idle"
             }
           ]
         }
@@ -251,349 +210,60 @@
       }
     },
     {
+      "$Comment": "Head motion",
+      "Continue": true,
+      "Sensor": {
+        "Type": "Player",
+        "Range": 2,
+        "Filters": [
+          {
+            "Type": "ViewSector",
+            "ViewSector": 120
+          }
+        ]
+      },
+      "HeadMotion": {
+        "Type": "Watch",
+        "RelativeTurnSpeed": 0.5
+      }
+    },
+    {
       "$Comment": "Entity movement",
+      "Sensor": {
+        "Type": "State",
+        "State": "Following"
+      },
       "Instructions": [
         {
+          "$Comment": "Less than 1 block away from the leader",
           "Sensor": {
-            "Type": "State",
-            "State": "Following"
-          },
-          "Instructions": [
-            {
-              "$Comment": "Less than 1 block away from the leader",
-              "Sensor": {
-                "Type": "Player",
-                "Range": 1,
-                "LockOnTarget": true,
-                "Filters": [
-                  {
-                    "Type": "Evoke:IsEvoker"
-                  }
-                ]
-              },
-              "HeadMotion": {
-                "Type": "Aim",
-                "Deflection": true,
-                "Spread": 1
-              },
-              "BodyMotion": {
-                "Type": "MaintainDistance",
-                "DesiredDistanceRange": [1.5, 1.5],
-                "MoveThreshold": 0.2,
-                "RelativeForwardsSpeed": 0.6,
-                "RelativeBackwardsSpeed": 0.3
+            "Type": "Player",
+            "Range": 1,
+            "LockOnTarget": true,
+            "Filters": [
+              {
+                "Type": "Evoke:IsEvoker"
               }
-            },
-            {
-              "$Comment": "Less than 40 blocks away from the leader",
-              "Sensor": {
-                "Type": "Player",
-                "Range": 40,
-                "LockOnTarget": true,
-                "Filters": [
-                  {
-                    "Type": "Evoke:IsEvoker"
-                  }
-                ]
-              },
-              "Instructions": [
-                {
-                  "Sensor": {
-                    "Type": "Target"
-                  },
-                  "BodyMotion": {
-                    "Type": "Seek",
-                    "SlowDownDistance": 5,
-                    "StopDistance": 3,
-                    "RelativeSpeed": 0.5
-                  }
-                }
-              ]
-            },
-            {
-              "$Comment": "Teleports to the leader if more than 40 blocks away",
-              "Sensor": {
-                "Type": "Target",
-                "Filters": [
-                  {
-                    "Type": "Evoke:IsEvoker"
-                  }
-                ]
-              },
-              "BodyMotion": {
-                "Type": "Teleport",
-                "OffsetRange": [2, 3],
-                "OffsetSector": 2,
-                "Orientation": "TowardsTarget"
-              },
-              "Actions": [
-                {
-                  "Type": "SpawnParticles",
-                  "Offset": [ 0, 0.5, 0 ],
-                  "ParticleSystem": "Effect_Death",
-                  "Once": true
-                },
-                {
-                  "Type": "Timeout",
-                  "Delay": [ 2, 2 ],
-                  "DelayAfter": true
-                }
-              ]
-            }
-          ]
+            ]
+          },
+          "HeadMotion": {
+            "Type": "Aim",
+            "Deflection": true,
+            "Spread": 1
+          },
+          "BodyMotion": {
+            "Type": "MaintainDistance",
+            "DesiredDistanceRange": [
+              1.5,
+              1.5
+            ],
+            "MoveThreshold": 0.2,
+            "RelativeForwardsSpeed": 0.6,
+            "RelativeBackwardsSpeed": 0.3
+          }
         },
         {
-          "$Comment": "Check tasks to do",
-          "Continue": true,
-          "Sensor": {
-            "Type": "State",
-            "State": "CheckTasks"
-          },
-          "Instructions": [
-            {
-              "$Comment": "Verify item being held",
-              "Sensor": {
-                "Type": "State",
-                "State": ".Default"
-              },
-              "Instructions": [
-                {
-                  "$Comment": "Checks if the inventory is full and if there is a chest nearby",
-                  "Sensor": {
-                    "Type": "Self",
-                    "Filters": [
-                      {
-                        "Type": "Evoke:IsInventoryFull",
-                        "Inventories": ["Hotbar", "Storage"]
-                      },
-                      {
-                        "Type": "Evoke:HasChestNearby",
-                        "HorizontalRange": 15,
-                        "VerticalRange": 3
-                      }
-                    ]
-                  },
-                  "Actions": [
-                    {
-                      "Type": "State",
-                      "State": ".StoreItems"
-                    }
-                  ]
-                },
-                {
-                  "$Comment": "Checks if you are holding a sickle that is not broken and if has harvestable crop",
-                  "Sensor": {
-                    "Type": "Self",
-                    "Filters": [
-                      {
-                        "Type": "Evoke:HasUsableItemInHand",
-                        "Items": [ "Tool_Sickle*" ]
-                      },
-                      {
-                        "Type": "Evoke:HasHarvestableCrop",
-                        "HorizontalRange": 15,
-                        "VerticalRange": 3
-                      }
-                    ]
-                  },
-                  "Actions": [
-                    {
-                      "Type": "State",
-                      "State": ".Harvest"
-                    }
-                  ]
-                },
-                {
-                  "$Comment": "Checks if you are holding a watering can with water and if has dry soil",
-                  "Sensor": {
-                    "Type": "Self",
-                    "Filters": [
-                      {
-                        "Type": "Evoke:HasWateringCan",
-                        "Filled": true
-                      },
-                      {
-                        "Type": "Evoke:HasWettableSoil",
-                        "HorizontalRange": 15,
-                        "VerticalRange": 3
-                      }
-                    ]
-                  },
-                  "Actions": [
-                    {
-                      "Type": "State",
-                      "State": ".Water"
-                    }
-                  ]
-                },
-                {
-                  "$Comment": "Checks if you are holding an empty watering can, if has dry soil and water nearby to fill it",
-                  "Sensor": {
-                    "Type": "Self",
-                    "Filters": [
-                      {
-                        "Type": "Evoke:HasWateringCan",
-                        "Filled": false
-                      },
-                      {
-                        "Type": "Evoke:HasWettableSoil",
-                        "HorizontalRange": 15,
-                        "VerticalRange": 3
-                      },
-                      {
-                        "Type": "Evoke:HasWaterSourceNearby",
-                        "HorizontalRange": 15,
-                        "VerticalRange": 3
-                      }
-                    ]
-                  },
-                  "Actions": [
-                    {
-                      "Type": "State",
-                      "State": ".Water"
-                    }
-                  ]
-                },
-                {
-                  "$Comment": "Checks if you are holding a fertilizer and if has soil to fertilize",
-                  "Sensor": {
-                    "Type": "Self",
-                    "Filters": [
-                      {
-                        "Type": "ItemInHand",
-                        "Items": [ "Tool_Fertilizer" ]
-                      },
-                      {
-                        "Type": "Evoke:HasFertilizableSoil",
-                        "HorizontalRange": 15,
-                        "VerticalRange": 3
-                      }
-                    ]
-                  },
-                  "Actions": [
-                    {
-                      "Type": "State",
-                      "State": ".Fertilize"
-                    }
-                  ]
-                },
-                {
-                  "$Comment": "Stores the items when there is no task to do",
-                  "Sensor": {
-                    "Type": "Self",
-                    "Filters": [
-                      {
-                        "Type": "Evoke:HasItemsOnInventory",
-                        "Inventories": ["Hotbar", "Storage"],
-                        "SkipHotbarSlotZero": true
-                      },
-                      {
-                        "Type": "Evoke:HasChestNearby",
-                        "HorizontalRange": 15,
-                        "VerticalRange": 3,
-                        "CheckCanStore": true
-                      }
-                    ]
-                  },
-                  "Actions": [
-                    {
-                      "Type": "State",
-                      "State": ".StoreItems"
-                    }
-                  ]
-                },
-                {
-                  "$Comment": "Returns to standby mode",
-                  "Sensor": {
-                    "Type": "Any"
-                  },
-                  "Actions": [
-                    {
-                      "Type": "State",
-                      "State": ".Standby"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "$Comment": "Search for a chest that has available slots",
-              "Sensor": {
-                "Type": "State",
-                "State": ".StoreItems"
-              },
-              "Instructions": [
-                {
-                  "Reference": "Component_Evoke_Store_Items",
-                  "Modify": {
-                    "_ExportStates": ["SeekPosition"]
-                  }
-                }
-              ]
-            },
-            {
-              "$Comment": "Search for a plantation that is ready to harvest",
-              "Sensor": {
-                "Type": "State",
-                "State": ".Harvest"
-              },
-              "Instructions": [
-                {
-                  "Reference": "Component_Evoke_Harvest",
-                  "Modify": {
-                    "_ExportStates": ["SeekPosition"]
-                  }
-                }
-              ]
-            },
-            {
-              "$Comment": "Search for a dry soil",
-              "Sensor": {
-                "Type": "State",
-                "State": ".Water"
-              },
-              "Instructions": [
-                {
-                  "Reference": "Component_Evoke_Water",
-                  "Modify": {
-                    "_ExportStates": ["SeekPosition"]
-                  }
-                }
-              ]
-            },
-            {
-              "$Comment": "Search for soil to fertilize",
-              "Sensor": {
-                "Type": "State",
-                "State": ".Fertilize"
-              },
-              "Instructions": [
-                {
-                  "Reference": "Component_Evoke_Fertilize",
-                  "Modify": {
-                    "_ExportStates": ["SeekPosition"]
-                  }
-                }
-              ]
-            },
-            {
-              "$Comment": "Standby state",
-              "Sensor": {
-                "Type": "State",
-                "State": ".Standby"
-              },
-              "Actions": [
-                {
-                  "Type": "Timeout",
-                  "Delay": [3, 3],
-                  "Action": {
-                    "Type": "State",
-                    "State": "CheckTasks"
-                  }
-                }
-              ]
-            }
-          ]
+          "Reference": "Component_Evoke_Follow_Evoker_Walking"
         }
       ]
     }
@@ -735,7 +405,9 @@
               "Filters": [
                 {
                   "Type": "ItemInHand",
-                  "Items": [ "Evoke_Book*" ]
+                  "Items": [
+                    "Evoke_Book*"
+                  ]
                 }
               ]
             },

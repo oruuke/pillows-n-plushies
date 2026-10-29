@@ -1,0 +1,19 @@
+{
+  "OverlapBehavior": "Overwrite",
+  "Debuff": false,
+  "ApplicationEffects": {
+    "Particles": [
+      {
+        "SystemId": "Plush_Hand_Glow",
+        "TargetNodeName": "L-Attachment"
+      }
+    ],
+    "FirstPersonParticles": [
+      {
+        "SystemId": "Plush_Hand_Glow",
+        "TargetEntityPart": "SecondaryItem",
+        "TargetNodeName": "Handle"
+      }
+    ]
+  }
+}

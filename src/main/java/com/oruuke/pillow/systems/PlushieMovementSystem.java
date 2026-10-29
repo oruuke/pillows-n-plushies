@@ -25,7 +25,7 @@ public class PlushieMovementSystem extends EntityTickingSystem<EntityStore> {
     private static final float CROUCH_MULTIPLIER = 0.2F;
     private static final float MASS_FLAT = 16.0F;
 
-    private int[] effectIndexes;
+    private static int[] effectIndexes;
 
     @Override
     public Query<EntityStore> getQuery() {
@@ -64,7 +64,7 @@ public class PlushieMovementSystem extends EntityTickingSystem<EntityStore> {
         movementManager.update(playerRef.getPacketHandler());
     }
 
-    private boolean hasPlushieEffect(EffectControllerComponent effects) {
+    static boolean hasPlushieEffect(EffectControllerComponent effects) {
         if (effectIndexes == null) {
             effectIndexes = new int[PLUSHIE_EFFECTS.length];
             for (int i = 0; i < PLUSHIE_EFFECTS.length; i++) {

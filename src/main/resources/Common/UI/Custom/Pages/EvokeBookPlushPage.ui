@@ -10,86 +10,196 @@
 );
 
 @SaveButtonStyle = TextButtonStyle(
-    Default: (Background: #e6e6f1, LabelStyle: (FontSize: 16, TextColor: #B55088, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center, OutlineColor: #007f7f)),
-    Hovered: (Background: #e6e6f1, LabelStyle: (FontSize: 18, TextColor: #B55088, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center, OutlineColor: #007f7f)),
-    Pressed: (Background: #e6e6f1, LabelStyle: (FontSize: 18, TextColor: #B55088, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center, OutlineColor: #007f7f))
+    Default: (LabelStyle: (FontSize: 16, TextColor: #B55088, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Hovered: (LabelStyle: (FontSize: 18, TextColor: #B55088, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Pressed: (LabelStyle: (FontSize: 18, TextColor: #B55088, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center))
 );
+
+@TabStyle = TextButtonStyle(
+    Default: (Background: #B55088, LabelStyle: (FontSize: 15, TextColor: #f3dbe8, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Hovered: (Background: #c96a9d, LabelStyle: (FontSize: 15, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Pressed: (Background: #c96a9d, LabelStyle: (FontSize: 15, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center))
+);
+
+@TabSelectedStyle = TextButtonStyle(
+    Default: (Background: #e6e6f1, LabelStyle: (FontSize: 15, TextColor: #B55088, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Hovered: (Background: #e6e6f1, LabelStyle: (FontSize: 15, TextColor: #B55088, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Pressed: (Background: #e6e6f1, LabelStyle: (FontSize: 15, TextColor: #B55088, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center))
+);
+
+@PageNumberStyle = LabelStyle(
+    FontSize: 14,
+    TextColor: #B55088,
+    RenderBold: true,
+    VerticalAlignment: Center
+);
+
 Group {
-    Anchor: (Width: 900, Height: 600);
-    Background: (TexturePath: "../Images/EvokeBookPlushBackground.png");
-    LayoutMode: Left;
+    Anchor: (Width: 900, Height: 634);
+    LayoutMode: Top;
 
-    Group #LeftPanel {
-        Anchor: (Width: 450);
+    Group #Tabs {
+        Anchor: (Height: 34);
+        LayoutMode: Left;
+        Padding: (Left: 32);
 
-        LayoutMode: Top;
-        Padding: (Full: 16);
-        Group { Anchor: (Height: 14); }
+        TextButton #ListTab {
+            Text: "My Creatures";
+            Anchor: (Width: 150, Height: 34);
+            Style: @TabSelectedStyle;
+        }
 
-        Group {
-            LayoutMode: Center;
+        Group { Anchor: (Width: 4); }
 
-            Label {
-                Text: "~ plushie evoke book ~";
-                Anchor: (Height: 30);
-                Style: (FontSize: 24, TextColor: #B55088, RenderBold: true);
+        TextButton #GuideTab {
+            Text: "Guide";
+            Anchor: (Width: 150, Height: 34);
+            Style: @TabStyle;
+        }
+
+        Group { Anchor: (Width: 4); }
+
+        TextButton #CreaturesTab {
+            Text: "Hex Creatures";
+            Anchor: (Width: 150, Height: 34);
+            Style: @TabStyle;
+        }
+    }
+
+    Group #Book {
+        Anchor: (Width: 900, Height: 600);
+        Background: (TexturePath: "../Images/EvokeBookPlushBackground.png");
+
+        Group #ListView {
+            Anchor: (Full: 0);
+            LayoutMode: Left;
+
+            Group #LeftPanel {
+                Anchor: (Width: 450);
+
+                LayoutMode: Top;
+                Padding: (Full: 16);
+                Group { Anchor: (Height: 14); }
+
+                Group {
+                    LayoutMode: Center;
+
+                    Label {
+                        Text: "~ plushie evoke book ~";
+                        Anchor: (Height: 30);
+                        Style: (FontSize: 24, TextColor: #B55088, RenderBold: true);
+                    }
+                }
+
+                 Group {
+                    Padding: (Top: 2, Bottom: 6);
+                    Group {
+                        LayoutMode: Left;
+                        Label #HexCount {
+                             Text: "?/?";
+                             Anchor: (Height: 32);
+                             Padding: (Left: 32);
+                             Style: (FontSize: 22, TextColor: #B55088, RenderBold: true);
+                        }
+                    }
+                    Group {
+                        LayoutMode: Right;
+                        Padding: (Right: 32);
+
+                        TextButton #SaveButton {
+                           Anchor: (Width: 50, Height: 30);
+                           Text: "Save";
+                           Visible: true;
+                           Style: @SaveButtonStyle;
+                        }
+
+                        Group { Anchor: (Width: 4); }
+
+                        TextButton #EditButton {
+                             Text: "";
+                             Anchor: (Width: 24, Height: 24);
+                             Style: @EditButtonStyle;
+                             TooltipText: "Edit names";
+                        }
+                    }
+                 }
+
+                  Group #ItemList{
+                     FlexWeight: 1;
+                     LayoutMode: Top;
+                     Padding: (Left: 14);
+                  }
+            }
+
+            Group #RightPanel {
+                FlexWeight: 1;
+                LayoutMode: Top;
+                Padding: (Top: 100, Left: 16, Right: 16, Bottom: 16);
+
+                Group #ItemListRight {
+                    FlexWeight: 1;
+                    LayoutMode: Top;
+                    Padding: (Left: 14);
+                }
             }
         }
 
-         Group {
-            Padding: (Top: 16, Bottom: 8);
-            Group {
-                LayoutMode: Left;
-                Label #HexCount {
-                     Text: "?/?";
-                     Anchor: (Height: 32);
-                     Padding: (Left: 32);
-                     Style: (FontSize: 22, TextColor: #B55088, RenderBold: true);
-                }
+        Group #PagesView {
+            Anchor: (Full: 0);
+            LayoutMode: Left;
+            Visible: false;
+
+            Group #LeftPage {
+                Anchor: (Width: 450);
+                LayoutMode: Top;
+                Padding: (Top: 40, Left: 44, Right: 30, Bottom: 64);
             }
-            Group {
-                LayoutMode: Right;
-                Padding: (Right: 32);
 
-                TextButton #SaveButton {
-                   Anchor: (Width: 50, Height: 30);
-                   Text: "Save";
-                   Visible: true;
-                   Style: @SaveButtonStyle;
-                }
-
-                Group { Anchor: (Width: 4); }
-
-                TextButton #EditButton {
-                     Text: "";
-                     Anchor: (Width: 24, Height: 24);
-                     Style: @EditButtonStyle;
-                     TooltipText: "Edit names";
-                }
+            Group #RightPage {
+                FlexWeight: 1;
+                LayoutMode: Top;
+                Padding: (Top: 40, Left: 34, Right: 40, Bottom: 64);
             }
-         }
+        }
 
-          Group #ItemList{
-             FlexWeight: 1;
-             LayoutMode: Top;
-             Padding: (Left: 14);
-          }
-    }
+        Group #PageNav {
+            Anchor: (Left: 40, Right: 40, Bottom: 26, Height: 30);
+            LayoutMode: Left;
+            Visible: false;
 
-    Group #RightPanel {
-        FlexWeight: 1;
-        LayoutMode: Top;
-        Padding: (Full: 20);
-
-        Group {
-            LayoutMode: Right;
-            Anchor: (Width: 355, Height: 75);
-
-            TextButton #CloseButton {
-                Text: "X";
-                Anchor: (Width: 20, Height: 20);
+            TextButton #PrevPageButton {
+                Text: "<";
+                Anchor: (Width: 30, Height: 30);
                 Style: @CloseButtonStyle;
             }
+
+            Label #LeftPageNumber {
+                Text: "";
+                Anchor: (Width: 60, Height: 30);
+                Padding: (Left: 8);
+                Style: @PageNumberStyle;
+            }
+
+            Group { FlexWeight: 1; }
+
+            Label #RightPageNumber {
+                Text: "";
+                Anchor: (Width: 60, Height: 30);
+                Padding: (Right: 8);
+                Style: (FontSize: 14, TextColor: #B55088, RenderBold: true, VerticalAlignment: Center, HorizontalAlignment: End);
+            }
+
+            TextButton #NextPageButton {
+                Text: ">";
+                Anchor: (Width: 30, Height: 30);
+                Style: @CloseButtonStyle;
+            }
+        }
+
+        TextButton #CloseButton {
+            Text: "X";
+            Anchor: (Top: 22, Right: 22, Width: 25, Height: 25);
+            Style: @CloseButtonStyle;
         }
     }
 }

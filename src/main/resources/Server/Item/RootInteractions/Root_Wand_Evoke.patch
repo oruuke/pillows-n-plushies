@@ -1,0 +1,10 @@
+{
+  "$Requires": "Lexem:HexcodeEvoke",
+  "Interactions~": [
+    {
+      "Items+": [
+        "Evoke_Book_Plush"
+      ]
+    }
+  ]
+}

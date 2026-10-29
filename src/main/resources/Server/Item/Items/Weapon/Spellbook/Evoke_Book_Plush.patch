@@ -41,54 +41,9 @@
     },
     "Interactions": {
         "Primary": "Root_Evoke",
-        "Secondary": {
-            "RequireNewClick": true,
-            "Interactions": [
-                {
-                    "Type": "OpenEvokeBook",
-                    "PageName": "EvokeBookPlushPage",
-                    "CardName": "CardHexCreaturesPlush",
-                    "Next": {
-                        "Type": "Simple",
-                        "RunTime": 0.5,
-                        "Effects": {
-                            "WorldSoundEventId": "SFX_Skeleton_Mage_Spellbook_Charge"
-                        }
-                    },
-                    "Failed": {
-                        "Type": "Simple",
-                        "Effects": {
-                            "ItemAnimationId": "Interact"
-                        }
-                    }
-                }
-            ]
-        },
+        "Secondary": "Root_Open_Evoke_Book_Plush",
         "Ability1": "Root_Evoke",
-        "Ability4": {
-            "RequireNewClick": true,
-            "HudInputBindingEntry": "evoke.hud.inputBinding.open",
-            "Interactions": [
-                {
-                    "Type": "OpenEvokeBook",
-                    "PageName": "EvokeBookPlushPage",
-                    "CardName": "CardHexCreaturesPlush",
-                    "Next": {
-                        "Type": "Simple",
-                        "RunTime": 0.5,
-                        "Effects": {
-                            "WorldSoundEventId": "SFX_Skeleton_Mage_Spellbook_Charge"
-                        }
-                    },
-                    "Failed": {
-                        "Type": "Simple",
-                        "Effects": {
-                            "ItemAnimationId": "Interact"
-                        }
-                    }
-                }
-            ]
-        }
+        "Ability4": "Root_Open_Evoke_Book_Plush"
     },
     "Weapon": {}
 }

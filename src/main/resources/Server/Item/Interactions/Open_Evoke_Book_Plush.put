@@ -1,0 +1,19 @@
+{
+  "$Requires": "Lexem:HexcodeEvoke",
+  "Type": "OpenEvokeBook",
+  "PageName": "EvokeBookPlushPage",
+  "CardName": "CardHexCreaturesPlush",
+  "Next": {
+    "Type": "Simple",
+    "RunTime": 0.5,
+    "Effects": {
+      "WorldSoundEventId": "SFX_Skeleton_Mage_Spellbook_Charge"
+    }
+  },
+  "Failed": {
+    "Type": "Simple",
+    "Effects": {
+      "ItemAnimationId": "Interact"
+    }
+  }
+}

@@ -9,7 +9,7 @@
         }
     ],
     "Website": "https://github.com/oruuke/pillows-n-plushies",
-    "ServerVersion": ">=0.7.4",
+    "ServerVersion": ">=0.7.5",
     "Dependencies": {
         "Hytale:AssetModule": "*",
         "Hytale:EntityModule": "*",

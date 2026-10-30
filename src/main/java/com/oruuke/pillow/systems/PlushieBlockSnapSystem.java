@@ -5,6 +5,7 @@ import com.hypixel.hytale.component.CommandBuffer;
 import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.component.query.Query;
 import com.hypixel.hytale.component.system.tick.EntityTickingSystem;
+import com.hypixel.hytale.math.vector.Rotation3f;
 import com.hypixel.hytale.protocol.ChangeVelocityType;
 import com.hypixel.hytale.server.core.entity.effect.EffectControllerComponent;
 import com.hypixel.hytale.server.core.entity.movement.MovementStatesComponent;
@@ -51,11 +52,12 @@ public class PlushieBlockSnapSystem extends EntityTickingSystem<EntityStore> {
         }
 
         final Vector3d position = transform.getPosition();
+        final Rotation3f rotation = transform.getRotation();
         Snap snap = snaps.get(uuid);
         if (snap == null) {
             if (!states.onGround) return;
 
-            snap = new Snap(Math.floor(position.x) + 0.5, Math.floor(position.z) + 0.5);
+            snap = new Snap(Math.floor(position.x) + 0.5, Math.floor(position.z) + 0.5, Math.floor(rotation.y) + 0.5);
             snaps.put(uuid, snap);
         }
         if (snap.done) return;
@@ -81,13 +83,15 @@ public class PlushieBlockSnapSystem extends EntityTickingSystem<EntityStore> {
     private static final class Snap {
         private final double targetX;
         private final double targetZ;
+        private final double targetR;
         private double closestDistance = Double.MAX_VALUE;
         private float elapsed;
         private boolean done;
 
-        private Snap(double targetX, double targetZ) {
+        private Snap(double targetX, double targetZ, double targetR) {
             this.targetX = targetX;
             this.targetZ = targetZ;
+            this.targetR = targetR;
         }
     }
 }

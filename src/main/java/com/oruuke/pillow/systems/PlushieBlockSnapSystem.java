@@ -23,11 +23,8 @@ import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class PlushieBlockSnapSystem extends EntityTickingSystem<EntityStore> {
-    private static final double ARRIVE_DISTANCE = 0.04;
-    private static final double SPEED_PER_BLOCK = 6.0;
-    private static final double MAX_SPEED = 3.0;
-    private static final double GIVE_UP_DISTANCE = 0.1;
-    private static final float TIMEOUT = 1.5F;
+    private static final float SNAP_DURATION = 0.18f;
+    private static final float TWO_PI = (float) (Math.PI * 2.0);
     private static final float QUARTER_TURN = (float) (Math.PI / 2.0);
 
     private final Map<UUID, Snap> snaps = new ConcurrentHashMap<>();
@@ -49,64 +46,83 @@ public class PlushieBlockSnapSystem extends EntityTickingSystem<EntityStore> {
         final UUID uuid = playerRef.getUuid();
         final var states = movementStates.getMovementStates();
         final boolean crouching = states != null && states.crouching && !states.flying && !states.swimming && !states.mounting;
-        if (!crouching || !PlushieMovementSystem.hasPlushieEffect(effects)) {
-            snaps.remove(uuid);
-            return;
+        final boolean hasEffect = PlushieMovementSystem.hasPlushieEffect(effects);
+
+        Snap snap = snaps.get(uuid);
+
+        if (!crouching || !hasEffect) {
+            if (snap == null || snap.done || !hasEffect) snaps.remove(uuid);
+            if (snap == null || snap.done || !hasEffect) return;
         }
 
         final Vector3d position = transform.getPosition();
         final Rotation3f rotation = transform.getRotation();
-        Snap snap = snaps.get(uuid);
+
         if (snap == null) {
             if (!states.onGround) return;
 
-            snap = new Snap(Math.floor(position.x) + 0.5, Math.floor(position.z) + 0.5, snapYaw(rotation.y));
+            snap = new Snap(
+                    position.x, position.z, rotation.y,
+                    Math.floor(position.x) + 0.5,
+                    Math.floor(position.z) + 0.5,
+                    snapYaw(rotation.y));
             snaps.put(uuid, snap);
         }
         if (snap.done) return;
 
-        final double dx = snap.targetX - position.x;
-        final double dz = snap.targetZ - position.z;
-        final double distance = Math.sqrt(dx * dx + dz * dz);
         snap.elapsed += dt;
+        final float time = Math.min(1f, snap.elapsed / SNAP_DURATION);
+        final float timeAfterEase = timeAfterEaseOutCubic(time);
 
-        final boolean arrived = distance <= ARRIVE_DISTANCE;
-        final boolean pushedAway = distance > snap.closestDistance + GIVE_UP_DISTANCE;
-        final boolean interrupted = pushedAway || !states.onGround;
-        if (arrived || pushedAway || !states.onGround || snap.elapsed > TIMEOUT) {
-            snap.done = true;
-            if (interrupted) return;
+        final double x = lerp(snap.startX, snap.targetX, timeAfterEase);
+        final double z = lerp(snap.startZ, snap.targetZ, timeAfterEase);
+        final float yaw = snap.startYaw + snap.yawDelta * timeAfterEase;
 
-            final Ref<EntityStore> ref = chunk.getReferenceTo(index);
-            final Rotation3f target = new Rotation3f(rotation.x, snap.targetYaw, 0f);
-            final Vector3d snapped = new Vector3d(snap.targetX, position.y, snap.targetZ);
-            final Teleport teleport = Teleport.createForPlayer(snapped, target);
-            buffer.addComponent(ref, Teleport.getComponentType(), teleport);
+        velocity.addInstruction(new Vector3d(0,0,0), null, ChangeVelocityType.Set);
 
-            return;
-        }
+        final Ref<EntityStore> ref = chunk.getReferenceTo(index);
+        final Teleport teleport = Teleport.createForPlayer(
+                new Vector3d(x, position.y, z),
+                new Rotation3f(rotation.x, yaw, 0f));
+        buffer.addComponent(ref, Teleport.getComponentType(), teleport);
 
-        snap.closestDistance = Math.min(snap.closestDistance, distance);
-        final double speed = Math.min(MAX_SPEED, distance * SPEED_PER_BLOCK);
-        velocity.addInstruction(new Vector3d(dx / distance * speed, 0, dz / distance * speed), null, ChangeVelocityType.Set);
+        if (time >= 1f) snap.done = true;
     }
 
     private static float snapYaw(float yaw) {
         return Math.round(yaw / QUARTER_TURN) * QUARTER_TURN;
     }
 
+    private static float angleDelta(float a, float b) {
+        float d = (b - a) % TWO_PI;
+        if (d > Math.PI) d -= TWO_PI;
+        if (d < -Math.PI) d += TWO_PI;
+        return d;
+    }
+
+    private static float timeAfterEaseOutCubic(float t) {
+        final float inv = 1f - t;
+        return 1f - inv * inv * inv;
+    }
+
+    private static double lerp(double a, double b, double t) {
+        return a + (b - a) * t;
+    }
+
     private static final class Snap {
-        private final double targetX;
-        private final double targetZ;
-        private final float targetYaw;
-        private double closestDistance = Double.MAX_VALUE;
+        private final double startX, startZ, targetX, targetZ;
+        private final float startYaw, yawDelta;
         private float elapsed;
         private boolean done;
 
-        private Snap(double targetX, double targetZ, float targetYaw) {
+        private Snap(double startX, double startZ, float startYaw,
+                     double targetX, double targetZ, float targetYaw) {
+            this.startX = startX;
+            this.startZ = startZ;
+            this.startYaw = startYaw;
             this.targetX = targetX;
             this.targetZ = targetZ;
-            this.targetYaw = targetYaw;
+            this.yawDelta = angleDelta(startYaw, targetYaw);
         }
     }
 }

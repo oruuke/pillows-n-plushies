@@ -2,6 +2,7 @@ package com.oruuke.pillow.systems;
 
 import com.hypixel.hytale.component.ArchetypeChunk;
 import com.hypixel.hytale.component.CommandBuffer;
+import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.component.query.Query;
 import com.hypixel.hytale.component.system.tick.EntityTickingSystem;
@@ -10,6 +11,7 @@ import com.hypixel.hytale.protocol.ChangeVelocityType;
 import com.hypixel.hytale.server.core.entity.effect.EffectControllerComponent;
 import com.hypixel.hytale.server.core.entity.movement.MovementStatesComponent;
 import com.hypixel.hytale.server.core.modules.entity.component.TransformComponent;
+import com.hypixel.hytale.server.core.modules.entity.teleport.Teleport;
 import com.hypixel.hytale.server.core.modules.physics.component.Velocity;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
@@ -26,6 +28,7 @@ public class PlushieBlockSnapSystem extends EntityTickingSystem<EntityStore> {
     private static final double MAX_SPEED = 3.0;
     private static final double GIVE_UP_DISTANCE = 0.1;
     private static final float TIMEOUT = 1.5F;
+    private static final float QUARTER_TURN = (float) (Math.PI / 2.0);
 
     private final Map<UUID, Snap> snaps = new ConcurrentHashMap<>();
 
@@ -57,7 +60,7 @@ public class PlushieBlockSnapSystem extends EntityTickingSystem<EntityStore> {
         if (snap == null) {
             if (!states.onGround) return;
 
-            snap = new Snap(Math.floor(position.x) + 0.5, Math.floor(position.z) + 0.5, Math.floor(rotation.y) + 0.5);
+            snap = new Snap(Math.floor(position.x) + 0.5, Math.floor(position.z) + 0.5, snapYaw(rotation.y));
             snaps.put(uuid, snap);
         }
         if (snap.done) return;
@@ -69,9 +72,17 @@ public class PlushieBlockSnapSystem extends EntityTickingSystem<EntityStore> {
 
         final boolean arrived = distance <= ARRIVE_DISTANCE;
         final boolean pushedAway = distance > snap.closestDistance + GIVE_UP_DISTANCE;
+        final boolean interrupted = pushedAway || !states.onGround;
         if (arrived || pushedAway || !states.onGround || snap.elapsed > TIMEOUT) {
             snap.done = true;
-            velocity.addInstruction(new Vector3d(0, 0, 0), null, ChangeVelocityType.Set);
+            if (interrupted) return;
+
+            final Ref<EntityStore> ref = chunk.getReferenceTo(index);
+            final Rotation3f target = new Rotation3f(rotation.x, snap.targetYaw, 0f);
+            final Vector3d snapped = new Vector3d(snap.targetX, position.y, snap.targetZ);
+            final Teleport teleport = Teleport.createForPlayer(snapped, target);
+            buffer.addComponent(ref, Teleport.getComponentType(), teleport);
+
             return;
         }
 
@@ -80,18 +91,22 @@ public class PlushieBlockSnapSystem extends EntityTickingSystem<EntityStore> {
         velocity.addInstruction(new Vector3d(dx / distance * speed, 0, dz / distance * speed), null, ChangeVelocityType.Set);
     }
 
+    private static float snapYaw(float yaw) {
+        return Math.round(yaw / QUARTER_TURN) * QUARTER_TURN;
+    }
+
     private static final class Snap {
         private final double targetX;
         private final double targetZ;
-        private final double targetR;
+        private final float targetYaw;
         private double closestDistance = Double.MAX_VALUE;
         private float elapsed;
         private boolean done;
 
-        private Snap(double targetX, double targetZ, double targetR) {
+        private Snap(double targetX, double targetZ, float targetYaw) {
             this.targetX = targetX;
             this.targetZ = targetZ;
-            this.targetR = targetR;
+            this.targetYaw = targetYaw;
         }
     }
 }

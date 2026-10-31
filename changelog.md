@@ -1,5 +1,3 @@
-- expanded on plushie rpg
-- overhauled plushie bones
-- added revival animation
-- fixed weapon positions for plushies
-- fixed many animations for plushies
+- crouch disguise for plushie morph
+- updated to work wit latest evoke
+- other stuff probs

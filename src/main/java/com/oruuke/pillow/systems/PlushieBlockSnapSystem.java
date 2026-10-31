@@ -51,8 +51,11 @@ public class PlushieBlockSnapSystem extends EntityTickingSystem<EntityStore> {
         Snap snap = snaps.get(uuid);
 
         if (!crouching || !hasEffect) {
-            if (snap == null || snap.done || !hasEffect) snaps.remove(uuid);
-            if (snap == null || snap.done || !hasEffect) return;
+            final boolean finished = snap == null || snap.done || !hasEffect;
+            if (finished) {
+                snaps.remove(uuid);
+                return;
+            }
         }
 
         final Vector3d position = transform.getPosition();
@@ -69,6 +72,12 @@ public class PlushieBlockSnapSystem extends EntityTickingSystem<EntityStore> {
             snaps.put(uuid, snap);
         }
         if (snap.done) return;
+
+        assert states != null;
+        if (!states.onGround) {
+            snap.done = true;
+            return;
+        }
 
         snap.elapsed += dt;
         final float time = Math.min(1f, snap.elapsed / SNAP_DURATION);

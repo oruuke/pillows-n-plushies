@@ -73,8 +73,7 @@ public class PlushieBlockSnapSystem extends EntityTickingSystem<EntityStore> {
         }
         if (snap.done) return;
 
-        assert states != null;
-        if (!states.onGround) {
+        if (states == null || !states.onGround) {
             snap.done = true;
             return;
         }

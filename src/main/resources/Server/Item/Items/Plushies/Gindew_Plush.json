@@ -1,0 +1,96 @@
+{
+  "Parent": "Template_Plush",
+  "TranslationProperties": {
+    "Name": "pillow.items.Gindew_Plush.name",
+    "Description": "pillow.items.Gindew_Plush.description"
+  },
+  "PlayerAnimationsId": "Item",
+  "MaxStack": 100,
+  "Set": "Furniture_Misc",
+  "Model": "Items/Blocks/Plushies/Gindew_Plush.blockymodel",
+  "Texture": "Items/Blocks/Plushies/Gindew_Plush.png",
+  "Weapon": {},
+  "Interactions": {
+    "Secondary": {
+      "Interactions": [
+        "Block_Secondary"
+      ]
+    }
+  },
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Items/Blocks/Plushies/Gindew_Plush.blockymodel",
+    "VariantRotation": "NESW",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Blocks/Plushies/Gindew_Plush.png",
+        "Weight": 1
+      }
+    ],
+    "HitboxType": "Block_Plushie_Fumo",
+    "InteractionHint": "server.interaction.squeeze",
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "Simple",
+            "Effects": {
+              "WorldSoundEventId": "SFX_Plushie_Build"
+            }
+          }
+        ]
+      }
+    },
+    "PlacementSettings": {
+      "RotationMode": "FacingPlayer"
+    },
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "SoftBlocks"
+      }
+    },
+    "ParticleColor": "#f5f5f5",
+    "Group": "Cloth",
+    "BlockSoundSetId": "Plushie",
+    "PhysicalMaterialId": "Cloth",
+    "BlockParticleSetId": "Dust"
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Cloth_Block_Wool_Red",
+        "Quantity": 2
+      },
+      {
+        "ItemId": "Ingredient_Fibre",
+        "Quantity": 4
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Pillow_Bench",
+        "Categories": [
+          "Pillow_Plushies"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ],
+    "TimeSeconds": 16
+  },
+  "IconProperties": {
+    "Scale": 0.7,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Gindew_Plush.png"
+}

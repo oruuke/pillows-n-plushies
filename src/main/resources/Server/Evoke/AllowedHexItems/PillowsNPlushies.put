@@ -97,6 +97,19 @@
             "VariantOf": "Hex_Oruuke_Plush"
         },
         {
+            "BlockId": "Gindew_Plush",
+            "EntityId": "Hex_Gindew_Plush",
+            "EssenceCost": 30,
+            "HasLeftHandSlot": true,
+            "HasRightHandSlot": true,
+            "HasArmorHeadSlot": true,
+            "HasArmorChestSlot": true,
+            "HasArmorHandsSlot": true,
+            "HasArmorLegSlot": true,
+            "HasHotbarSlot": true,
+            "VariantOf": "Hex_Oruuke_Plush"
+        },
+        {
             "BlockId": "Edilan_Plush",
             "EntityId": "Hex_Edilan_Plush",
             "EssenceCost": 30,

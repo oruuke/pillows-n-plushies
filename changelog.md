@@ -1,3 +1,1 @@
-- crouch disguise for plushie morph
-- updated to work wit latest evoke
-- other stuff probs
+- added gindew plushie

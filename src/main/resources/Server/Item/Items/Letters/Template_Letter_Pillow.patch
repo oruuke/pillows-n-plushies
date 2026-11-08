@@ -1,5 +1,5 @@
 {
-  "$Requires": "com.gaiagauntlet:Gauntlet",
+  "$Requires": "com.gaiagauntlet.gauntlet:Gauntlet",
   "Texture": "Items/Blocks/Letters/Letter_Gold.png",
   "BlockType": {
     "CustomModelTexture": [

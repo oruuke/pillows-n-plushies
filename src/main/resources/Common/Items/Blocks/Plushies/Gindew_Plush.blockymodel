@@ -647,49 +647,17 @@
                         },
                         {
                           "id": "18",
-                          "name": "R-Earring",
-                          "position": {"x": -11.5, "y": -2.2, "z": 0.5},
+                          "name": "R-Elf-Ear",
+                          "position": {"x": -7, "y": -1.7, "z": -2},
                           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                           "shape": {
-                            "type": "box",
-                            "offset": {"x": 0.5, "y": 1.5, "z": -0.5},
+                            "type": "none",
+                            "offset": {"x": 0, "y": 0, "z": 0},
                             "stretch": {"x": 1, "y": 1, "z": 1},
                             "settings": {
-                              "isPiece": false,
-                              "size": {"x": 2, "y": 2, "z": 2}
+                              "isPiece": false
                             },
-                            "textureLayout": {
-                              "back": {
-                                "offset": {"x": 22, "y": 44},
-                                "mirror": {"x": true, "y": false},
-                                "angle": 0
-                              },
-                              "right": {
-                                "offset": {"x": 24, "y": 44},
-                                "mirror": {"x": true, "y": false},
-                                "angle": 0
-                              },
-                              "front": {
-                                "offset": {"x": 26, "y": 44},
-                                "mirror": {"x": true, "y": false},
-                                "angle": 0
-                              },
-                              "left": {
-                                "offset": {"x": 20, "y": 44},
-                                "mirror": {"x": true, "y": false},
-                                "angle": 0
-                              },
-                              "top": {
-                                "offset": {"x": 20, "y": 44},
-                                "mirror": {"x": false, "y": true},
-                                "angle": 0
-                              },
-                              "bottom": {
-                                "offset": {"x": 22, "y": 42},
-                                "mirror": {"x": false, "y": false},
-                                "angle": 0
-                              }
-                            },
+                            "textureLayout": {},
                             "unwrapMode": "custom",
                             "visible": true,
                             "doubleSided": false,
@@ -698,9 +666,487 @@
                           "children": [
                             {
                               "id": "19",
+                              "name": "R-Ear",
+                              "position": {"x": -3, "y": 1, "z": 0},
+                              "orientation": {"x": 0, "y": 0, "z": -0.17365, "w": 0.98481},
+                              "shape": {
+                                "type": "box",
+                                "offset": {"x": -1.5, "y": 0, "z": 0},
+                                "stretch": {"x": 1, "y": 1, "z": 1},
+                                "settings": {
+                                  "isPiece": false,
+                                  "size": {"x": 7, "y": 9, "z": 2}
+                                },
+                                "textureLayout": {
+                                  "back": {
+                                    "offset": {"x": 11, "y": 59},
+                                    "mirror": {"x": true, "y": false},
+                                    "angle": 0
+                                  },
+                                  "right": {
+                                    "offset": {"x": 11, "y": 48},
+                                    "mirror": {"x": false, "y": false},
+                                    "angle": 0
+                                  },
+                                  "front": {
+                                    "offset": {"x": 4, "y": 48},
+                                    "mirror": {"x": false, "y": false},
+                                    "angle": 0
+                                  },
+                                  "left": {
+                                    "offset": {"x": 11, "y": 59},
+                                    "mirror": {"x": false, "y": false},
+                                    "angle": 0
+                                  },
+                                  "top": {
+                                    "offset": {"x": 4, "y": 46},
+                                    "mirror": {"x": false, "y": false},
+                                    "angle": 0
+                                  },
+                                  "bottom": {
+                                    "offset": {"x": 4, "y": 57},
+                                    "mirror": {"x": false, "y": false},
+                                    "angle": 0
+                                  }
+                                },
+                                "unwrapMode": "custom",
+                                "visible": true,
+                                "doubleSided": false,
+                                "shadingMode": "flat"
+                              },
+                              "children": [
+                                {
+                                  "id": "20",
+                                  "name": "R-Ear--C1",
+                                  "position": {"x": -3.5, "y": 4.5, "z": 1},
+                                  "orientation": {"x": 0.04362, "y": 0, "z": 0, "w": 0.99905},
+                                  "shape": {
+                                    "type": "quad",
+                                    "offset": {"x": -0.1, "y": -3, "z": -0.5},
+                                    "stretch": {"x": 1, "y": 1, "z": 1},
+                                    "settings": {
+                                      "isPiece": false,
+                                      "size": {"x": 1, "y": 4},
+                                      "normal": "-X",
+                                      "isStaticBox": true
+                                    },
+                                    "textureLayout": {
+                                      "front": {
+                                        "offset": {"x": 12, "y": 53},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      }
+                                    },
+                                    "unwrapMode": "custom",
+                                    "visible": true,
+                                    "doubleSided": false,
+                                    "shadingMode": "flat"
+                                  }
+                                },
+                                {
+                                  "id": "21",
+                                  "name": "R-Ear2",
+                                  "position": {"x": -3.5, "y": 4.5, "z": 1},
+                                  "orientation": {"x": 0.04362, "y": 0, "z": 0, "w": 0.99905},
+                                  "shape": {
+                                    "type": "quad",
+                                    "offset": {"x": -2, "y": -4.5, "z": 0},
+                                    "stretch": {"x": 1, "y": 1, "z": 0.1},
+                                    "settings": {
+                                      "isPiece": false,
+                                      "size": {"x": 4, "y": 9},
+                                      "normal": "+Z"
+                                    },
+                                    "textureLayout": {
+                                      "front": {
+                                        "offset": {"x": 0, "y": 48},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      }
+                                    },
+                                    "unwrapMode": "custom",
+                                    "visible": true,
+                                    "doubleSided": true,
+                                    "shadingMode": "flat"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "22",
+                                      "name": "R-Ear3--C1",
+                                      "position": {"x": 0, "y": 0, "z": 0},
+                                      "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                                      "shape": {
+                                        "type": "quad",
+                                        "offset": {"x": 0, "y": 0, "z": -0.01},
+                                        "stretch": {"x": 1, "y": 1, "z": 0.1},
+                                        "settings": {
+                                          "isPiece": false,
+                                          "size": {"x": 4, "y": 9},
+                                          "normal": "+Z",
+                                          "isStaticBox": true
+                                        },
+                                        "textureLayout": {
+                                          "front": {
+                                            "offset": {"x": 0, "y": 59},
+                                            "mirror": {"x": false, "y": false},
+                                            "angle": 0
+                                          }
+                                        },
+                                        "unwrapMode": "custom",
+                                        "visible": true,
+                                        "doubleSided": true,
+                                        "shadingMode": "flat"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "23",
+                                  "name": "R-Ear3",
+                                  "position": {"x": -3.5, "y": 4.5, "z": -1},
+                                  "orientation": {"x": -0.04362, "y": 0, "z": 0, "w": 0.99905},
+                                  "shape": {
+                                    "type": "quad",
+                                    "offset": {"x": -2, "y": -4.5, "z": 0},
+                                    "stretch": {"x": 1, "y": 1, "z": 0.1},
+                                    "settings": {
+                                      "isPiece": false,
+                                      "size": {"x": 4, "y": 9},
+                                      "normal": "-Z"
+                                    },
+                                    "textureLayout": {
+                                      "front": {
+                                        "offset": {"x": 4, "y": 59},
+                                        "mirror": {"x": true, "y": false},
+                                        "angle": 0
+                                      }
+                                    },
+                                    "unwrapMode": "custom",
+                                    "visible": true,
+                                    "doubleSided": true,
+                                    "shadingMode": "flat"
+                                  }
+                                },
+                                {
+                                  "id": "24",
+                                  "name": "R-Ear4",
+                                  "position": {"x": -7.5, "y": 4.5, "z": 0},
+                                  "orientation": {"x": -0.70711, "y": 0, "z": 0, "w": 0.70711},
+                                  "shape": {
+                                    "type": "quad",
+                                    "offset": {"x": 2, "y": 0, "z": 0},
+                                    "stretch": {"x": 1, "y": 1, "z": 1},
+                                    "settings": {
+                                      "isPiece": false,
+                                      "size": {"x": 4, "y": 2},
+                                      "normal": "+Z"
+                                    },
+                                    "textureLayout": {
+                                      "front": {
+                                        "offset": {"x": 0, "y": 46},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      }
+                                    },
+                                    "unwrapMode": "custom",
+                                    "visible": true,
+                                    "doubleSided": true,
+                                    "shadingMode": "flat"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "25",
+                          "name": "L-Elf-Ear",
+                          "position": {"x": 7, "y": -1.7, "z": -2},
+                          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                          "shape": {
+                            "type": "none",
+                            "offset": {"x": 0, "y": 0, "z": 0},
+                            "stretch": {"x": 1, "y": 1, "z": 1},
+                            "settings": {
+                              "isPiece": false
+                            },
+                            "textureLayout": {},
+                            "unwrapMode": "custom",
+                            "visible": true,
+                            "doubleSided": false,
+                            "shadingMode": "flat"
+                          },
+                          "children": [
+                            {
+                              "id": "26",
+                              "name": "L-Ear",
+                              "position": {"x": 3, "y": 1, "z": 0},
+                              "orientation": {"x": 0, "y": 0, "z": 0.17365, "w": 0.98481},
+                              "shape": {
+                                "type": "box",
+                                "offset": {"x": 1.5, "y": 0, "z": 0},
+                                "stretch": {"x": 1, "y": 1, "z": 1},
+                                "settings": {
+                                  "isPiece": false,
+                                  "size": {"x": 7, "y": 9, "z": 2}
+                                },
+                                "textureLayout": {
+                                  "back": {
+                                    "offset": {"x": 4, "y": 59},
+                                    "mirror": {"x": false, "y": false},
+                                    "angle": 0
+                                  },
+                                  "right": {
+                                    "offset": {"x": 13, "y": 59},
+                                    "mirror": {"x": true, "y": false},
+                                    "angle": 0
+                                  },
+                                  "front": {
+                                    "offset": {"x": 11, "y": 48},
+                                    "mirror": {"x": true, "y": false},
+                                    "angle": 0
+                                  },
+                                  "left": {
+                                    "offset": {"x": 13, "y": 48},
+                                    "mirror": {"x": true, "y": false},
+                                    "angle": 0
+                                  },
+                                  "top": {
+                                    "offset": {"x": 11, "y": 46},
+                                    "mirror": {"x": true, "y": false},
+                                    "angle": 0
+                                  },
+                                  "bottom": {
+                                    "offset": {"x": 11, "y": 57},
+                                    "mirror": {"x": true, "y": false},
+                                    "angle": 0
+                                  }
+                                },
+                                "unwrapMode": "custom",
+                                "visible": true,
+                                "doubleSided": false,
+                                "shadingMode": "flat"
+                              },
+                              "children": [
+                                {
+                                  "id": "27",
+                                  "name": "L-Ear--C1",
+                                  "position": {"x": 3.5, "y": 4.5, "z": 1},
+                                  "orientation": {"x": 0.04362, "y": 0, "z": 0, "w": 0.99905},
+                                  "shape": {
+                                    "type": "quad",
+                                    "offset": {"x": 0.1, "y": -3, "z": -0.5},
+                                    "stretch": {"x": 1, "y": 1, "z": 1},
+                                    "settings": {
+                                      "isPiece": false,
+                                      "size": {"x": 1, "y": 4},
+                                      "normal": "+X",
+                                      "isStaticBox": true
+                                    },
+                                    "textureLayout": {
+                                      "front": {
+                                        "offset": {"x": 13, "y": 53},
+                                        "mirror": {"x": true, "y": false},
+                                        "angle": 0
+                                      }
+                                    },
+                                    "unwrapMode": "custom",
+                                    "visible": true,
+                                    "doubleSided": false,
+                                    "shadingMode": "flat"
+                                  }
+                                },
+                                {
+                                  "id": "28",
+                                  "name": "L-Ear2",
+                                  "position": {"x": 3.5, "y": 4.5, "z": 1},
+                                  "orientation": {"x": 0.04362, "y": 0, "z": 0, "w": 0.99905},
+                                  "shape": {
+                                    "type": "quad",
+                                    "offset": {"x": 2, "y": -4.5, "z": -0.01},
+                                    "stretch": {"x": 1, "y": 1, "z": 0.1},
+                                    "settings": {
+                                      "isPiece": false,
+                                      "size": {"x": 4, "y": 9},
+                                      "normal": "+Z"
+                                    },
+                                    "textureLayout": {
+                                      "front": {
+                                        "offset": {"x": 4, "y": 59},
+                                        "mirror": {"x": true, "y": false},
+                                        "angle": 0
+                                      }
+                                    },
+                                    "unwrapMode": "custom",
+                                    "visible": true,
+                                    "doubleSided": true,
+                                    "shadingMode": "flat"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "29",
+                                      "name": "L-Ear2--C1",
+                                      "position": {"x": 0, "y": 0, "z": 0.01},
+                                      "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                                      "shape": {
+                                        "type": "quad",
+                                        "offset": {"x": 0, "y": 0, "z": 0},
+                                        "stretch": {"x": 1, "y": 1, "z": 0.1},
+                                        "settings": {
+                                          "isPiece": false,
+                                          "size": {"x": 4, "y": 9},
+                                          "normal": "+Z",
+                                          "isStaticBox": true
+                                        },
+                                        "textureLayout": {
+                                          "front": {
+                                            "offset": {"x": 4, "y": 48},
+                                            "mirror": {"x": true, "y": false},
+                                            "angle": 0
+                                          }
+                                        },
+                                        "unwrapMode": "custom",
+                                        "visible": true,
+                                        "doubleSided": true,
+                                        "shadingMode": "flat"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "30",
+                                  "name": "L-Ear3",
+                                  "position": {"x": 3.5, "y": 4.5, "z": -1},
+                                  "orientation": {"x": -0.04362, "y": 0, "z": 0, "w": 0.99905},
+                                  "shape": {
+                                    "type": "quad",
+                                    "offset": {"x": 2, "y": -4.5, "z": 0},
+                                    "stretch": {"x": 1, "y": 1, "z": 0.1},
+                                    "settings": {
+                                      "isPiece": false,
+                                      "size": {"x": 4, "y": 9},
+                                      "normal": "-Z"
+                                    },
+                                    "textureLayout": {
+                                      "front": {
+                                        "offset": {"x": 0, "y": 59},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      }
+                                    },
+                                    "unwrapMode": "custom",
+                                    "visible": true,
+                                    "doubleSided": true,
+                                    "shadingMode": "flat"
+                                  }
+                                },
+                                {
+                                  "id": "31",
+                                  "name": "L-Ear4",
+                                  "position": {"x": 7.5, "y": 4.5, "z": 0},
+                                  "orientation": {"x": -0.70711, "y": 0, "z": 0, "w": 0.70711},
+                                  "shape": {
+                                    "type": "quad",
+                                    "offset": {"x": -2, "y": 0, "z": 0},
+                                    "stretch": {"x": 1, "y": 1, "z": 1},
+                                    "settings": {
+                                      "isPiece": false,
+                                      "size": {"x": 4, "y": 2},
+                                      "normal": "+Z"
+                                    },
+                                    "textureLayout": {
+                                      "front": {
+                                        "offset": {"x": 4, "y": 46},
+                                        "mirror": {"x": true, "y": false},
+                                        "angle": 0
+                                      }
+                                    },
+                                    "unwrapMode": "custom",
+                                    "visible": true,
+                                    "doubleSided": true,
+                                    "shadingMode": "flat"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "32",
+                          "name": "R-Earring",
+                          "position": {"x": -11.5, "y": -2.2, "z": 0.5},
+                          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                          "shape": {
+                            "type": "none",
+                            "offset": {"x": 0.5, "y": 1.5, "z": -0.5},
+                            "stretch": {"x": 1, "y": 1, "z": 1},
+                            "settings": {
+                              "isPiece": false
+                            },
+                            "textureLayout": {},
+                            "unwrapMode": "custom",
+                            "visible": true,
+                            "doubleSided": false,
+                            "shadingMode": "flat"
+                          },
+                          "children": [
+                            {
+                              "id": "33",
                               "name": "R-Earring--C1",
-                              "position": {"x": -0.5, "y": -3.5, "z": 0.5},
-                              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                              "position": {"x": -6, "y": 3, "z": -1},
+                              "orientation": {"x": 0, "y": 0, "z": 0.93969, "w": 0.34202},
+                              "shape": {
+                                "type": "box",
+                                "offset": {"x": 0, "y": 0, "z": 0},
+                                "stretch": {"x": 1, "y": 1, "z": 1},
+                                "settings": {
+                                  "isPiece": false,
+                                  "size": {"x": 2, "y": 2, "z": 2},
+                                  "isStaticBox": true
+                                },
+                                "textureLayout": {
+                                  "back": {
+                                    "offset": {"x": 22, "y": 44},
+                                    "mirror": {"x": true, "y": false},
+                                    "angle": 0
+                                  },
+                                  "right": {
+                                    "offset": {"x": 24, "y": 44},
+                                    "mirror": {"x": true, "y": false},
+                                    "angle": 0
+                                  },
+                                  "front": {
+                                    "offset": {"x": 26, "y": 44},
+                                    "mirror": {"x": true, "y": false},
+                                    "angle": 0
+                                  },
+                                  "left": {
+                                    "offset": {"x": 20, "y": 44},
+                                    "mirror": {"x": true, "y": false},
+                                    "angle": 0
+                                  },
+                                  "top": {
+                                    "offset": {"x": 20, "y": 44},
+                                    "mirror": {"x": false, "y": true},
+                                    "angle": 0
+                                  },
+                                  "bottom": {
+                                    "offset": {"x": 22, "y": 42},
+                                    "mirror": {"x": false, "y": false},
+                                    "angle": 0
+                                  }
+                                },
+                                "unwrapMode": "custom",
+                                "visible": true,
+                                "doubleSided": false,
+                                "shadingMode": "flat"
+                              }
+                            },
+                            {
+                              "id": "34",
+                              "name": "R-Earring--C2",
+                              "position": {"x": -2.5, "y": -3.5, "z": -0.5},
+                              "orientation": {"x": 0, "y": 0, "z": 0.83147, "w": 0.55557},
                               "shape": {
                                 "type": "box",
                                 "offset": {"x": 0.5, "y": 0.5, "z": -0.5},
@@ -751,50 +1197,18 @@
                           ]
                         },
                         {
-                          "id": "20",
+                          "id": "35",
                           "name": "L-Earring",
                           "position": {"x": 11.5, "y": -2.2, "z": 0.5},
                           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                           "shape": {
-                            "type": "box",
-                            "offset": {"x": -0.5, "y": 1.5, "z": -0.5},
+                            "type": "none",
+                            "offset": {"x": 0.5, "y": 1.5, "z": -0.5},
                             "stretch": {"x": 1, "y": 1, "z": 1},
                             "settings": {
-                              "isPiece": false,
-                              "size": {"x": 2, "y": 2, "z": 2}
+                              "isPiece": false
                             },
-                            "textureLayout": {
-                              "back": {
-                                "offset": {"x": 20, "y": 44},
-                                "mirror": {"x": false, "y": false},
-                                "angle": 0
-                              },
-                              "right": {
-                                "offset": {"x": 18, "y": 44},
-                                "mirror": {"x": false, "y": false},
-                                "angle": 0
-                              },
-                              "front": {
-                                "offset": {"x": 24, "y": 44},
-                                "mirror": {"x": false, "y": false},
-                                "angle": 0
-                              },
-                              "left": {
-                                "offset": {"x": 22, "y": 44},
-                                "mirror": {"x": false, "y": false},
-                                "angle": 0
-                              },
-                              "top": {
-                                "offset": {"x": 22, "y": 44},
-                                "mirror": {"x": true, "y": true},
-                                "angle": 0
-                              },
-                              "bottom": {
-                                "offset": {"x": 24, "y": 42},
-                                "mirror": {"x": true, "y": false},
-                                "angle": 0
-                              }
-                            },
+                            "textureLayout": {},
                             "unwrapMode": "custom",
                             "visible": true,
                             "doubleSided": false,
@@ -802,10 +1216,62 @@
                           },
                           "children": [
                             {
-                              "id": "21",
+                              "id": "36",
                               "name": "L-Earring--C1",
-                              "position": {"x": 0.5, "y": -3.5, "z": 0.5},
-                              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                              "position": {"x": 5, "y": 3, "z": -1},
+                              "orientation": {"x": 0, "y": 0, "z": -0.93969, "w": 0.34202},
+                              "shape": {
+                                "type": "box",
+                                "offset": {"x": 0, "y": 0, "z": 0},
+                                "stretch": {"x": 1, "y": 1, "z": 1},
+                                "settings": {
+                                  "isPiece": false,
+                                  "size": {"x": 2, "y": 2, "z": 2},
+                                  "isStaticBox": true
+                                },
+                                "textureLayout": {
+                                  "back": {
+                                    "offset": {"x": 20, "y": 44},
+                                    "mirror": {"x": false, "y": false},
+                                    "angle": 0
+                                  },
+                                  "right": {
+                                    "offset": {"x": 18, "y": 44},
+                                    "mirror": {"x": false, "y": false},
+                                    "angle": 0
+                                  },
+                                  "front": {
+                                    "offset": {"x": 24, "y": 44},
+                                    "mirror": {"x": false, "y": false},
+                                    "angle": 0
+                                  },
+                                  "left": {
+                                    "offset": {"x": 22, "y": 44},
+                                    "mirror": {"x": false, "y": false},
+                                    "angle": 0
+                                  },
+                                  "top": {
+                                    "offset": {"x": 22, "y": 44},
+                                    "mirror": {"x": true, "y": true},
+                                    "angle": 0
+                                  },
+                                  "bottom": {
+                                    "offset": {"x": 24, "y": 42},
+                                    "mirror": {"x": true, "y": false},
+                                    "angle": 0
+                                  }
+                                },
+                                "unwrapMode": "custom",
+                                "visible": true,
+                                "doubleSided": false,
+                                "shadingMode": "flat"
+                              }
+                            },
+                            {
+                              "id": "37",
+                              "name": "L-Earring--C2",
+                              "position": {"x": 1.5, "y": -3.5, "z": -0.5},
+                              "orientation": {"x": 0, "y": 0, "z": -0.83147, "w": 0.55557},
                               "shape": {
                                 "type": "box",
                                 "offset": {"x": -0.5, "y": 0.5, "z": -0.5},
@@ -856,7 +1322,7 @@
                           ]
                         },
                         {
-                          "id": "22",
+                          "id": "38",
                           "name": "Top",
                           "position": {"x": 0, "y": 17.5, "z": 0},
                           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -907,7 +1373,7 @@
                           },
                           "children": [
                             {
-                              "id": "23",
+                              "id": "39",
                               "name": "Top--C1",
                               "position": {"x": 0, "y": 6, "z": 0},
                               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -959,7 +1425,7 @@
                               }
                             },
                             {
-                              "id": "24",
+                              "id": "40",
                               "name": "Goggles",
                               "position": {"x": 0, "y": -2.25, "z": 6.5},
                               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -978,7 +1444,7 @@
                               },
                               "children": [
                                 {
-                                  "id": "25",
+                                  "id": "41",
                                   "name": "Goggles--C1",
                                   "position": {"x": 0, "y": 0, "z": 0},
                                   "orientation": {"x": -0.19509, "y": 0, "z": 0, "w": 0.98079},
@@ -1022,7 +1488,7 @@
                               ]
                             },
                             {
-                              "id": "26",
+                              "id": "42",
                               "name": "Hair",
                               "position": {"x": 1, "y": -4, "z": 6},
                               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -1049,7 +1515,7 @@
                               },
                               "children": [
                                 {
-                                  "id": "27",
+                                  "id": "43",
                                   "name": "Hair--C1",
                                   "position": {"x": 1, "y": 7.5, "z": 12.1},
                                   "orientation": {"x": 0.96593, "y": 0, "z": 0, "w": 0.25882},
@@ -1077,23 +1543,23 @@
                                   }
                                 },
                                 {
-                                  "id": "28",
+                                  "id": "44",
                                   "name": "Hair--C2",
                                   "position": {"x": 10, "y": 5.5, "z": 7.1},
                                   "orientation": {"x": -0.06163, "y": 0.70442, "z": 0.06163, "w": 0.70442},
                                   "shape": {
                                     "type": "quad",
-                                    "offset": {"x": 1.5, "y": -5.5, "z": 0},
+                                    "offset": {"x": 1, "y": -5.5, "z": 0},
                                     "stretch": {"x": 1.1, "y": 1, "z": 1},
                                     "settings": {
                                       "isPiece": false,
-                                      "size": {"x": 12, "y": 11},
+                                      "size": {"x": 13, "y": 11},
                                       "normal": "+Z",
                                       "isStaticBox": true
                                     },
                                     "textureLayout": {
                                       "front": {
-                                        "offset": {"x": 55, "y": 15},
+                                        "offset": {"x": 56, "y": 15},
                                         "mirror": {"x": true, "y": false},
                                         "angle": 0
                                       }
@@ -1105,17 +1571,17 @@
                                   }
                                 },
                                 {
-                                  "id": "29",
+                                  "id": "45",
                                   "name": "Hair--C3",
                                   "position": {"x": -10, "y": 5.5, "z": 7.1},
                                   "orientation": {"x": -0.06163, "y": -0.70442, "z": -0.06163, "w": 0.70442},
                                   "shape": {
                                     "type": "quad",
-                                    "offset": {"x": -1.5, "y": -5.5, "z": 0},
+                                    "offset": {"x": -1, "y": -5.5, "z": 0},
                                     "stretch": {"x": 1.1, "y": 1, "z": 1},
                                     "settings": {
                                       "isPiece": false,
-                                      "size": {"x": 12, "y": 11},
+                                      "size": {"x": 13, "y": 11},
                                       "normal": "+Z",
                                       "isStaticBox": true
                                     },
@@ -1139,7 +1605,7 @@
                       ]
                     },
                     {
-                      "id": "30",
+                      "id": "46",
                       "name": "R-Arm",
                       "position": {"x": -7, "y": 3, "z": 4},
                       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -1158,7 +1624,7 @@
                       },
                       "children": [
                         {
-                          "id": "31",
+                          "id": "47",
                           "name": "R-Plushie-Nubbin",
                           "position": {"x": 0, "y": -0.5, "z": 0},
                           "orientation": {"x": 0, "y": 0, "z": -0.57358, "w": 0.81915},
@@ -1209,7 +1675,7 @@
                           },
                           "children": [
                             {
-                              "id": "32",
+                              "id": "48",
                               "name": "R-Plushie-Strap--C1",
                               "position": {"x": -0.5, "y": -6.5, "z": -0.5},
                               "orientation": {"x": 0, "y": -0.38268, "z": 0, "w": 0.92388},
@@ -1239,7 +1705,7 @@
                           ]
                         },
                         {
-                          "id": "33",
+                          "id": "49",
                           "name": "R-Forearm",
                           "position": {"x": 0, "y": -0.5, "z": 0},
                           "orientation": {"x": 0, "y": 0, "z": -0.21644, "w": 0.9763},
@@ -1258,7 +1724,7 @@
                           },
                           "children": [
                             {
-                              "id": "34",
+                              "id": "50",
                               "name": "R-Hand",
                               "position": {"x": -2, "y": -4.5, "z": 0},
                               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -1277,7 +1743,7 @@
                               },
                               "children": [
                                 {
-                                  "id": "35",
+                                  "id": "51",
                                   "name": "R-Attachment",
                                   "position": {"x": -20.5, "y": -3.5, "z": 14},
                                   "orientation": {"x": 0.60876, "y": 0, "z": 0, "w": 0.79335},
@@ -1302,7 +1768,7 @@
                       ]
                     },
                     {
-                      "id": "36",
+                      "id": "52",
                       "name": "L-Arm",
                       "position": {"x": 7, "y": 3, "z": 4},
                       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -1321,7 +1787,7 @@
                       },
                       "children": [
                         {
-                          "id": "37",
+                          "id": "53",
                           "name": "L-Plushie-Nubbin",
                           "position": {"x": 0, "y": -0.5, "z": 0},
                           "orientation": {"x": 0, "y": 0, "z": 0.57358, "w": 0.81915},
@@ -1372,7 +1838,7 @@
                           },
                           "children": [
                             {
-                              "id": "38",
+                              "id": "54",
                               "name": "L-Plushie-Strap--C1",
                               "position": {"x": 0.5, "y": -6.5, "z": -0.5},
                               "orientation": {"x": 0, "y": 0.38268, "z": 0, "w": 0.92388},
@@ -1402,7 +1868,7 @@
                           ]
                         },
                         {
-                          "id": "39",
+                          "id": "55",
                           "name": "L-Forearm",
                           "position": {"x": 31.41995, "y": 12.56325, "z": 11.27658},
                           "orientation": {"x": 0.62089, "y": 0.16637, "z": 0.19827, "w": 0.73993},
@@ -1421,7 +1887,7 @@
                           },
                           "children": [
                             {
-                              "id": "40",
+                              "id": "56",
                               "name": "L-Hand",
                               "position": {"x": 0, "y": 0, "z": 0},
                               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -1440,7 +1906,7 @@
                               },
                               "children": [
                                 {
-                                  "id": "41",
+                                  "id": "57",
                                   "name": "L-Attachment",
                                   "position": {"x": 0, "y": 0, "z": 0},
                                   "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -1467,7 +1933,7 @@
                   ]
                 },
                 {
-                  "id": "42",
+                  "id": "58",
                   "name": "R-Plushie-Leg",
                   "position": {"x": -3, "y": -4, "z": 8},
                   "orientation": {"x": 0, "y": -0.08716, "z": 0, "w": 0.99619},
@@ -1518,7 +1984,7 @@
                   }
                 },
                 {
-                  "id": "43",
+                  "id": "59",
                   "name": "L-Plushie-Leg",
                   "position": {"x": 3, "y": -4, "z": 8},
                   "orientation": {"x": 0, "y": 0.08716, "z": 0, "w": 0.99619},
@@ -1569,7 +2035,7 @@
                   },
                   "children": [
                     {
-                      "id": "44",
+                      "id": "60",
                       "name": "L-Plushie-Strap",
                       "position": {"x": 0, "y": -2, "z": -3.5},
                       "orientation": {"x": 0, "y": -0.13053, "z": 0, "w": 0.99144},
@@ -1588,7 +2054,7 @@
                       },
                       "children": [
                         {
-                          "id": "45",
+                          "id": "61",
                           "name": "L-Plushie-Strap--C1",
                           "position": {"x": 0, "y": 0, "z": 0},
                           "orientation": {"x": 0, "y": 0.13053, "z": 0, "w": 0.99144},
@@ -1640,7 +2106,7 @@
                           }
                         },
                         {
-                          "id": "46",
+                          "id": "62",
                           "name": "L-Plushie-Strap--C2",
                           "position": {"x": 0, "y": 0, "z": 0},
                           "orientation": {"x": 0, "y": 0.13053, "z": 0, "w": 0.99144},

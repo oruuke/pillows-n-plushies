@@ -1,0 +1,17 @@
+{
+  "$Requires": "Riprod:Hexcode",
+  "Parent": "Life_Hexbook",
+  "MaxGlyphs": 10,
+  "Effects": {
+    "Sustain": {
+      "Particles": [
+        {
+          "SystemId": "Shock_Spawner",
+          "TargetEntityPart": "Self",
+          "TargetNodeName": "",
+          "Color": "#b55088"
+        }
+      ]
+    }
+  }
+}

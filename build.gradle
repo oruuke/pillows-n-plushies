@@ -13,7 +13,8 @@ configurations {
 
 dependencies {
     shaded('com.riprod:patchly:3.+')
-    vineImplementation('curse.maven:hexcode-1448311:9146849')
+    // vineImplementation('curse.maven:hexcode-1448311:9146849')
+    vineImplementation files('/libs/Hexcode-0.12.0.jar')
 }
 
 shadowJar {

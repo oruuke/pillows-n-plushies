@@ -1,5 +1,7 @@
 package com.oruuke.pillow.builtin.system;
 
+import java.util.function.Consumer;
+
 import javax.annotation.Nonnull;
 
 import com.hypixel.hytale.component.CommandBuffer;
@@ -12,17 +14,12 @@ import com.hypixel.hytale.server.core.modules.entitystats.EntityStatMap;
 import com.hypixel.hytale.server.core.modules.entitystats.EntityStatValue;
 import com.hypixel.hytale.server.core.modules.entitystats.asset.EntityStatType;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
-import com.riprod.hexcode.api.event.HexCastEvent;
+import com.riprod.hexcode.api.event.CastEvent;
 import com.riprod.hexcode.core.common.execution.context.HexContext;
 import com.riprod.hexcode.core.common.execution.cast.component.VolatilityComponent;
 import com.riprod.hexcode.core.common.execution.root.PlayerHexRoot;
 
-public class CastSpellLimiterSystem extends WorldEventSystem<EntityStore, HexCastEvent> {
-
-    public CastSpellLimiterSystem() {
-        super(HexCastEvent.class);
-    }
-    //HytaleLogger L = HytaleLogger.get("");
+public class CastSpellLimiterSystem implements Consumer<CastEvent> {
 
     @Override
     public void handle(@Nonnull Store<EntityStore> store, @Nonnull CommandBuffer<EntityStore> buffer,

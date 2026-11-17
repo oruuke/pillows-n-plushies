@@ -1,1 +1,1 @@
-- added gindew plushie
+- updated forced plushie dance model

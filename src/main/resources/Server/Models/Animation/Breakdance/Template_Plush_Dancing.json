@@ -68,7 +68,7 @@
     "Idle": {
       "Animations": [
         {
-          "Animation": "Characters/Animations/Plush/Pillow_Sims_Breakdance_Plush.blockyanim",
+          "Animation": "Characters/Animations/Plush/Pillow_Revival_Plush.blockyanim",
           "Looping": true,
           "Speed": 1.0
         }

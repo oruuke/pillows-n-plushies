@@ -1,0 +1,122 @@
+{
+  "TranslationProperties": {
+    "Name": "pillow.items.Cushion.name",
+    "Description": "pillow.items.Cushion.description"
+  },
+  "Categories": [
+    "Blocks.Deco",
+    "Furniture.Furniture"
+  ],
+  "PlayerAnimationsId": "Item",
+  "MaxStack": 100,
+  "Set": "Furniture_Misc",
+  "Model": "Items/Blocks/Cushions/Cushion.blockymodel",
+  "Texture": "Items/Blocks/Cushions/Cushion_Pink.png",
+  "Weapon": {},
+  "Interactions": {
+    "Secondary": {
+      "Interactions": [
+        "Block_Secondary"
+      ]
+    }
+  },
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Items/Blocks/Cushions/Cushion.blockymodel",
+    "VariantRotation": "NESW",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Blocks/Cushions/Cushion_Pink.png",
+        "Weight": 1
+      }
+    ],
+    "HitboxType": "Block_Quarter",
+    "InteractionHint": "server.interaction.sit",
+    "Seats": [
+      {
+        "Offset": {
+          "X": 0,
+          "Y": -0.25,
+          "Z": 0.1
+        },
+        "Yaw": 0
+      }
+    ],
+    "Interactions": {
+      "Use": "Plush_Seat"
+    },
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ],
+      "Up": [
+        {
+          "FaceType": "Full"
+        }
+      ],
+      "East": [
+        {
+          "FaceType": "Full"
+        }
+      ],
+      "West": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "PlacementSettings": {
+      "RotationMode": "FacingPlayer"
+    },
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "SoftBlocks"
+      }
+    },
+    "ParticleColor": "#f5f5f5",
+    "Group": "Cloth",
+    "BlockSoundSetId": "Plushie",
+    "PhysicalMaterialId": "Cloth",
+    "BlockParticleSetId": "Dust"
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Cloth_Block_Wool_Blue_Light",
+        "Quantity": 2
+      },
+      {
+        "ItemId": "Ingredient_Fibre",
+        "Quantity": 4
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Pillow_Bench",
+        "Categories": [
+          "Pillow_Plushies"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ],
+    "TimeSeconds": 16
+  },
+  "IconProperties": {
+    "Scale": 0.7,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -6
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Cushion.png"
+}

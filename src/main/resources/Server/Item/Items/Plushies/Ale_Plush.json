@@ -60,7 +60,7 @@
   "Recipe": {
     "Input": [
       {
-        "ItemId": "Cloth_Block_Wool_Red",
+        "ItemId": "Cloth_Block_Wool_Orange",
         "Quantity": 2
       },
       {

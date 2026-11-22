@@ -481,46 +481,308 @@
                             },
                             {
                               "id": "14",
-                              "name": "Suit-Collar",
-                              "position": {"x": -0.25, "y": 19.59594, "z": 0.03211},
+                              "name": "Plushie-Tie",
+                              "position": {"x": 0, "y": 5, "z": 4.5},
                               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                               "shape": {
                                 "type": "box",
-                                "offset": {"x": 0.25, "y": -13.7, "z": 0.5},
-                                "stretch": {"x": 1.01, "y": 1.01, "z": 1.01},
+                                "offset": {"x": 0, "y": 1, "z": 0.5},
+                                "stretch": {"x": 1, "y": 1, "z": 1},
                                 "settings": {
                                   "isPiece": false,
-                                  "size": {"x": 21, "y": 6, "z": 14}
+                                  "size": {"x": 3, "y": 2, "z": 2}
                                 },
                                 "textureLayout": {
                                   "back": {
-                                    "offset": {"x": 14, "y": 90},
+                                    "offset": {"x": 39, "y": 63},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   },
                                   "right": {
-                                    "offset": {"x": 0, "y": 90},
+                                    "offset": {"x": 37, "y": 63},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   },
                                   "front": {
-                                    "offset": {"x": 49, "y": 90},
+                                    "offset": {"x": 44, "y": 63},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   },
                                   "left": {
-                                    "offset": {"x": 35, "y": 90},
+                                    "offset": {"x": 42, "y": 63},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   },
                                   "top": {
-                                    "offset": {"x": 35, "y": 89},
+                                    "offset": {"x": 42, "y": 63},
                                     "mirror": {"x": true, "y": true},
                                     "angle": 0
                                   },
                                   "bottom": {
-                                    "offset": {"x": 70, "y": 75},
+                                    "offset": {"x": 45, "y": 61},
                                     "mirror": {"x": true, "y": false},
+                                    "angle": 0
+                                  }
+                                },
+                                "unwrapMode": "custom",
+                                "visible": true,
+                                "doubleSided": false,
+                                "shadingMode": "flat"
+                              },
+                              "children": [
+                                {
+                                  "id": "15",
+                                  "name": "Plushie-Tie--C1",
+                                  "position": {"x": 0, "y": -4, "z": 0.8},
+                                  "orientation": {"x": -0.04598, "y": -0.2578, "z": 0.0096, "w": 0.96506},
+                                  "shape": {
+                                    "type": "box",
+                                    "offset": {"x": -1.49901, "y": 0.11921, "z": -0.96321},
+                                    "stretch": {"x": 1, "y": 1, "z": 1},
+                                    "settings": {
+                                      "isPiece": false,
+                                      "size": {"x": 3, "y": 6, "z": 2},
+                                      "isStaticBox": true
+                                    },
+                                    "textureLayout": {
+                                      "back": {
+                                        "offset": {"x": 39, "y": 73},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      },
+                                      "right": {
+                                        "offset": {"x": 37, "y": 73},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      },
+                                      "front": {
+                                        "offset": {"x": 44, "y": 73},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      },
+                                      "left": {
+                                        "offset": {"x": 42, "y": 73},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      },
+                                      "top": {
+                                        "offset": {"x": 42, "y": 73},
+                                        "mirror": {"x": true, "y": true},
+                                        "angle": 0
+                                      },
+                                      "bottom": {
+                                        "offset": {"x": 45, "y": 71},
+                                        "mirror": {"x": true, "y": false},
+                                        "angle": 0
+                                      }
+                                    },
+                                    "unwrapMode": "custom",
+                                    "visible": true,
+                                    "doubleSided": false,
+                                    "shadingMode": "flat"
+                                  }
+                                },
+                                {
+                                  "id": "16",
+                                  "name": "Plushie-Tie--C2",
+                                  "position": {"x": 0, "y": -4, "z": 0.8},
+                                  "orientation": {"x": -0.04598, "y": 0.2578, "z": -0.0096, "w": 0.96506},
+                                  "shape": {
+                                    "type": "box",
+                                    "offset": {"x": 1.49901, "y": 0.11921, "z": -0.96321},
+                                    "stretch": {"x": 1, "y": 1, "z": 1},
+                                    "settings": {
+                                      "isPiece": false,
+                                      "size": {"x": 3, "y": 6, "z": 2},
+                                      "isStaticBox": true
+                                    },
+                                    "textureLayout": {
+                                      "back": {
+                                        "offset": {"x": 42, "y": 81},
+                                        "mirror": {"x": true, "y": false},
+                                        "angle": 0
+                                      },
+                                      "right": {
+                                        "offset": {"x": 44, "y": 81},
+                                        "mirror": {"x": true, "y": false},
+                                        "angle": 0
+                                      },
+                                      "front": {
+                                        "offset": {"x": 47, "y": 81},
+                                        "mirror": {"x": true, "y": false},
+                                        "angle": 0
+                                      },
+                                      "left": {
+                                        "offset": {"x": 39, "y": 81},
+                                        "mirror": {"x": true, "y": false},
+                                        "angle": 0
+                                      },
+                                      "top": {
+                                        "offset": {"x": 39, "y": 81},
+                                        "mirror": {"x": false, "y": true},
+                                        "angle": 0
+                                      },
+                                      "bottom": {
+                                        "offset": {"x": 42, "y": 79},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      }
+                                    },
+                                    "unwrapMode": "custom",
+                                    "visible": true,
+                                    "doubleSided": false,
+                                    "shadingMode": "flat"
+                                  }
+                                },
+                                {
+                                  "id": "17",
+                                  "name": "Plushie-Tie--C3",
+                                  "position": {"x": 0, "y": -7.2, "z": 1.1},
+                                  "orientation": {"x": 0.15608, "y": 0.26075, "z": 0.03316, "w": 0.95213},
+                                  "shape": {
+                                    "type": "box",
+                                    "offset": {"x": 1.52406, "y": -1.03452, "z": -0.98132},
+                                    "stretch": {"x": 1, "y": 1, "z": 1},
+                                    "settings": {
+                                      "isPiece": false,
+                                      "size": {"x": 3, "y": 2, "z": 2},
+                                      "isStaticBox": true
+                                    },
+                                    "textureLayout": {
+                                      "back": {
+                                        "offset": {"x": 42, "y": 69},
+                                        "mirror": {"x": true, "y": false},
+                                        "angle": 0
+                                      },
+                                      "right": {
+                                        "offset": {"x": 44, "y": 69},
+                                        "mirror": {"x": true, "y": false},
+                                        "angle": 0
+                                      },
+                                      "front": {
+                                        "offset": {"x": 47, "y": 69},
+                                        "mirror": {"x": true, "y": false},
+                                        "angle": 0
+                                      },
+                                      "left": {
+                                        "offset": {"x": 39, "y": 69},
+                                        "mirror": {"x": true, "y": false},
+                                        "angle": 0
+                                      },
+                                      "top": {
+                                        "offset": {"x": 39, "y": 69},
+                                        "mirror": {"x": false, "y": true},
+                                        "angle": 0
+                                      },
+                                      "bottom": {
+                                        "offset": {"x": 42, "y": 67},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      }
+                                    },
+                                    "unwrapMode": "custom",
+                                    "visible": true,
+                                    "doubleSided": false,
+                                    "shadingMode": "flat"
+                                  }
+                                },
+                                {
+                                  "id": "18",
+                                  "name": "Plushie-Tie--C4",
+                                  "position": {"x": 0, "y": -7.2, "z": 1.1},
+                                  "orientation": {"x": 0.15608, "y": -0.26075, "z": -0.03316, "w": 0.95213},
+                                  "shape": {
+                                    "type": "box",
+                                    "offset": {"x": -1.52406, "y": -1.03452, "z": -0.98132},
+                                    "stretch": {"x": 1, "y": 1, "z": 1},
+                                    "settings": {
+                                      "isPiece": false,
+                                      "size": {"x": 3, "y": 2, "z": 2},
+                                      "isStaticBox": true
+                                    },
+                                    "textureLayout": {
+                                      "back": {
+                                        "offset": {"x": 39, "y": 69},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      },
+                                      "right": {
+                                        "offset": {"x": 37, "y": 69},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      },
+                                      "front": {
+                                        "offset": {"x": 44, "y": 69},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      },
+                                      "left": {
+                                        "offset": {"x": 42, "y": 69},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      },
+                                      "top": {
+                                        "offset": {"x": 42, "y": 69},
+                                        "mirror": {"x": true, "y": true},
+                                        "angle": 0
+                                      },
+                                      "bottom": {
+                                        "offset": {"x": 45, "y": 67},
+                                        "mirror": {"x": true, "y": false},
+                                        "angle": 0
+                                      }
+                                    },
+                                    "unwrapMode": "custom",
+                                    "visible": true,
+                                    "doubleSided": false,
+                                    "shadingMode": "flat"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "id": "19",
+                              "name": "L-Suit-Collar--C1",
+                              "position": {"x": 3.5, "y": 6.99594, "z": -2.96789},
+                              "orientation": {"x": 0, "y": 0.70711, "z": 0, "w": 0.70711},
+                              "shape": {
+                                "type": "box",
+                                "offset": {"x": 1.5, "y": 0, "z": -3.5},
+                                "stretch": {"x": 1.01, "y": 1.01, "z": 1.01},
+                                "settings": {
+                                  "isPiece": false,
+                                  "size": {"x": 2, "y": 3, "z": 16},
+                                  "isStaticBox": true
+                                },
+                                "textureLayout": {
+                                  "back": {
+                                    "offset": {"x": 36, "y": 90},
+                                    "mirror": {"x": true, "y": false},
+                                    "angle": 0
+                                  },
+                                  "right": {
+                                    "offset": {"x": 47, "y": 90},
+                                    "mirror": {"x": true, "y": false},
+                                    "angle": 0
+                                  },
+                                  "front": {
+                                    "offset": {"x": 50, "y": 90},
+                                    "mirror": {"x": true, "y": false},
+                                    "angle": 0
+                                  },
+                                  "left": {
+                                    "offset": {"x": 18, "y": 90},
+                                    "mirror": {"x": true, "y": false},
+                                    "angle": 0
+                                  },
+                                  "top": {
+                                    "offset": {"x": 33, "y": 93},
+                                    "mirror": {"x": false, "y": true},
+                                    "angle": 0
+                                  },
+                                  "bottom": {
+                                    "offset": {"x": 49, "y": 80},
+                                    "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   }
                                 },
@@ -529,11 +791,429 @@
                                 "doubleSided": true,
                                 "shadingMode": "flat"
                               }
+                            },
+                            {
+                              "id": "20",
+                              "name": "R-Suit-Collar",
+                              "position": {"x": -0.25, "y": 19.59594, "z": 0.03211},
+                              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                              "shape": {
+                                "type": "box",
+                                "offset": {"x": -5.25, "y": -12.6, "z": 1},
+                                "stretch": {"x": 1.01, "y": 1.01, "z": 1.01},
+                                "settings": {
+                                  "isPiece": false,
+                                  "size": {"x": 5, "y": 3, "z": 9}
+                                },
+                                "textureLayout": {
+                                  "back": {
+                                    "offset": {"x": 31, "y": 90},
+                                    "mirror": {"x": false, "y": false},
+                                    "angle": 0
+                                  },
+                                  "right": {
+                                    "offset": {"x": 2, "y": 90},
+                                    "mirror": {"x": false, "y": false},
+                                    "angle": 0
+                                  },
+                                  "front": {
+                                    "offset": {"x": 48, "y": 90},
+                                    "mirror": {"x": false, "y": false},
+                                    "angle": 0
+                                  },
+                                  "left": {
+                                    "offset": {"x": 38, "y": 90},
+                                    "mirror": {"x": false, "y": false},
+                                    "angle": 0
+                                  },
+                                  "top": {
+                                    "offset": {"x": 35, "y": 86},
+                                    "mirror": {"x": true, "y": true},
+                                    "angle": 0
+                                  },
+                                  "bottom": {
+                                    "offset": {"x": 70, "y": 77},
+                                    "mirror": {"x": true, "y": false},
+                                    "angle": 0
+                                  }
+                                },
+                                "unwrapMode": "custom",
+                                "visible": true,
+                                "doubleSided": true,
+                                "shadingMode": "flat"
+                              },
+                              "children": [
+                                {
+                                  "id": "21",
+                                  "name": "L-Suit-Collar--C1",
+                                  "position": {"x": 4.55223, "y": -0.4199, "z": 4.82749},
+                                  "orientation": {"x": -0.03396, "y": -0.30637, "z": -0.21756, "w": 0.92609},
+                                  "shape": {
+                                    "type": "box",
+                                    "offset": {"x": -2, "y": 0, "z": 0},
+                                    "stretch": {"x": 1, "y": 1, "z": 1},
+                                    "settings": {
+                                      "isPiece": false,
+                                      "size": {"x": 4, "y": 1, "z": 1},
+                                      "isStaticBox": true
+                                    },
+                                    "textureLayout": {
+                                      "back": {
+                                        "offset": {"x": 38, "y": 66},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      },
+                                      "right": {
+                                        "offset": {"x": 37, "y": 66},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      },
+                                      "front": {
+                                        "offset": {"x": 43, "y": 66},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      },
+                                      "left": {
+                                        "offset": {"x": 42, "y": 66},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      },
+                                      "top": {
+                                        "offset": {"x": 42, "y": 66},
+                                        "mirror": {"x": true, "y": true},
+                                        "angle": 0
+                                      },
+                                      "bottom": {
+                                        "offset": {"x": 46, "y": 65},
+                                        "mirror": {"x": true, "y": false},
+                                        "angle": 0
+                                      }
+                                    },
+                                    "unwrapMode": "custom",
+                                    "visible": true,
+                                    "doubleSided": false,
+                                    "shadingMode": "flat"
+                                  }
+                                },
+                                {
+                                  "id": "22",
+                                  "name": "R-Suit-Collar--C2",
+                                  "position": {"x": 1.69418, "y": -4.89572, "z": 4},
+                                  "orientation": {"x": -0.17101, "y": 0.2962, "z": -0.46985, "w": 0.8138},
+                                  "shape": {
+                                    "type": "box",
+                                    "offset": {"x": 1.5, "y": 0.5, "z": 0},
+                                    "stretch": {"x": 1.01, "y": 1.01, "z": 1.01},
+                                    "settings": {
+                                      "isPiece": false,
+                                      "size": {"x": 9, "y": 4, "z": 1},
+                                      "isStaticBox": true
+                                    },
+                                    "textureLayout": {
+                                      "back": {
+                                        "offset": {"x": 27, "y": 90},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      },
+                                      "right": {
+                                        "offset": {"x": 1, "y": 88},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      },
+                                      "front": {
+                                        "offset": {"x": 48, "y": 90},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      },
+                                      "left": {
+                                        "offset": {"x": 47, "y": 90},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      },
+                                      "top": {
+                                        "offset": {"x": 35, "y": 75},
+                                        "mirror": {"x": true, "y": false},
+                                        "angle": 0
+                                      },
+                                      "bottom": {
+                                        "offset": {"x": 70, "y": 77},
+                                        "mirror": {"x": true, "y": false},
+                                        "angle": 0
+                                      }
+                                    },
+                                    "unwrapMode": "custom",
+                                    "visible": true,
+                                    "doubleSided": true,
+                                    "shadingMode": "flat"
+                                  }
+                                },
+                                {
+                                  "id": "23",
+                                  "name": "R-Suit-Collar--C3",
+                                  "position": {"x": 2.99477, "y": -0.34063, "z": 3.75691},
+                                  "orientation": {"x": -0.46178, "y": 0.74542, "z": -0.24862, "w": 0.41146},
+                                  "shape": {
+                                    "type": "box",
+                                    "offset": {"x": 0, "y": 0, "z": 0.5},
+                                    "stretch": {"x": 1.01, "y": 1.01, "z": 1.01},
+                                    "settings": {
+                                      "isPiece": false,
+                                      "size": {"x": 3, "y": 4, "z": 2},
+                                      "isStaticBox": true
+                                    },
+                                    "textureLayout": {
+                                      "back": {
+                                        "offset": {"x": 2, "y": 69},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      },
+                                      "right": {
+                                        "offset": {"x": 0, "y": 69},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      },
+                                      "front": {
+                                        "offset": {"x": 7, "y": 69},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      },
+                                      "left": {
+                                        "offset": {"x": 5, "y": 69},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      },
+                                      "top": {
+                                        "offset": {"x": 5, "y": 69},
+                                        "mirror": {"x": true, "y": true},
+                                        "angle": 0
+                                      },
+                                      "bottom": {
+                                        "offset": {"x": 8, "y": 67},
+                                        "mirror": {"x": true, "y": false},
+                                        "angle": 0
+                                      }
+                                    },
+                                    "unwrapMode": "custom",
+                                    "visible": true,
+                                    "doubleSided": true,
+                                    "shadingMode": "flat"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "id": "24",
+                              "name": "L-Suit-Collar",
+                              "position": {"x": 0.25, "y": 19.59594, "z": 0.03211},
+                              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                              "shape": {
+                                "type": "box",
+                                "offset": {"x": 5.25, "y": -12.6, "z": 1},
+                                "stretch": {"x": 1.01, "y": 1.01, "z": 1.01},
+                                "settings": {
+                                  "isPiece": false,
+                                  "size": {"x": 5, "y": 3, "z": 9}
+                                },
+                                "textureLayout": {
+                                  "back": {
+                                    "offset": {"x": 36, "y": 90},
+                                    "mirror": {"x": true, "y": false},
+                                    "angle": 0
+                                  },
+                                  "right": {
+                                    "offset": {"x": 47, "y": 90},
+                                    "mirror": {"x": true, "y": false},
+                                    "angle": 0
+                                  },
+                                  "front": {
+                                    "offset": {"x": 53, "y": 90},
+                                    "mirror": {"x": true, "y": false},
+                                    "angle": 0
+                                  },
+                                  "left": {
+                                    "offset": {"x": 11, "y": 90},
+                                    "mirror": {"x": true, "y": false},
+                                    "angle": 0
+                                  },
+                                  "top": {
+                                    "offset": {"x": 30, "y": 86},
+                                    "mirror": {"x": false, "y": true},
+                                    "angle": 0
+                                  },
+                                  "bottom": {
+                                    "offset": {"x": 65, "y": 77},
+                                    "mirror": {"x": false, "y": false},
+                                    "angle": 0
+                                  }
+                                },
+                                "unwrapMode": "custom",
+                                "visible": true,
+                                "doubleSided": true,
+                                "shadingMode": "flat"
+                              },
+                              "children": [
+                                {
+                                  "id": "25",
+                                  "name": "L-Suit-Collar--C1",
+                                  "position": {"x": -4.55223, "y": -0.4199, "z": 4.82749},
+                                  "orientation": {"x": -0.03396, "y": 0.30637, "z": 0.21756, "w": 0.92609},
+                                  "shape": {
+                                    "type": "box",
+                                    "offset": {"x": 2, "y": 0, "z": 0},
+                                    "stretch": {"x": 1, "y": 1, "z": 1},
+                                    "settings": {
+                                      "isPiece": false,
+                                      "size": {"x": 4, "y": 1, "z": 1},
+                                      "isStaticBox": true
+                                    },
+                                    "textureLayout": {
+                                      "back": {
+                                        "offset": {"x": 42, "y": 66},
+                                        "mirror": {"x": true, "y": false},
+                                        "angle": 0
+                                      },
+                                      "right": {
+                                        "offset": {"x": 43, "y": 66},
+                                        "mirror": {"x": true, "y": false},
+                                        "angle": 0
+                                      },
+                                      "front": {
+                                        "offset": {"x": 47, "y": 66},
+                                        "mirror": {"x": true, "y": false},
+                                        "angle": 0
+                                      },
+                                      "left": {
+                                        "offset": {"x": 38, "y": 66},
+                                        "mirror": {"x": true, "y": false},
+                                        "angle": 0
+                                      },
+                                      "top": {
+                                        "offset": {"x": 38, "y": 66},
+                                        "mirror": {"x": false, "y": true},
+                                        "angle": 0
+                                      },
+                                      "bottom": {
+                                        "offset": {"x": 42, "y": 65},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      }
+                                    },
+                                    "unwrapMode": "custom",
+                                    "visible": true,
+                                    "doubleSided": false,
+                                    "shadingMode": "flat"
+                                  }
+                                },
+                                {
+                                  "id": "26",
+                                  "name": "L-Suit-Collar--C2",
+                                  "position": {"x": -1.69418, "y": -4.89572, "z": 4},
+                                  "orientation": {"x": -0.17101, "y": -0.2962, "z": 0.46985, "w": 0.8138},
+                                  "shape": {
+                                    "type": "box",
+                                    "offset": {"x": -1.5, "y": 0.5, "z": 0},
+                                    "stretch": {"x": 1.01, "y": 1.01, "z": 1.01},
+                                    "settings": {
+                                      "isPiece": false,
+                                      "size": {"x": 9, "y": 4, "z": 1},
+                                      "isStaticBox": true
+                                    },
+                                    "textureLayout": {
+                                      "back": {
+                                        "offset": {"x": 36, "y": 90},
+                                        "mirror": {"x": true, "y": false},
+                                        "angle": 0
+                                      },
+                                      "right": {
+                                        "offset": {"x": 48, "y": 90},
+                                        "mirror": {"x": true, "y": false},
+                                        "angle": 0
+                                      },
+                                      "front": {
+                                        "offset": {"x": 57, "y": 90},
+                                        "mirror": {"x": true, "y": false},
+                                        "angle": 0
+                                      },
+                                      "left": {
+                                        "offset": {"x": 2, "y": 88},
+                                        "mirror": {"x": true, "y": false},
+                                        "angle": 0
+                                      },
+                                      "top": {
+                                        "offset": {"x": 26, "y": 75},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      },
+                                      "bottom": {
+                                        "offset": {"x": 61, "y": 77},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      }
+                                    },
+                                    "unwrapMode": "custom",
+                                    "visible": true,
+                                    "doubleSided": true,
+                                    "shadingMode": "flat"
+                                  }
+                                },
+                                {
+                                  "id": "27",
+                                  "name": "L-Suit-Collar--C3",
+                                  "position": {"x": -2.99477, "y": -0.34063, "z": 3.75691},
+                                  "orientation": {"x": -0.46178, "y": -0.74542, "z": 0.24862, "w": 0.41146},
+                                  "shape": {
+                                    "type": "box",
+                                    "offset": {"x": 0, "y": 0, "z": 0.5},
+                                    "stretch": {"x": 1.01, "y": 1.01, "z": 1.01},
+                                    "settings": {
+                                      "isPiece": false,
+                                      "size": {"x": 3, "y": 4, "z": 2},
+                                      "isStaticBox": true
+                                    },
+                                    "textureLayout": {
+                                      "back": {
+                                        "offset": {"x": 5, "y": 69},
+                                        "mirror": {"x": true, "y": false},
+                                        "angle": 0
+                                      },
+                                      "right": {
+                                        "offset": {"x": 7, "y": 69},
+                                        "mirror": {"x": true, "y": false},
+                                        "angle": 0
+                                      },
+                                      "front": {
+                                        "offset": {"x": 10, "y": 69},
+                                        "mirror": {"x": true, "y": false},
+                                        "angle": 0
+                                      },
+                                      "left": {
+                                        "offset": {"x": 2, "y": 69},
+                                        "mirror": {"x": true, "y": false},
+                                        "angle": 0
+                                      },
+                                      "top": {
+                                        "offset": {"x": 2, "y": 69},
+                                        "mirror": {"x": false, "y": true},
+                                        "angle": 0
+                                      },
+                                      "bottom": {
+                                        "offset": {"x": 5, "y": 67},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      }
+                                    },
+                                    "unwrapMode": "custom",
+                                    "visible": true,
+                                    "doubleSided": true,
+                                    "shadingMode": "flat"
+                                  }
+                                }
+                              ]
                             }
                           ]
                         },
                         {
-                          "id": "15",
+                          "id": "28",
                           "name": "Plushie-Core-Lower",
                           "position": {"x": 0, "y": -5, "z": 0},
                           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -584,7 +1264,7 @@
                           },
                           "children": [
                             {
-                              "id": "16",
+                              "id": "29",
                               "name": "Plushie-Tag",
                               "position": {"x": 0, "y": -0.5, "z": -2},
                               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -603,7 +1283,7 @@
                               },
                               "children": [
                                 {
-                                  "id": "17",
+                                  "id": "30",
                                   "name": "Plushie-Tag--C1",
                                   "position": {"x": 0, "y": 0, "z": 0},
                                   "orientation": {"x": 0, "y": 0.42262, "z": 0, "w": 0.90631},
@@ -637,7 +1317,7 @@
                       ]
                     },
                     {
-                      "id": "18",
+                      "id": "31",
                       "name": "Head",
                       "position": {"x": 0, "y": 12, "z": 4},
                       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -688,7 +1368,7 @@
                       },
                       "children": [
                         {
-                          "id": "19",
+                          "id": "32",
                           "name": "Mouth--C1",
                           "position": {"x": 1, "y": 0.5, "z": 5.6},
                           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -716,7 +1396,7 @@
                           }
                         },
                         {
-                          "id": "20",
+                          "id": "33",
                           "name": "R-Eye--C2",
                           "position": {"x": -3.5, "y": 3, "z": 6.6},
                           "orientation": {"x": 0, "y": 0, "z": -0.70711, "w": 0.70711},
@@ -744,7 +1424,7 @@
                           }
                         },
                         {
-                          "id": "21",
+                          "id": "34",
                           "name": "L-Eye--C3",
                           "position": {"x": 3.5, "y": 3, "z": 6.6},
                           "orientation": {"x": 0, "y": 0, "z": 0.70711, "w": 0.70711},
@@ -772,7 +1452,7 @@
                           }
                         },
                         {
-                          "id": "22",
+                          "id": "35",
                           "name": "Nose--C4",
                           "position": {"x": 0, "y": -10.7, "z": -1.5},
                           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -824,7 +1504,7 @@
                           }
                         },
                         {
-                          "id": "23",
+                          "id": "36",
                           "name": "Top",
                           "position": {"x": 0, "y": 14.5, "z": -0.5},
                           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -875,8 +1555,60 @@
                           },
                           "children": [
                             {
-                              "id": "24",
+                              "id": "37",
                               "name": "Top--C1",
+                              "position": {"x": 0, "y": -13, "z": 0},
+                              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                              "shape": {
+                                "type": "box",
+                                "offset": {"x": 0, "y": 0, "z": 0},
+                                "stretch": {"x": 1, "y": 1, "z": 1},
+                                "settings": {
+                                  "isPiece": false,
+                                  "size": {"x": 14, "y": 2, "z": 9},
+                                  "isStaticBox": true
+                                },
+                                "textureLayout": {
+                                  "back": {
+                                    "offset": {"x": 16, "y": 9},
+                                    "mirror": {"x": false, "y": false},
+                                    "angle": 0
+                                  },
+                                  "right": {
+                                    "offset": {"x": 6, "y": 9},
+                                    "mirror": {"x": false, "y": false},
+                                    "angle": 0
+                                  },
+                                  "front": {
+                                    "offset": {"x": 41, "y": 9},
+                                    "mirror": {"x": false, "y": false},
+                                    "angle": 0
+                                  },
+                                  "left": {
+                                    "offset": {"x": 31, "y": 9},
+                                    "mirror": {"x": false, "y": false},
+                                    "angle": 0
+                                  },
+                                  "top": {
+                                    "offset": {"x": 30, "y": 9},
+                                    "mirror": {"x": true, "y": true},
+                                    "angle": 0
+                                  },
+                                  "bottom": {
+                                    "offset": {"x": 46, "y": 0},
+                                    "mirror": {"x": true, "y": false},
+                                    "angle": 0
+                                  }
+                                },
+                                "unwrapMode": "custom",
+                                "visible": true,
+                                "doubleSided": false,
+                                "shadingMode": "flat"
+                              }
+                            },
+                            {
+                              "id": "38",
+                              "name": "Top--C2",
                               "position": {"x": 0, "y": 6, "z": -0.5},
                               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                               "shape": {
@@ -931,9 +1663,9 @@
                       ]
                     },
                     {
-                      "id": "25",
+                      "id": "39",
                       "name": "R-Arm",
-                      "position": {"x": -7, "y": 4, "z": 5},
+                      "position": {"x": -7, "y": 6, "z": 5},
                       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                       "shape": {
                         "type": "none",
@@ -950,7 +1682,7 @@
                       },
                       "children": [
                         {
-                          "id": "26",
+                          "id": "40",
                           "name": "R-Plushie-Nubbin",
                           "position": {"x": 0, "y": -4.5, "z": 0},
                           "orientation": {"x": 0, "y": 0, "z": -0.57358, "w": 0.81915},
@@ -1001,7 +1733,7 @@
                           },
                           "children": [
                             {
-                              "id": "27",
+                              "id": "41",
                               "name": "R-Toe-Beans-Nubbin",
                               "position": {"x": 1.5, "y": -2.4, "z": 1},
                               "orientation": {"x": -0.70711, "y": 0, "z": -0.70711, "w": 0},
@@ -1054,7 +1786,7 @@
                           ]
                         },
                         {
-                          "id": "28",
+                          "id": "42",
                           "name": "R-Forearm",
                           "position": {"x": 0, "y": -4.5, "z": 0},
                           "orientation": {"x": 0, "y": 0, "z": -0.21644, "w": 0.9763},
@@ -1073,7 +1805,7 @@
                           },
                           "children": [
                             {
-                              "id": "29",
+                              "id": "43",
                               "name": "R-Hand",
                               "position": {"x": -2, "y": -4.5, "z": 0},
                               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -1092,7 +1824,7 @@
                               },
                               "children": [
                                 {
-                                  "id": "30",
+                                  "id": "44",
                                   "name": "R-Attachment",
                                   "position": {"x": -20.5, "y": -3.5, "z": 14},
                                   "orientation": {"x": 0.60876, "y": 0, "z": 0, "w": 0.79335},
@@ -1117,9 +1849,9 @@
                       ]
                     },
                     {
-                      "id": "31",
+                      "id": "45",
                       "name": "L-Arm",
-                      "position": {"x": 7, "y": 4, "z": 5},
+                      "position": {"x": 7, "y": 6, "z": 5},
                       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                       "shape": {
                         "type": "none",
@@ -1136,7 +1868,7 @@
                       },
                       "children": [
                         {
-                          "id": "32",
+                          "id": "46",
                           "name": "L-Plushie-Nubbin",
                           "position": {"x": 0, "y": -4.5, "z": 0},
                           "orientation": {"x": 0, "y": 0, "z": 0.57358, "w": 0.81915},
@@ -1187,7 +1919,7 @@
                           },
                           "children": [
                             {
-                              "id": "33",
+                              "id": "47",
                               "name": "L-Toe-Beans-Nubbin",
                               "position": {"x": -1.5, "y": -2.4, "z": 1},
                               "orientation": {"x": 0.70711, "y": 0, "z": -0.70711, "w": 0},
@@ -1240,7 +1972,7 @@
                           ]
                         },
                         {
-                          "id": "34",
+                          "id": "48",
                           "name": "L-Forearm",
                           "position": {"x": 31.41995, "y": 8.56325, "z": 11.27658},
                           "orientation": {"x": 0.62089, "y": 0.16637, "z": 0.19827, "w": 0.73993},
@@ -1259,7 +1991,7 @@
                           },
                           "children": [
                             {
-                              "id": "35",
+                              "id": "49",
                               "name": "L-Hand",
                               "position": {"x": 0, "y": 0, "z": 0},
                               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -1278,7 +2010,7 @@
                               },
                               "children": [
                                 {
-                                  "id": "36",
+                                  "id": "50",
                                   "name": "L-Attachment",
                                   "position": {"x": 0, "y": 0, "z": 0},
                                   "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -1305,7 +2037,7 @@
                   ]
                 },
                 {
-                  "id": "37",
+                  "id": "51",
                   "name": "R-Plushie-Leg",
                   "position": {"x": -3, "y": -4, "z": 8},
                   "orientation": {"x": 0, "y": -0.08716, "z": 0, "w": 0.99619},
@@ -1356,7 +2088,7 @@
                   }
                 },
                 {
-                  "id": "38",
+                  "id": "52",
                   "name": "L-Plushie-Leg",
                   "position": {"x": 3, "y": -4, "z": 8},
                   "orientation": {"x": 0, "y": 0.08716, "z": 0, "w": 0.99619},

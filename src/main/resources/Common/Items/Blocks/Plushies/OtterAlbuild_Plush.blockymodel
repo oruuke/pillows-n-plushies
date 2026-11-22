@@ -236,30 +236,30 @@
                           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                           "shape": {
                             "type": "box",
-                            "offset": {"x": 0, "y": -0.8, "z": 0},
+                            "offset": {"x": 0, "y": -1.3, "z": 0},
                             "stretch": {"x": 1, "y": 1, "z": 1.01},
                             "settings": {
                               "isPiece": false,
-                              "size": {"x": 14, "y": 2, "z": 8}
+                              "size": {"x": 14, "y": 3, "z": 8}
                             },
                             "textureLayout": {
                               "back": {
-                                "offset": {"x": 75, "y": 35},
+                                "offset": {"x": 75, "y": 33},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 0
                               },
                               "right": {
-                                "offset": {"x": 67, "y": 35},
+                                "offset": {"x": 67, "y": 33},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 0
                               },
                               "front": {
-                                "offset": {"x": 97, "y": 35},
+                                "offset": {"x": 97, "y": 33},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 0
                               },
                               "left": {
-                                "offset": {"x": 89, "y": 35},
+                                "offset": {"x": 89, "y": 33},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 0
                               },
@@ -283,7 +283,7 @@
                             {
                               "id": "10",
                               "name": "Plushie-Tag",
-                              "position": {"x": 0, "y": -1, "z": -2},
+                              "position": {"x": 0, "y": -0.5, "z": -2},
                               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                               "shape": {
                                 "type": "none",
@@ -1485,7 +1485,7 @@
                               "id": "39",
                               "name": "R-Toe-Beans-Nubbin",
                               "position": {"x": 1.5, "y": -2.4, "z": 1},
-                              "orientation": {"x": 0.70711, "y": 0, "z": 0.70711, "w": 0},
+                              "orientation": {"x": -0.70711, "y": 0, "z": -0.70711, "w": 0},
                               "shape": {
                                 "type": "box",
                                 "offset": {"x": -1, "y": 1.5, "z": 0.5},

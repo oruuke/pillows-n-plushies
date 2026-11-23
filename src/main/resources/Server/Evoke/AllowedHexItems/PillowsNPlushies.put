@@ -292,6 +292,19 @@
             "VariantOf": "Hex_Oruuke_Plush"
         },
         {
+            "BlockId": "SlothSimon_Plush",
+            "EntityId": "Hex_SlothSimon_Plush",
+            "EssenceCost": 30,
+            "HasLeftHandSlot": true,
+            "HasRightHandSlot": true,
+            "HasArmorHeadSlot": true,
+            "HasArmorChestSlot": true,
+            "HasArmorHandsSlot": true,
+            "HasArmorLegSlot": true,
+            "HasHotbarSlot": true,
+            "VariantOf": "Hex_Oruuke_Plush"
+        },
+        {
             "BlockId": "Slushy_Plush",
             "EntityId": "Hex_Slushy_Plush",
             "EssenceCost": 30,

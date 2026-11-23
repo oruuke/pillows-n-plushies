@@ -1,1 +1,1 @@
-- added ale plushie
+- added ale, otter, sloth plushies

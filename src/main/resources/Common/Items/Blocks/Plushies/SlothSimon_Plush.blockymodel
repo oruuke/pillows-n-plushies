@@ -743,58 +743,6 @@
                             {
                               "id": "19",
                               "name": "L-Suit-Collar--C1",
-                              "position": {"x": 3.5, "y": 6.99594, "z": -2.96789},
-                              "orientation": {"x": 0, "y": 0.70711, "z": 0, "w": 0.70711},
-                              "shape": {
-                                "type": "box",
-                                "offset": {"x": 2, "y": 0, "z": -3.5},
-                                "stretch": {"x": 1.01, "y": 1.01, "z": 1.01},
-                                "settings": {
-                                  "isPiece": false,
-                                  "size": {"x": 1, "y": 3, "z": 16},
-                                  "isStaticBox": true
-                                },
-                                "textureLayout": {
-                                  "back": {
-                                    "offset": {"x": 160, "y": 66},
-                                    "mirror": {"x": true, "y": false},
-                                    "angle": 0
-                                  },
-                                  "right": {
-                                    "offset": {"x": 176, "y": 66},
-                                    "mirror": {"x": true, "y": false},
-                                    "angle": 0
-                                  },
-                                  "front": {
-                                    "offset": {"x": 177, "y": 66},
-                                    "mirror": {"x": true, "y": false},
-                                    "angle": 0
-                                  },
-                                  "left": {
-                                    "offset": {"x": 159, "y": 66},
-                                    "mirror": {"x": true, "y": false},
-                                    "angle": 0
-                                  },
-                                  "top": {
-                                    "offset": {"x": 159, "y": 66},
-                                    "mirror": {"x": false, "y": true},
-                                    "angle": 0
-                                  },
-                                  "bottom": {
-                                    "offset": {"x": 160, "y": 50},
-                                    "mirror": {"x": false, "y": false},
-                                    "angle": 0
-                                  }
-                                },
-                                "unwrapMode": "custom",
-                                "visible": false,
-                                "doubleSided": true,
-                                "shadingMode": "flat"
-                              }
-                            },
-                            {
-                              "id": "20",
-                              "name": "L-Suit-Collar--C2",
                               "position": {"x": -0.5, "y": 5.49594, "z": -3.46789},
                               "orientation": {"x": 0, "y": 0.70711, "z": 0, "w": 0.70711},
                               "shape": {
@@ -845,7 +793,7 @@
                               }
                             },
                             {
-                              "id": "21",
+                              "id": "20",
                               "name": "R-Suit-Collar",
                               "position": {"x": -0.25, "y": 19.59594, "z": 0.03211},
                               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -896,7 +844,7 @@
                               },
                               "children": [
                                 {
-                                  "id": "22",
+                                  "id": "21",
                                   "name": "L-Suit-Collar--C1",
                                   "position": {"x": 4.55223, "y": -0.41986, "z": 5.32749},
                                   "orientation": {"x": -0.03396, "y": -0.30637, "z": -0.21756, "w": 0.92609},
@@ -948,7 +896,7 @@
                                   }
                                 },
                                 {
-                                  "id": "23",
+                                  "id": "22",
                                   "name": "R-Suit-Collar--C2",
                                   "position": {"x": 4.15825, "y": -8.18514, "z": 1.77973},
                                   "orientation": {"x": -0.19001, "y": 0.28438, "z": -0.52207, "w": 0.78132},
@@ -1000,7 +948,7 @@
                                   }
                                 },
                                 {
-                                  "id": "24",
+                                  "id": "23",
                                   "name": "R-Suit-Collar--C3",
                                   "position": {"x": 2.99477, "y": -0.34059, "z": 4.25691},
                                   "orientation": {"x": -0.46178, "y": 0.74542, "z": -0.24862, "w": 0.41146},
@@ -1054,7 +1002,7 @@
                               ]
                             },
                             {
-                              "id": "25",
+                              "id": "24",
                               "name": "L-Suit-Collar",
                               "position": {"x": 0.25, "y": 19.59594, "z": 0.03211},
                               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -1105,7 +1053,7 @@
                               },
                               "children": [
                                 {
-                                  "id": "26",
+                                  "id": "25",
                                   "name": "R-Suit-Collar--C1",
                                   "position": {"x": -4.55223, "y": -0.41986, "z": 5.32749},
                                   "orientation": {"x": -0.03396, "y": 0.30637, "z": 0.21756, "w": 0.92609},
@@ -1157,7 +1105,7 @@
                                   }
                                 },
                                 {
-                                  "id": "27",
+                                  "id": "26",
                                   "name": "L-Suit-Collar--C2",
                                   "position": {"x": -4.15825, "y": -8.18514, "z": 1.77973},
                                   "orientation": {"x": -0.19001, "y": -0.28438, "z": 0.52207, "w": 0.78132},
@@ -1209,7 +1157,7 @@
                                   }
                                 },
                                 {
-                                  "id": "28",
+                                  "id": "27",
                                   "name": "L-Suit-Collar--C3",
                                   "position": {"x": -2.99477, "y": -0.34059, "z": 4.25691},
                                   "orientation": {"x": -0.46178, "y": -0.74542, "z": 0.24862, "w": 0.41146},
@@ -1265,7 +1213,7 @@
                           ]
                         },
                         {
-                          "id": "29",
+                          "id": "28",
                           "name": "Plushie-Core-Lower",
                           "position": {"x": 0, "y": -5, "z": 0},
                           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -1316,7 +1264,7 @@
                           },
                           "children": [
                             {
-                              "id": "30",
+                              "id": "29",
                               "name": "Plushie-Tag",
                               "position": {"x": 0, "y": -0.5, "z": -2},
                               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -1335,7 +1283,7 @@
                               },
                               "children": [
                                 {
-                                  "id": "31",
+                                  "id": "30",
                                   "name": "Plushie-Tag--C1",
                                   "position": {"x": 0, "y": 0, "z": 0},
                                   "orientation": {"x": 0, "y": 0.42262, "z": 0, "w": 0.90631},
@@ -1369,7 +1317,7 @@
                       ]
                     },
                     {
-                      "id": "32",
+                      "id": "31",
                       "name": "Head",
                       "position": {"x": 0, "y": 12, "z": 4},
                       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -1420,7 +1368,7 @@
                       },
                       "children": [
                         {
-                          "id": "33",
+                          "id": "32",
                           "name": "Mouth--C1",
                           "position": {"x": 1, "y": 0.5, "z": 5.6},
                           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -1448,7 +1396,7 @@
                           }
                         },
                         {
-                          "id": "34",
+                          "id": "33",
                           "name": "R-Eye--C2",
                           "position": {"x": -3.5, "y": 3, "z": 6.6},
                           "orientation": {"x": 0, "y": 0, "z": -0.70711, "w": 0.70711},
@@ -1476,7 +1424,7 @@
                           }
                         },
                         {
-                          "id": "35",
+                          "id": "34",
                           "name": "L-Eye--C3",
                           "position": {"x": 3.5, "y": 3, "z": 6.6},
                           "orientation": {"x": 0, "y": 0, "z": 0.70711, "w": 0.70711},
@@ -1504,7 +1452,7 @@
                           }
                         },
                         {
-                          "id": "36",
+                          "id": "35",
                           "name": "Nose--C4",
                           "position": {"x": 0, "y": -10.7, "z": -1.5},
                           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -1556,7 +1504,7 @@
                           }
                         },
                         {
-                          "id": "37",
+                          "id": "36",
                           "name": "Neck--C5",
                           "position": {"x": 0, "y": -4.5, "z": 0},
                           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -1608,7 +1556,7 @@
                           }
                         },
                         {
-                          "id": "38",
+                          "id": "37",
                           "name": "Top",
                           "position": {"x": 0, "y": 14.5, "z": -0.5},
                           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -1659,7 +1607,7 @@
                           },
                           "children": [
                             {
-                              "id": "39",
+                              "id": "38",
                               "name": "Top--C1",
                               "position": {"x": 0, "y": 6, "z": -0.5},
                               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -1711,7 +1659,7 @@
                               }
                             },
                             {
-                              "id": "40",
+                              "id": "39",
                               "name": "Hair",
                               "position": {"x": 0, "y": 1, "z": 0},
                               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -1730,7 +1678,7 @@
                               },
                               "children": [
                                 {
-                                  "id": "41",
+                                  "id": "40",
                                   "name": "Hair--C1",
                                   "position": {"x": -2.25, "y": 0.25, "z": 0},
                                   "orientation": {"x": 0, "y": 0, "z": -0.5373, "w": 0.84339},
@@ -1782,7 +1730,7 @@
                                   }
                                 },
                                 {
-                                  "id": "42",
+                                  "id": "41",
                                   "name": "Hair--C2",
                                   "position": {"x": 2.25, "y": 0.25, "z": 0},
                                   "orientation": {"x": 0, "y": 0, "z": 0.5373, "w": 0.84339},
@@ -1840,7 +1788,7 @@
                       ]
                     },
                     {
-                      "id": "43",
+                      "id": "42",
                       "name": "R-Arm",
                       "position": {"x": -7, "y": 6, "z": 5},
                       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -1859,7 +1807,7 @@
                       },
                       "children": [
                         {
-                          "id": "44",
+                          "id": "43",
                           "name": "R-Plushie-Nubbin",
                           "position": {"x": 0, "y": -4.5, "z": 0},
                           "orientation": {"x": 0, "y": 0, "z": -0.57358, "w": 0.81915},
@@ -1910,7 +1858,7 @@
                           },
                           "children": [
                             {
-                              "id": "45",
+                              "id": "44",
                               "name": "R-Toe-Beans-Nubbin",
                               "position": {"x": -2, "y": -3.4, "z": 1},
                               "orientation": {"x": -0.70711, "y": 0, "z": -0.70711, "w": 0},
@@ -1963,7 +1911,7 @@
                           ]
                         },
                         {
-                          "id": "46",
+                          "id": "45",
                           "name": "R-Forearm",
                           "position": {"x": 0, "y": -4.5, "z": 0},
                           "orientation": {"x": 0, "y": 0, "z": -0.21644, "w": 0.9763},
@@ -1982,7 +1930,7 @@
                           },
                           "children": [
                             {
-                              "id": "47",
+                              "id": "46",
                               "name": "R-Hand",
                               "position": {"x": -2, "y": -4.5, "z": 0},
                               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -2001,7 +1949,7 @@
                               },
                               "children": [
                                 {
-                                  "id": "48",
+                                  "id": "47",
                                   "name": "R-Attachment",
                                   "position": {"x": -20.5, "y": -3.5, "z": 14},
                                   "orientation": {"x": 0.60876, "y": 0, "z": 0, "w": 0.79335},
@@ -2026,7 +1974,7 @@
                       ]
                     },
                     {
-                      "id": "49",
+                      "id": "48",
                       "name": "L-Arm",
                       "position": {"x": 7, "y": 6, "z": 5},
                       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -2045,7 +1993,7 @@
                       },
                       "children": [
                         {
-                          "id": "50",
+                          "id": "49",
                           "name": "L-Plushie-Nubbin",
                           "position": {"x": 0, "y": -4.5, "z": 0},
                           "orientation": {"x": 0, "y": 0, "z": 0.57358, "w": 0.81915},
@@ -2096,7 +2044,7 @@
                           },
                           "children": [
                             {
-                              "id": "51",
+                              "id": "50",
                               "name": "L-Toe-Beans-Nubbin",
                               "position": {"x": 2, "y": -3.4, "z": 1},
                               "orientation": {"x": 0.70711, "y": 0, "z": -0.70711, "w": 0},
@@ -2149,7 +2097,7 @@
                           ]
                         },
                         {
-                          "id": "52",
+                          "id": "51",
                           "name": "L-Forearm",
                           "position": {"x": 31.41995, "y": 8.56325, "z": 11.27658},
                           "orientation": {"x": 0.62089, "y": 0.16637, "z": 0.19827, "w": 0.73993},
@@ -2168,7 +2116,7 @@
                           },
                           "children": [
                             {
-                              "id": "53",
+                              "id": "52",
                               "name": "L-Hand",
                               "position": {"x": 0, "y": 0, "z": 0},
                               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -2187,7 +2135,7 @@
                               },
                               "children": [
                                 {
-                                  "id": "54",
+                                  "id": "53",
                                   "name": "L-Attachment",
                                   "position": {"x": 0, "y": 0, "z": 0},
                                   "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -2214,7 +2162,7 @@
                   ]
                 },
                 {
-                  "id": "55",
+                  "id": "54",
                   "name": "R-Plushie-Leg",
                   "position": {"x": -3, "y": -4, "z": 8},
                   "orientation": {"x": 0, "y": -0.08716, "z": 0, "w": 0.99619},
@@ -2265,7 +2213,7 @@
                   }
                 },
                 {
-                  "id": "56",
+                  "id": "55",
                   "name": "L-Plushie-Leg",
                   "position": {"x": 3, "y": -4, "z": 8},
                   "orientation": {"x": 0, "y": 0.08716, "z": 0, "w": 0.99619},

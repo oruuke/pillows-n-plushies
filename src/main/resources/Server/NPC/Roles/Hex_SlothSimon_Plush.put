@@ -9,8 +9,8 @@
   },
   "Parameters": {
     "NameTranslationKey": {
-      "Value": "SlothSimon",
-      "Description": "SlothSimon"
+      "Value": "Simon",
+      "Description": "Simon"
     }
   }
 }

@@ -1,1 +1,1 @@
-- added ale, otter, sloth plushies
+- fixed simon model and cushion recipe

@@ -130,7 +130,7 @@
     ],
     "TimeSeconds": 8
   },
-  "ItemSoundSetId": "ISS_Blocks_Wood",
+  "ItemSoundSetId": "ISS_Items_Cloth",
   "ItemLevel": 6,
   "MaxStack": 25
 }

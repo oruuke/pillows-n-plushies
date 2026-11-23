@@ -89,14 +89,6 @@
     "PhysicalMaterialId": "Cloth",
     "BlockParticleSetId": "Dust"
   },
-  "ResourceTypes": [
-    {
-      "Id": "Fuel"
-    },
-    {
-      "Id": "Charcoal"
-    }
-  ],
   "Tags": {
     "Type": [
       "Furniture"
@@ -106,5 +98,5 @@
     ]
   },
   "Scale": 0.6,
-  "ItemSoundSetId": "ISS_Blocks_Wood"
+  "ItemSoundSetId": "ISS_Items_Cloth"
 }

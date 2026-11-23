@@ -742,7 +742,7 @@
                             },
                             {
                               "id": "19",
-                              "name": "L-Suit-Collar--C1",
+                              "name": "Back-Suit-Collar--C1",
                               "position": {"x": -0.5, "y": 5.49594, "z": -3.46789},
                               "orientation": {"x": 0, "y": 0.70711, "z": 0, "w": 0.70711},
                               "shape": {
@@ -846,12 +846,12 @@
                                 {
                                   "id": "21",
                                   "name": "L-Suit-Collar--C1",
-                                  "position": {"x": 4.55223, "y": -0.41986, "z": 5.32749},
-                                  "orientation": {"x": -0.03396, "y": -0.30637, "z": -0.21756, "w": 0.92609},
+                                  "position": {"x": 4.54281, "y": -0.51396, "z": 5.31905},
+                                  "orientation": {"x": 0.09441, "y": -0.3689, "z": -0.19608, "w": 0.90363},
                                   "shape": {
                                     "type": "box",
                                     "offset": {"x": -2, "y": 0, "z": 0},
-                                    "stretch": {"x": 1, "y": 1, "z": 1},
+                                    "stretch": {"x": 1, "y": 1.5, "z": 1},
                                     "settings": {
                                       "isPiece": false,
                                       "size": {"x": 4, "y": 1, "z": 1},
@@ -954,31 +954,31 @@
                                   "orientation": {"x": -0.46178, "y": 0.74542, "z": -0.24862, "w": 0.41146},
                                   "shape": {
                                     "type": "box",
-                                    "offset": {"x": 0.00523, "y": 0, "z": 0.46098},
+                                    "offset": {"x": 0.00523, "y": -0.5, "z": 0.46098},
                                     "stretch": {"x": 1.01, "y": 1.01, "z": 1.01},
                                     "settings": {
                                       "isPiece": false,
-                                      "size": {"x": 3, "y": 4, "z": 2},
+                                      "size": {"x": 3, "y": 3, "z": 2},
                                       "isStaticBox": true
                                     },
                                     "textureLayout": {
                                       "back": {
-                                        "offset": {"x": 2, "y": 69},
+                                        "offset": {"x": 2, "y": 70},
                                         "mirror": {"x": false, "y": false},
                                         "angle": 0
                                       },
                                       "right": {
-                                        "offset": {"x": 0, "y": 69},
+                                        "offset": {"x": 0, "y": 70},
                                         "mirror": {"x": false, "y": false},
                                         "angle": 0
                                       },
                                       "front": {
-                                        "offset": {"x": 7, "y": 69},
+                                        "offset": {"x": 7, "y": 70},
                                         "mirror": {"x": false, "y": false},
                                         "angle": 0
                                       },
                                       "left": {
-                                        "offset": {"x": 5, "y": 69},
+                                        "offset": {"x": 5, "y": 70},
                                         "mirror": {"x": false, "y": false},
                                         "angle": 0
                                       },
@@ -1055,12 +1055,12 @@
                                 {
                                   "id": "25",
                                   "name": "R-Suit-Collar--C1",
-                                  "position": {"x": -4.55223, "y": -0.41986, "z": 5.32749},
-                                  "orientation": {"x": -0.03396, "y": 0.30637, "z": 0.21756, "w": 0.92609},
+                                  "position": {"x": -4.54281, "y": -0.51396, "z": 5.31905},
+                                  "orientation": {"x": 0.09441, "y": 0.3689, "z": 0.19608, "w": 0.90363},
                                   "shape": {
                                     "type": "box",
                                     "offset": {"x": 2, "y": 0, "z": 0},
-                                    "stretch": {"x": 1, "y": 1, "z": 1},
+                                    "stretch": {"x": 1, "y": 1.5, "z": 1},
                                     "settings": {
                                       "isPiece": false,
                                       "size": {"x": 4, "y": 1, "z": 1},
@@ -1163,31 +1163,31 @@
                                   "orientation": {"x": -0.46178, "y": -0.74542, "z": 0.24862, "w": 0.41146},
                                   "shape": {
                                     "type": "box",
-                                    "offset": {"x": -0.00523, "y": 0, "z": 0.46098},
+                                    "offset": {"x": -0.00523, "y": -0.5, "z": 0.46098},
                                     "stretch": {"x": 1.01, "y": 1.01, "z": 1.01},
                                     "settings": {
                                       "isPiece": false,
-                                      "size": {"x": 3, "y": 4, "z": 2},
+                                      "size": {"x": 3, "y": 3, "z": 2},
                                       "isStaticBox": true
                                     },
                                     "textureLayout": {
                                       "back": {
-                                        "offset": {"x": 5, "y": 69},
+                                        "offset": {"x": 5, "y": 70},
                                         "mirror": {"x": true, "y": false},
                                         "angle": 0
                                       },
                                       "right": {
-                                        "offset": {"x": 7, "y": 69},
+                                        "offset": {"x": 7, "y": 70},
                                         "mirror": {"x": true, "y": false},
                                         "angle": 0
                                       },
                                       "front": {
-                                        "offset": {"x": 10, "y": 69},
+                                        "offset": {"x": 10, "y": 70},
                                         "mirror": {"x": true, "y": false},
                                         "angle": 0
                                       },
                                       "left": {
-                                        "offset": {"x": 2, "y": 69},
+                                        "offset": {"x": 2, "y": 70},
                                         "mirror": {"x": true, "y": false},
                                         "angle": 0
                                       },

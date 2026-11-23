@@ -358,8 +358,8 @@
                             "angle": 0
                           },
                           "front": {
-                            "offset": {"x": 62, "y": 40},
-                            "mirror": {"x": true, "y": false},
+                            "offset": {"x": 44, "y": 40},
+                            "mirror": {"x": false, "y": false},
                             "angle": 0
                           },
                           "left": {
